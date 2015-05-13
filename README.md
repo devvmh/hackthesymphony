@@ -2,7 +2,7 @@
 
 2) Intsall XCode developer tools in the App Store or in XCode, I forget which
 
-4) Clone the git repository with the git app: https://git@github.com/devvmh/hackthesymphony
+4) Clone the git repository with the git app: https://github.com/devvmh/hackthesymphony
 
 5) Open a terminal and type these commands, one to a line, hitting Enter after each one:
 
