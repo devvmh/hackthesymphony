@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+    {% block css %}
+    {% endblock css %}
+  </head>
+  <body>
+    {% block header %}
+      <header>Header</header>
+    {% endblock header %}
+    <div id="content">
+      {% block main %}
+      {% endblock main %}
+    </div>
+  </body>
+  <footer>
+    <script type="text/javascript" src="{% static "custom.js" %}">
+    {% block js %}
+    {% endblock js %}
+  </footer>
+</html>
+    
