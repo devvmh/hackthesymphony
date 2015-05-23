@@ -1,0 +1,44 @@
+[
+{
+  "model": "appcode.question",
+  "pk": 1,
+  "fields": {
+    "question": "Have you ever symphonied before?",
+  },
+{
+  "model": "appcode.question",
+  "pk": 2,
+  "fields": {
+    "question": "Did you enjoy it?",
+  },
+{
+  "model": "appcode.question",
+  "pk": 3,
+  "fields": {
+    "question": "Saturday night's the night for:",
+  },
+{
+  "model": "appcode.answer",
+  "pk": 1,
+  "fields": {
+    "old_question": "1",
+    "answer": "Yes",
+    "new_question": 2,
+  },
+{
+  "model": "appcode.answer",
+  "pk": 2,
+  "fields": {
+    "old_question": "1",
+    "answer": "No",
+    "new_question": 3,
+  },
+{
+  "model": "appcode.answer",
+  "pk": 3,
+  "fields": {
+    "old_question": "1",
+    "answer": "Maybe, when I was a kid?",
+    "new_question": 3,
+  },
+]
