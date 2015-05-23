@@ -1,0 +1,14 @@
+{% spaceless %}
+{
+  "question": {{question.question}},
+  "answers": [
+    {% with answer_list=question.answer_oldptr.all %}
+      {% for answer in answer_list %}
+        {% include "raw_answer_detail.html" with answer=answer %}
+        {% if not forloop.last %},{% endif %}
+      {% endfor %}
+    {% endwith %}
+  ],
+  "id": {{question.pk}}
+}
+{% endspaceless %}
