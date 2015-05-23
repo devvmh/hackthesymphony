@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+  <strong>{{ question.question }}</strong>
+  <ul>
+  {% for answer in answer_list %}
+    <li>{{answer}}</li>
+  {% end for %}
+  </ul>
+  <p>Hello, world!</p>
+{% endblock main %}
