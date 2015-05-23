@@ -15,7 +15,7 @@ class Answer(Model):
 
 class Session(Model):
   username = CharField(max_length=255, blank=True)
-  current_question = ForeignKey(Question, blank=True, default=Question.objects.first())
+  current_question = ForeignKey(Question, blank=True, default=1)
   #answers - foreign key from SessionAnswer
   def __unicode__(self):
     if self.username:
