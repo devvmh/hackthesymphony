@@ -5,6 +5,10 @@
     <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
     {% block css %}
     {% endblock css %}
+    <script type="text/javascript" src="//backbonejs.org/backbone-min.js" />
+    <script type="text/javascript" src="{% static "custom.js" %}"/>
+    {% block js %}
+    {% endblock js %}
   </head>
   <body>
     {% block header %}
@@ -14,10 +18,5 @@
       {% endblock main %}
     </div>
   </body>
-  <footer>
-    <script type="text/javascript" src="{% static "custom.js" %}">
-    {% block js %}
-    {% endblock js %}
-  </footer>
 </html>
     
