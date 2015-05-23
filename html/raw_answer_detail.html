@@ -1,0 +1,14 @@
+{% spaceless %}
+{
+  "answer": {{ answer.answer }},
+  "old_question": {{ answer.old_question.pk }}
+  "next_url":
+  {% if answer.new_question %}
+    "{% url 'raw-question-detail' answer.new_question.pk %}"
+  {% else %}
+    "{{ answer.redirect_url_if_no_new_question }}"
+  {% endif %}
+  "model": "appcode.question",
+  "pk": {{question.pk}},
+}
+{% endspaceless %}
