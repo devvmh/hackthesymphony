@@ -8,9 +8,9 @@
 
     cd ~/Github/hackthesymphony
     sudo -H easy_install pip
-    sudo -H pip install -r requirements.txt
-    sudo python manage.py syncdb
-    sudo python manage.py runserver
+    ./install-requirements.command
+    ./sync-database.command
+    ./run-server.command
 
 6) The terminal will show you error messages from the Python server, if any.
 
