@@ -7,7 +7,10 @@ from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpRespo
 from django.shortcuts import get_object_or_404, get_list_or_404, render, redirect
 from django.views.generic import DetailView, UpdateView, ListView
 
+from rest_framework import viewsets
+
 from .models import *
+from .serializers import *
 
 def index(request):
   return render(request, 'index.html', {})
@@ -53,3 +56,25 @@ def raw_answer_detail(request, pk):
   json_dump = serializers.serialize("json", [answer])
   json_dump = json_dump[1:-1] #strip array bits off
   return HttpResponse(json_dump, content_type="application/json")
+
+
+
+class QuestionViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows users to be viewed or edited."""
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
+
+class AnswerViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows users to be viewed or edited."""
+    queryset = Answer.objects.all()
+    serializer_class = AnswerSerializer
+
+class SessionViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows users to be viewed or edited."""
+    queryset = Session.objects.all()
+    serializer_class = SessionSerializer
+
+class SessionAnswersViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows users to be viewed or edited."""
+    queryset = SessionAnswers.objects.all()
+    serializer_class = SessionAnswersSerializer

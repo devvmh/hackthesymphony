@@ -1,13 +1,20 @@
 from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.contrib.auth.decorators import login_required
+
+from rest_framework import routers
+
 from .views import *
 
+router = routers.DefaultRouter()
+router.register(r'questions', QuestionSerializer)
+router.register(r'answers', AnswerSerializer)
+router.register(r'sessions', SessionSerializer)
+router.register(r'session-answers', SessionAnswersSerializer)
+
 urlpatterns = patterns('appcode.views',
-  url(r'^$', 'index'),
-  url(r'^raw/questions/$', 'raw_question_list', name='raw-question-list'),
-  url(r'^raw/questions/(?P<pk>\d+)/$', 'raw_question_detail', name='raw-question-detail'),
-  url(r'^raw/answers/$', 'raw_answer_list', name='raw-answer-list'),
-  url(r'^raw/answers/(?P<pk>\d+)/$', 'raw_answer_detail', name='raw-answer-detail'),
-  url(r'questions/(?P<pk>\d+)/$', 'question_detail', name='question-detail'),
+  url(r'^', include(router.urls)),
+  url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+#  url(r'questions/(?P<pk>\d+)/$', 'question_detail', name='question-detail'),
+
 )
