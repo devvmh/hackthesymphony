@@ -14,7 +14,7 @@ class QuestionDetailView(DetailView):
 
 def question_detail(request, pk):
   question = Question.objects.get(pk=pk)
-  answer_list = Answer.objects.get(old_question=question)
+  answer_list = Answer.objects.filter(old_question=question)
   return render(request, 'question_detail.html', {
     'question': question,
     'answer_list': answer_list,

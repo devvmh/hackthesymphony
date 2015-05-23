@@ -4,8 +4,7 @@
   <strong>{{ question.question }}</strong>
   <ul>
   {% for answer in answer_list %}
-    <li>{{answer}}</li>
-  {% end for %}
+    <li><a href="{% url 'question-detail' answer.new_question.pk %}">{{answer.answer}}</a></li>
+  {% endfor %}
   </ul>
-  <p>Hello, world!</p>
 {% endblock main %}

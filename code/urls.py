@@ -5,5 +5,5 @@ from .views import *
 
 urlpatterns = patterns('code.views',
   url(r'^$', 'index'),
-  url(r'question/(?P<pk>\d+)/$', QuestionDetailView.as_view(), name='question-detail'),
+  url(r'questions/(?P<pk>\d+)/$', 'question_detail', name='question-detail'),
 )
