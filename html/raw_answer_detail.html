@@ -8,7 +8,7 @@
   {% else %}
     "{{ answer.redirect_url_if_no_new_question }}"
   {% endif %}
-  "model": "appcode.question",
-  "pk": {{question.pk}},
+  "model": "appcode.answer",
+  "id": {{answer.pk}},
 }
 {% endspaceless %}
