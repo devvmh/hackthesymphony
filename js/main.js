@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function declareModelsAndCollections() {
   Session = Backbone.Model.extend({
   });
   Questions = Backbone.Collection.extend({
@@ -14,10 +14,17 @@ $(document).ready(function() {
   SessionAnswers = Backbone.Collection.extend({
     url: '/api/session-answers',
   });
+}
 
-  qlst = new Questions();
-  qlst.fetch();
-  alst = new Answers();
-  alst.fetch();
-  session = new Session();
+function declareMainObject() {
+  HDIS = new Object();
+  HDIS.questions = new Questions();
+  HDIS.questions.fetch();
+  HDIS.answers = new Answers();
+  HDIS.answers.fetch();
+  HDIS.session = new Session();
+
+$(document).ready(function() {
+  declareModelsAndCollections();
+  declareMainObject();
 });

@@ -21,9 +21,6 @@ from django.shortcuts import redirect
 from django.views.generic import RedirectView
 from django.contrib import admin
 
-#magic incantation from the internet
-#admin.autodiscover()
-
 urlpatterns = patterns('',
   url(r'^', include ('appcode.urls')),
 )
