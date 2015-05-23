@@ -6,15 +6,14 @@ from rest_framework import routers
 
 from .views import *
 
-router = routers.DefaultRouter()
-router.register(r'questions', QuestionSerializer)
-router.register(r'answers', AnswerSerializer)
-router.register(r'sessions', SessionSerializer)
-router.register(r'session-answers', SessionAnswersSerializer)
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'questions', QuestionViewSet)
+router.register(r'answers', AnswerViewSet)
+router.register(r'sessions', SessionViewSet)
+router.register(r'session-answers', SessionAnswerViewSet)
 
 urlpatterns = patterns('appcode.views',
-  url(r'^', include(router.urls)),
+  url(r'^$', 'index', name='index'),
+  url(r'^api/', include(router.urls)),
   url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-#  url(r'questions/(?P<pk>\d+)/$', 'question_detail', name='question-detail'),
-
 )

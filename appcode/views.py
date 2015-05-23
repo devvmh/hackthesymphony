@@ -74,7 +74,7 @@ class SessionViewSet(viewsets.ModelViewSet):
     queryset = Session.objects.all()
     serializer_class = SessionSerializer
 
-class SessionAnswersViewSet(viewsets.ModelViewSet):
+class SessionAnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
-    queryset = SessionAnswers.objects.all()
-    serializer_class = SessionAnswersSerializer
+    queryset = SessionAnswer.objects.all()
+    serializer_class = SessionAnswerSerializer

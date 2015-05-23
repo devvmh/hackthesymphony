@@ -23,7 +23,7 @@ class Session(Model):
     else:
       return "Anonymous - on Question #" + str(self.current_question.pk)
 
-class QuestionsAnsweredBySession(Model):
+class SessionAnswer(Model):
   session = ForeignKey(Session, related_name='answers')
   question = ForeignKey(Question, related_name='sessions_answered_this_question')
   answer = ForeignKey(Answer, related_name='sessions_using_this_answer')
