@@ -5,11 +5,11 @@ $(document).ready(function() {
   });
 
   Questions = Backbone.Collection.extend({
-    url: '/raw/questions',
+    url: '/api/questions',
     model: Question,
   });
   Answers = Backbone.Collection.extend({
-    url: '/raw/answers',
+    url: '/api/answers',
     model: Answer,
   });
 
