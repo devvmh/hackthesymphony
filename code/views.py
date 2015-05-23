@@ -8,12 +8,14 @@ from .models import *
 def index(request):
   return render(request, 'index.html', {})
 
-#class ExampleListView(ListView):
-#  model = Example
-#  context_object_name = 'example_list'
-#  #paginate_by = 10
-#  #template_name = 'special.html'
-#
-#class ExampleDetailView(DetailView):
-#  model = Example
-#  context_object_name = 'example'
+class QuestionDetailView(DetailView):
+  model = Question
+  context_object_name = 'question'
+
+def question_detail(request, pk):
+  question = Question.objects.get(pk=pk)
+  answer_list = Answer.objects.get(old_question=question)
+  return render(request, 'question_detail.html', {
+    'question': question,
+    'answer_list': answer_list,
+  })

@@ -1,4 +1,5 @@
 from .models import *
 from django.contrib import admin
 
-#admin.site.register(Model)
+admin.site.register(Question)
+admin.site.register(Answer)

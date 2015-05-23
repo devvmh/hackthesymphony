@@ -5,6 +5,5 @@ from .views import *
 
 urlpatterns = patterns('code.views',
   url(r'^$', 'index'),
-#  url(r'^example/$', ExampleListView.as_view()), name='example-list'),
-#  url(r'^example/(?P<pk>\d+)/$', ExampleDetailView.as_view()), name='example-detail'),
+  url(r'question/(?P<pk>\d+)/$', QuestionDetailView.as_view(), name='question-detail'),
 )
