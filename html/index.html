@@ -2,6 +2,10 @@
 {% load static %}
 
 {% block js %}
+  <script type="text/javascript">
+    ORCA.ip_address = "{{ ip_address }}"; //not working
+    ORCA.ip_address = "192.168.5.100";
+  </script>
   <script type="text/javascript" src="{% static "main.js" %}"></script>
 {% endblock js %}
 

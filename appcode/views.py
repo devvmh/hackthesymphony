@@ -13,7 +13,9 @@ from .models import *
 from .serializers import *
 
 def index(request):
-  return render(request, 'index.html', {})
+  return render(request, 'index.html', {
+    'ip_address': '192.168.1.99',
+  })
 
 class QuestionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
