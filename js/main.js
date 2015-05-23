@@ -38,12 +38,12 @@ function declareModelsAndCollections() {
 }//declareModelsAndCollections
 
 function declareMainObject() {
-  HDIS = new Object();
-  HDIS.questions = new Questions();
-  HDIS.questions.fetch();
-  HDIS.answers = new Answers();
-  HDIS.answers.fetch();
-  HDIS.session = new Session();
+  ORCA = new Object();
+  ORCA.questions = new Questions();
+  ORCA.questions.fetch();
+  ORCA.answers = new Answers();
+  ORCA.answers.fetch();
+  ORCA.session = new Session();
 }//declareMainObject
 
 $(document).ready(function() {
