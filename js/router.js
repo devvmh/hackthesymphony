@@ -1,6 +1,10 @@
 function goToNextPage(answerObject) {
   var id = answerObject.attributes.id;
   var new_question = answerObject.attributes.new_question;
+  var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
+  if (new_question_id == 666) {
+    window.location = 'suggestions/' + ORCA.session.attributes.id;
+  }//if
   var session_answer = new SessionAnswer({
     session: ORCA.session.url(),
     question: ORCA.session.attributes.current_question,
@@ -11,8 +15,7 @@ function goToNextPage(answerObject) {
     session_answer.save(),
     ORCA.session.save()
   ).then(function() {
-    new_question = new_question.replace(window.location.origin + '/api/', '');
-    ORCA.router.navigate(new_question, {trigger: true});
+    ORCA.router.navigate('questions/' + new_question_id, {trigger: true});
   });
 }//goToNextPage
 

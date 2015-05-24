@@ -59,7 +59,7 @@
     "pk": "666", 
     "model": "appcode.question", 
     "fields": {
-      "question": "Redirect me to a url",
+      "question": "Redirect me to a url"
     }
   }, 
   {
