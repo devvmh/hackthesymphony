@@ -22,7 +22,7 @@ def what_is_this(request):
   })
 
 def suggestions(request, pk):
-  session = Session.objects.get(pk=pk)
+  session = get_object_or_404(Session, pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session.pk)
   knowledge = get_answer_concert_array()
   concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
