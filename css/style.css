@@ -81,11 +81,11 @@ MAIN CONTENT
 .answers {
 	width: 95%;
 	margin: 0 auto;
+	max-width: 95%;
 }
 
 .answers ul {
 	list-style: none;
-	max-width: 95%;
 }
 
 .answer {
@@ -96,7 +96,6 @@ MAIN CONTENT
 	max-width: 95%;
 	padding: 10px;
 	margin: 12px auto;
-	margin: 10px;
 	display: none;
 	font-size: 1.25em;
 	background: rgb(168,53,58);
@@ -114,7 +113,7 @@ MAIN CONTENT
 }
 
 .answer:active {
-	background: green;
+	background: #000;
 }
 
 .comment {

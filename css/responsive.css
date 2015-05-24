@@ -77,9 +77,13 @@
 
 	#logo {
 		font-size: 1.5em;
+		margin-left: -1.5em;
 	}
 
-
+	#arrow {
+		height: 1.5em;
+		width: 1.5em;
+	}
 
 
 
