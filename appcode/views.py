@@ -17,6 +17,10 @@ def index(request):
     'ip_address': '192.168.1.99',
   })
 
+def what_is_this(request):
+  return render(request, 'what-is-this.html', {
+  })
+
 def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session)
