@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-cd $(find ~ -name hackthesymphony)
+cd $(basename "$0")
 sudo -H easy_install pip
 sudo -H pip install -r requirements.txt
 
