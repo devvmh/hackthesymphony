@@ -5,7 +5,7 @@
 	**********************************************************/
 
 	header {
-		height: 50px;
+		height: 70px;
 	}
 
 	#logo {
@@ -14,11 +14,6 @@
 		width: 100%;
 		margin: auto;
 		padding: 10px;
-		font-size: 1.5em;
-	}
-
-	#nav-top {
-		display:none;
 	}
 
 
@@ -63,8 +58,13 @@
 @media screen and (max-width: 480px) {
 
 
+	header {
+		height: 50px;
+	}
 
-
+	#logo {
+		font-size: 1.5em;
+	}
 
 
 
@@ -82,6 +82,10 @@
 	FOOTER
 	**********************************************************/
 
+	#nav-top {
+		display:none;
+	}
+	
 	#nav-bottom {
 			display: block;
 			padding: 10px;
