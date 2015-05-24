@@ -7,3 +7,12 @@
 	max-width: 100%;
 }
 	
+#cat-gif {
+	float: left;
+}
+
+
+#words {
+	float: right;
+}
+
