@@ -142,7 +142,7 @@ BACK BUTTON
 **********************************************************/
 
 
-#back-button a {
+.back-button a {
 	font-family:'Cutive';
 	text-align: center;
 	text-decoration: none;

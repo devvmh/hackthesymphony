@@ -20,7 +20,7 @@
   </head>
   <body>
   	<header>
-  		<a href="javascript:void(0);"><img src="/static/arrow-282-48.png" id="arrow"></a>
+  		<div class="back-button"><a href="javascript:void(0);"><img src="/static/arrow-282-48.png" id="arrow"></a></div>
       <h1 id="logo"><a href="/">How Do I Symphony?</a></h1>
   		<h3 id="nav-top"><a href="/what-is-this">What is this?</a></h3>
   	</header>  	
@@ -30,7 +30,7 @@
       {% endblock main %}
     </div>
   	
-    <section id="back-button">
+    <section class="back-button">
       <p>
         {% block backlink %}
           <a href="javascript:void(0);">Back</a>

@@ -44,7 +44,7 @@
 		font-size: 1em;
 	}
 
-	#back-button {
+	.back-button {
 		font-size: .75em;
 		padding: 5px;
 		display: none;

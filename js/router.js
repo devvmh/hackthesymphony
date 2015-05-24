@@ -37,7 +37,7 @@ function renderAnswersOnQuestionPage(answers) {
       $.when(
         $('.answer').fadeOut('slow'),
         $('.question').fadeOut('slow'),
-        $('#back-button a').fadeOut('slow')
+        $('.back-button a').fadeOut('slow')
       ).then(function() {
         $('.question').html('');
         $('.question').show();
@@ -85,9 +85,9 @@ ORCARouter = Backbone.Router.extend({
     renderAnswersOnQuestionPage(q.answers());
 
     //set up back button
-    $('#back-button a').fadeIn('slow');
-    $('#back-button a').unbind('click');
-    $('#back-button a').click(function() {
+    $('.back-button a').fadeIn('slow');
+    $('.back-button a').unbind('click');
+    $('.back-button a').click(function() {
       //pop current page, then pop previous page to use;
       //navigate will add the previous page back on
       ORCA.router.history.pop();
