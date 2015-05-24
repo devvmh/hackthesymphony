@@ -21,5 +21,10 @@ $(document).ready(function() {
     Backbone.history.start();
     ORCA.router.navigate('questions/1', {trigger: true});
     ORCA.session.save();
+    ORCA.router.history.push({
+      name : name,
+      args : args,
+      fragment : Backbone.history.fragment
+    });
   });
 });
