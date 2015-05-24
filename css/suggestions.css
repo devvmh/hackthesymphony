@@ -6,4 +6,11 @@
   max-width: 100%;
 }
 
-.concert-title
+.concert-title {
+  font-weight: bold;
+  float: left;
+}
+
+.concert-date {
+  float: right;
+}
