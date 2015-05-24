@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-cd $(dirname "$0")
-pwd
-python manage.py runserver
+cd $(find ~ -name hackthesymphony)
+python manage.py syncdb
+
 read -p "Press Enter to close this window" FOOBAR
