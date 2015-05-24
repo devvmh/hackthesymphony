@@ -14,3 +14,21 @@
 .concert-date {
   float: right;
 }
+
+.concert-img {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  clear: both;
+}
+
+.concert-description,
+.concert-highlight {
+  text-align: left;
+}
+
+.concert {
+  padding: 1.5em;
+  padding-top: 1em;
+  background-color: rgba(143,143,143,0.2);
+  margin: 1.5em;
+}
