@@ -8,6 +8,8 @@
 
 ## What I learned
 
+Behaviour change requires the user to have the motivation, ability and a trigger. Our app focuses on motivating new symphony goers to take the leap by giving them a personal connection to the concerts, improving their ability to change by lowering the barriers to entry, and  triggering the behavior change with a fantastic ticketing experience. We found this comprehensive approach does not exist in any of the symphony’s current marketing approachers (or if it does, it isn’t obvious to the user). We learned that each one of these three components has unique challenges to overcome. We also personally grew, sharing our strengths with fellow team members, and learning from the hackathon community at large.
+
 ## What's next for How do I Symphony?
 
 Through in-depth user and expert research, How do I Symphony will expand to include the experience of attending the symphony in it’s entirety. Phase 2 will include revamping the ticketing experience, leveraging interactive, connected tools to turn the ticket into a learning portal. The 3 will enhance the user experience up until the house lights are dimmed, including further learning opportunities, providing opportunities to prepay for parking and drinks, and letting them know when and when not to clap. Phase 4 will capture the after concert glow of participants to increase customer retention.
