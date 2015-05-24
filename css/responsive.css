@@ -17,6 +17,7 @@
 		padding: 25px 10px;
 	}
 
+    .back-button.arrow,
 	#arrow {
 		display: inline-block;
 	}
@@ -98,6 +99,7 @@
 		padding: 17px 10px;
 	}
 
+    .back-button.arrow,
 	#arrow {
 		height: 1.5em;
 		width: 1.5em;

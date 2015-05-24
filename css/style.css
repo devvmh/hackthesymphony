@@ -25,6 +25,7 @@ header {
 	border-bottom: 5px solid #C4666A;
 }
 
+.back-button.arrow,
 #arrow {
 	width: 2em;
 	height: 2em;
