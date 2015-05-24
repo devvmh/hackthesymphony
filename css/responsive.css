@@ -1,28 +1,24 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 660px) {
 
 	/**********************************************************
 	HEADER
 	**********************************************************/
 
 	header {
-		height: 75px;
+		height: 50px;
 	}
 
-	#logo, #nav {
+	#logo {
 		float: none;
 		text-align: center;
 		width: 100%;
 		margin: auto;
-	}
-
-	#logo {
-		padding: 7px;
+		padding: 10px;
 		font-size: 1.5em;
 	}
 
-	#nav {
-		padding: 2.5px 0 2.5px;
-		font-size: 1em;
+	#nav-top {
+		display:none;
 	}
 
 
@@ -30,34 +26,71 @@
 	MAIN CONTENT
 	**********************************************************/
 
+
+	#content {
+		max-width: 95%;
+		padding: 0;
+		margin-top: 8%;
+		margin-bottom: 0;
+	}
+
+	#content .question {
+		margin-bottom: 5%;
+		font-size: 1em;
+	}
+
+	.answer {
+		height: 35px;
+		padding: 5px;
+		font-size: 1em;
+	}
+
 	#back-button {
 		font-size: .75em;
 		padding: 5px;
 	}
 
-	#content {
-		max-width: 95%;
-		padding: 0;
-		margin-top, margin-bottom: 0;
-	}
 
-	#content p {
-		margin-bottom: 5%;
-		font-size: 1.25em;
-	}
-
-	.answer {
-		width: 100%;
-		max-width: 100%;
-		padding: 5px;
-		font-size: 1em;
-	}
-
-
-
-
+	/**********************************************************
+	FOOTER
+	**********************************************************/
 
 
 
 }
+
+
+@media screen and (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/**********************************************************
+	FOOTER
+	**********************************************************/
+
+	#nav-bottom {
+			display: block;
+			padding: 10px;
+		}
+
+
+}
+
+
+
+
 
