@@ -95,9 +95,8 @@ ORCARouter = Backbone.Router.extend({
       html += '<a href="javascript:void(0);">' + answer + '</a>';
       html += '</div>';
       $('.answers').append(html);
-      $('.answers-' + id).click(function() {
+      $('.answer-' + id + ' a').click(function() {
         ORCA.router.navigate('questions/' + id, {trigger: true});
-        console.log('lol');
       });
     });
   },
