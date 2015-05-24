@@ -7,7 +7,7 @@
 	max-width: 100%;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 511px) {
 
 	#cat-gif-mobile {
 		display: none;
@@ -15,7 +15,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
 
 	#cat-gif-large {
 		display: none;
