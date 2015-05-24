@@ -1,15 +1,46 @@
-{% extends "base.html" %}
-{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+   	<link rel="stylesheet" href="css/normalize.css">
 
-{% block js %}
   <script type="text/javascript">
     ORCA = new Object();
     ORCA.ip_address = "{{ ip_address }}"; //not working
     ORCA.ip_address = "192.168.5.100";
   </script>
   <script type="text/javascript" src="{% static "main.js" %}"></script>
-{% endblock js %}
 
-{% block main %}
-  <p>Hello, world!</p>
-{% endblock main %}
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//underscorejs.org/underscore-min.js" ></script>
+    <script type="text/javascript" src="//backbonejs.org/backbone-min.js" ></script>
+    <script type="text/javascript" src="{% static "custom.js" %}"></script>
+	<title>How Do I Symphony?</title>
+  </head>
+  <body>
+  	
+  	<header>
+  		<!-- Replace with meme/logo when we have it -->
+  		<h1 id="logo">Can I Has Symphony?</h1>
+
+  		<h3 id="nav">What is this?</h3>
+  	</header>
+
+  	<section id="back-button">
+		<p><a href="">Back</a></p>
+  	</section>
+  	
+
+    <div id="content">
+    	<p class="main-question">Have you symphony'd before?</p>
+    	<ul>
+    		<li id="answer-1">Yes</li>
+    		<li id="answer-2">No</li>
+    	</ul>	
+    </div>
+  	<p id="cat-video">Cat video break</p>
+  </body>
+</html>
+    
