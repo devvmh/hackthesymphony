@@ -84,6 +84,13 @@
     }
   }, 
   {
+    "pk": "666", 
+    "model": "appcode.question", 
+    "fields": {
+      "question": "Redirect"
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "appcode.answer", 
     "fields": {
