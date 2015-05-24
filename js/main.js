@@ -1,6 +1,3 @@
-function declareMainObject() {
-}//declareMainObject
-
 $(document).ready(function() {
   ORCA.questions = new Questions();
   ORCA.answers = new Answers();

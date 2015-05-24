@@ -13,7 +13,6 @@ ORCARouter = Backbone.Router.extend({
     "questions/:id": "renderQuestion",
   },
   renderQuestion(id) {
-    console.log("got here 2");
     //render question text
     q = ORCA.questions.get(id);
     $('.question p').html(q.attributes.question);
