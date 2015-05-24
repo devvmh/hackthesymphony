@@ -5,17 +5,15 @@
     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
    	<link rel="stylesheet" href="css/normalize.css">
-
-  <script type="text/javascript">
-    ORCA = new Object();
-    ORCA.ip_address = "{{ ip_address }}"; //not working
-    ORCA.ip_address = "192.168.5.100";
-  </script>
-  <script type="text/javascript" src="{% static "main.js" %}"></script>
-
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="//underscorejs.org/underscore-min.js" ></script>
     <script type="text/javascript" src="//backbonejs.org/backbone-min.js" ></script>
+    <script type="text/javascript">
+      ORCA = new Object();
+      ORCA.ip_address = "{{ ip_address }}"; //not working
+      ORCA.ip_address = "192.168.5.100";
+    </script>
+    <script type="text/javascript" src="{% static "main.js" %}"></script>
     <script type="text/javascript" src="{% static "custom.js" %}"></script>
 	<title>How Do I Symphony?</title>
   </head>
