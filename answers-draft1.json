@@ -1,5 +1,5 @@
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Yeah!",
     "old_question": 1,
@@ -8,7 +8,7 @@
   "pk": 1,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Not even once",
     "old_question": 1,
@@ -17,7 +17,7 @@
   "pk": 2,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Maybe when I was a kid",
     "old_question": 1,
@@ -26,7 +26,7 @@
   "pk": 3,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Don't really know--I fell asleep",
     "old_question": 2,
@@ -35,7 +35,7 @@
   "pk": 4,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Loved it!",
     "old_question": 2,
@@ -44,7 +44,7 @@
   "pk": 5,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "How do I put this gently…It was awful",
     "old_question": 2,
@@ -53,7 +53,7 @@
   "pk": 6,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Chilling with friends",
     "old_question": 3,
@@ -62,7 +62,7 @@
   "pk": 7,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Going out and partying hard",
     "old_question": 3,
@@ -71,7 +71,7 @@
   "pk": 8,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Soaking up some culture ",
     "old_question": 3,
@@ -80,7 +80,7 @@
   "pk": 9,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Binge-watching Netflix",
     "old_question": 3,
@@ -89,7 +89,7 @@
   "pk": 10,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Time with the kids",
     "old_question": 3,
@@ -98,7 +98,7 @@
   "pk": 11,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Tiny toddlers",
     "old_question": 4,
@@ -107,7 +107,7 @@
   "pk": 12,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Elementary school age",
     "old_question": 4,
@@ -116,7 +116,7 @@
   "pk": 13,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Teens",
     "old_question": 4,
@@ -125,7 +125,7 @@
   "pk": 14,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "We're all grown-ups now",
     "old_question": 4,
@@ -134,7 +134,7 @@
   "pk": 15,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "The brilliant,
     "old_question":  hot-tempered composer",
@@ -143,7 +143,7 @@
   "pk": 16,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "The lovable St. Bernard who stars in a movie",
     "old_question": 5,
@@ -152,7 +152,7 @@
   "pk": 17,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Tapping your foot and singing along to a familiar tune",
     "old_question": 6,
@@ -161,7 +161,7 @@
   "pk": 18,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Admiring the artists",
     "old_question": 6,
@@ -170,7 +170,7 @@
   "pk": 19,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Sound of Music",
     "old_question": 7,
@@ -179,7 +179,7 @@
   "pk": 20,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "James Bond 007: Goldfinger",
     "old_question": 7,
@@ -188,7 +188,7 @@
   "pk": 21,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "The Notebook",
     "old_question": 7,
@@ -197,7 +197,7 @@
   "pk": 22,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "The Exorcist",
     "old_question": 7,
@@ -206,7 +206,7 @@
   "pk": 23,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "Yellow Submarine",
     "old_question": 7,
@@ -215,20 +215,20 @@
   "pk": 24,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "A documentary about Bach",
     "old_question": 7,
     "new_question": 8,
   },
-  "pk": 1,
+  "pk": 25,
 },
 {
-  "model": "appcode.question",
+  "model": "appcode.answer",
   "fields": {
     "answer": "The Lion King",
     "old_question": 7,
     "new_question": 8,
   },
-  "pk": 25,
+  "pk": 26,
 },
