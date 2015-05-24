@@ -18,7 +18,8 @@ HEADER
 header {
 	width: 100%;
 	height: 100px;
-	background: rgb(245,78,109);
+	background: #A8353A;
+	color: #fff;
 }
 
 #logo { 
@@ -38,7 +39,7 @@ header {
 
 
 /**********************************************************
-MAIN CONTENT
+BACK BUTTON
 **********************************************************/
 
 
@@ -49,6 +50,12 @@ MAIN CONTENT
 	margin: 2.5%;
 	color: black;
 }
+
+
+/**********************************************************
+MAIN CONTENT
+**********************************************************/
+
 
 #content {
 	max-width: 480px;
@@ -71,22 +78,51 @@ MAIN CONTENT
 .answer {
 	width: 100%;
 	padding: 10px;
-	margin: 0 10px;
+	margin: 10px 10px;
 	display: block;
 	font-size: 1.25em;
 	text-align: top;
-	background: rgb(245,78,109);
+	background: rgb(168,53,58);
 	box-shadow: 0 0 10px #888;
+	color: #fff;
 
 }
 
+.answer a {
+	text-decoration: none;
+}
+
+/**********************************************************
+CAT BUTTON
+**********************************************************/
+
+
+
+#cat-video {
+	position: fixed;
+	top: 65%;
+	right: 5%;
+	width: 25px;
+}
+
+.grumpy-cat {
+	width: 100%;
+	height: auto;
+	margin: 5px;
+}
+
+#cat-video a {
+		text-decoration: none;
+}
 
 /**********************************************************
 FOOTER
 **********************************************************/
 
 footer {
-
+	text-align: center;
+	font-size: .75em;
+	padding: 10px;
 }
 
 .social-icon {
