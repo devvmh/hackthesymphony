@@ -31,7 +31,7 @@ function renderAnswersOnQuestionPage(answers) {
     html += '<a href="javascript:void(0);">' + answer + '</a>';
     html += '</div>';
     $('.answers').append(html);
-    $('.answer-' + id + ' a').click(function() {
+    $('.answer-' + id).click(function() {
       $.when(
         $('.answer').fadeOut('slow'),
         $('.question').fadeOut('slow'),
