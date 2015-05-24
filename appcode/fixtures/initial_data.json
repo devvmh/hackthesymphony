@@ -449,5 +449,6 @@
       "comment": "There's really not a bad seat in the house", 
       "old_question": "12"
     }
-  }
+  },
+  {"fields": {"date": "2015-08-25", "image": "http://www.kwsymphony.ca/2015_16/subscription/pops-banner.jpg", "description": "Classical popera group Tenore combine their stunning vocal talents with the\r\nmusical stylings of the KWS for this exquisite concert. Tenore has won prestigious awards and wowed communities with their timeless, beautiful music with hits like You Raise Me Up, Fare Thee Well and Nessun Dorma. Known for powerhouse vocals, inspiring music and audience participation, this concert is sure to delight KWS audiences!", "title": "Tenore"}, "model": "appcode.concert", "pk": 1}
 ]
