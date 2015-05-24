@@ -65,6 +65,7 @@ MAIN CONTENT
 #content .question {
 	margin-bottom: 50px;
 	font-size: 1.5em;
+	font-weight: bolder;
 	max-width: 100%;
 }
 
@@ -86,7 +87,6 @@ MAIN CONTENT
 	max-width: 95%;
 	padding: 10px;
 	margin: 12px auto;
-	display: block;
 	margin: 10px;
 	display: none;
 	font-size: 1.25em;
@@ -106,6 +106,7 @@ MAIN CONTENT
 
 .comment {
   display: none;
+  min-height: 500px;
 }
 
 
