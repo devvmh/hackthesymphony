@@ -94,24 +94,37 @@ function declareMainObject() {
     username: "Anonymous",
     ip: ORCA.ip_address,
     current_question: ORCA.first_question_url,
+    csrftoken: getCookie('csrftoken'),
   });
 }//declareMainObject
 
-function populateCurrentQuestion(id) {
-  q = ORCA.questions.get(id);
-  console.log(q);
-  var html = '<p>';
-  html += q.attributes.question;
-  html += '</p>';
-  html += '<div class="answers">';
-  $.each(q.answers(), function(index, value) {
-    var answer = value.attributes.answer;
-    var id = value.attributes.id;
-    html += '<div class="answer answer-' + id + '">' + answer + '</div>';
+function declareRouter() {
+  ORCARouter = Backbone.Router.extend({
+    routes: {
+      "#questions/:id": "renderQuestion",
+    },
+    renderQuestion(query, id) {
+      console.log("got here");
+      q = ORCA.questions.get(id);
+      $('.question p').html(q.attributes.question);
+      $('.answers').html('');
+      $.each(q.answers(), function(index, value) {
+      console.log("got here2");
+        var answer = object.attributes.answer;
+        var id = object.attributes.id;
+        var html = '<div class="answer answer-' + id + '">';
+        html += '<a href="javascript:void(0);">' + answer + '</a>';
+        html += '</div>';
+        $('.answers').append(html);
+        $('.answers-' + id).click(function() {
+          ORCA.router.navigate('questions/' + id);
+          console.log('lol');
+        });
+      });
+    },
   });
-  html += '</div>';
-  $('#content').html(html);
-}//populateCurrentQuestion
+  ORCA.router = new ORCARouter();
+}//declareRouter
 
 $(document).ready(function() {
   declareModelsAndCollections();
@@ -119,6 +132,8 @@ $(document).ready(function() {
   $.when(ORCA.questions.fetch(), 
          ORCA.answers.fetch(), 
          ORCA.session.save()).then(function() {
-    populateCurrentQuestion(1);
+    declareRouter();
+    Backbone.history.start();
+    ORCA.router.navigate('questions/1');
   });
 });
