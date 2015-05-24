@@ -15,6 +15,7 @@ class Answer(Model):
   def __unicode__(self): return self.answer + ' (' + self.old_question.question + ')'
 
 class Session(Model):
+  csrftoken = CharField(max_length=255, primary_key=True)
   username = CharField(max_length=255, blank=True)
   current_question = ForeignKey(Question, blank=True, default=1)
   ip = CharField(max_length=15)
