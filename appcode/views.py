@@ -19,7 +19,7 @@ def index(request):
 
 def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
-  session_answer_list = SessionAnswer.objects.get(session=session)
+  session_answer_list = SessionAnswer.objects.filter(session=session)
   return render(request, 'suggestions.html', {
     session_answer_list: session_answer_list,
   })
