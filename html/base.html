@@ -29,7 +29,11 @@
       {% endblock main %}
     </div>
   	
-    <p id="back-button"><a href="javascript:void(0);">Back</a></p>
+    <p id="back-button">
+      {% block backlink %}
+        <a href="javascript:void(0);">Back</a>
+      {% endblock backlink %}
+    </p>
     
     <footer>
       <h3 id="nav-bottom"><a href="">What is this?</a></h3>
