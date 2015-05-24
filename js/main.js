@@ -88,21 +88,27 @@ function declareModelsAndCollections() {
 
 function declareMainObject() {
   ORCA.questions = new Questions();
-  ORCA.questions.fetch();
   ORCA.answers = new Answers();
-  ORCA.answers.fetch();
   ORCA.first_question_url = window.location.href + 'api/questions/1';
   ORCA.session = new Session({
     username: "Anonymous",
     ip: ORCA.ip_address,
     current_question: ORCA.first_question_url,
   });
-  ORCA.session.save();
 }//declareMainObject
 
 function populateCurrentQuestion(id) {
   q = ORCA.questions.get(id);
   console.log(q);
+  var html = '<p>';
+  html += q.attributes.question;
+  html += '</p>';
+  $.each(q.answers(), function(index, value) {
+    var answer = value.attributes.answer;
+    var id = value.attributes.id;
+    html += '<div class="answer answer-' + id + '">' + answer + '</div>';
+  });
+  $('#content').html(html);
 }//populateCurrentQuestion
 
 $(document).ready(function() {
