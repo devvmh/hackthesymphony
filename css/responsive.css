@@ -13,9 +13,13 @@
 		text-align: center;
 		width: 100%;
 		margin: auto;
+		margin-left: -2em;
 		padding: 10px;
 	}
 
+	#arrow {
+		display: inline-block;
+	}
 
 	/**********************************************************
 	MAIN CONTENT
@@ -43,6 +47,7 @@
 	#back-button {
 		font-size: .75em;
 		padding: 5px;
+		display: none;
 	}
 
 
@@ -50,6 +55,14 @@
 	FOOTER
 	**********************************************************/
 
+	#nav-top {
+		display:none;
+	}
+	
+	#nav-bottom {
+			display: block;
+			padding: 10px;
+		}
 
 
 }
@@ -82,14 +95,6 @@
 	FOOTER
 	**********************************************************/
 
-	#nav-top {
-		display:none;
-	}
-	
-	#nav-bottom {
-			display: block;
-			padding: 10px;
-		}
 
 
 }

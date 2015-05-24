@@ -24,6 +24,14 @@ header {
 	border-bottom: 5px solid #C4666A;
 }
 
+#arrow {
+	width: 2em;
+	height: 2em;
+	float: left;
+	margin: 2.5%;
+	display: none;
+}
+
 #logo { 
 	font: 2em 'Changa One', sans-serif;
 	width: 60%;
@@ -60,6 +68,7 @@ MAIN CONTENT
 	margin: 0 auto;
 	padding: 50px 0 60px;
 	text-align: center;
+	min-height: 425px;
 }
 
 #content .question {
@@ -104,6 +113,10 @@ MAIN CONTENT
 	background: #C4666A;
 }
 
+.answer:active {
+	background: green;
+}
+
 .comment {
   display: none;
   min-height: 500px;
@@ -121,7 +134,7 @@ BACK BUTTON
 	text-decoration: none;
 	font-size: 1.5em;
 	width: 50px;
-	margin: 0 auto 15%;
+	margin: 0 auto 30px;
 	color: black;
 	display: block;
 }
