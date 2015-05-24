@@ -17,13 +17,14 @@ function renderAnswersOnQuestionPage(answers) {
       ).then(function() {
         $('.question').html('');
         $('.question').show();
+        console.log(value.attributes.comment);
         if (value.attributes.comment) {
+          console.log("got here");
+          $('.question').before('<div class="comment">' + value.attributes.comment + '</div>');
           $.when(
-            $('.question').before('<div class="comment">' + value.attributes.comment + '</div>'),
-            $('.comment').fadeIn('slow'),
-            $('.comment').delay(2000).fadeOut('slow'),
-            $('.comment').remove()
+            $('.comment').fadeIn('slow').delay(2000).fadeOut('slow')
           ).then(function() {
+            $('.comment').remove();
             ORCA.router.navigate(new_question, {trigger: true});
           });
         } else {
