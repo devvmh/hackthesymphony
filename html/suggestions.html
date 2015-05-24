@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block css %}
+  <link rel="stylesheet" href="{% static "suggestions.css" %}">
+{% endblock css %}
+
 {% block main %}
   {% for concert in concert_list %}
     {% include "concert.html" with concert=concert %}
