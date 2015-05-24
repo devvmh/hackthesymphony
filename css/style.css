@@ -36,7 +36,7 @@ header {
 #logo { 
 	font: 2em 'Cutive', sans-serif;
 	width: 60%;
-	margin: 2.5%;
+	margin: 30px 2.5%;
 	float: left;
 }
 
@@ -126,6 +126,16 @@ MAIN CONTENT
   min-height: 500px;
 }
 
+/**********************************************************
+WHAT IS THIS PAGE
+**********************************************************/
+
+#title {
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	font-weight: bolder;
+	max-width: 100%;
+}
 
 /**********************************************************
 BACK BUTTON

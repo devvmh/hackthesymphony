@@ -123,7 +123,7 @@
     "pk": 4, 
     "model": "appcode.answer", 
     "fields": {
-      "answer": "It didn’t blow my mind", 
+      "answer": “Don’t know—I fell asleep”, 
       "new_question": "3", 
       "comment": "Yeah, I've been there.", 
       "old_question": "2"
@@ -142,7 +142,7 @@
     "pk": 6, 
     "model": "appcode.answer", 
     "fields": {
-      "answer": "How do I put this gently: It was awful", 
+      "answer": "It didn’t blow my mind", 
       "new_question": "3", 
       "comment": "Guess what? It's way less boring now!", 
       "old_question": "2"

@@ -4,9 +4,9 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="{% static "normalize.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "what-is-this.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "responsive.css" %}">
+
     {% block css %}
     {% endblock css %}
    <!--  <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'> -->
@@ -30,11 +30,13 @@
       {% endblock main %}
     </div>
   	
-    <p id="back-button">
-      {% block backlink %}
-        <a href="javascript:void(0);">Back</a>
-      {% endblock backlink %}
-    </p>
+    <section id="back-button">
+      <p>
+        {% block backlink %}
+          <a href="javascript:void(0);">Back</a>
+        {% endblock backlink %}
+      </p>
+    </section>
     
     <footer>
       <h3 id="nav-bottom"><a href="/what-is-this">What is this?</a></h3>
