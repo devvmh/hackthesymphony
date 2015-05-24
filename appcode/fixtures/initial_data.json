@@ -1,316 +1,314 @@
 [
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "Have you ever \"symphony'd\" before?"
-  },
-  "pk": 1
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "How'd that go?"
-  },
-  "pk": 2
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "What are Saturdays for:"
-  },
-  "pk": 3
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "How old are they?"
-  },
-  "pk": 4
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "Which Beethoven are you most familiar with?"
-  },
-  "pk": 5
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "Is music more about:"
-  },
-  "pk": 6
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "If you had to pick a move to watch this evening:"
-  },
-  "pk": 7
-},
-{
-  "model": "appcode.question",
-  "fields": {
-    "question": "Are you seeking light entertainment, or do you want to feel something?"
-  },
-  "pk": 8
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Yeah!",
-    "old_question": 1,
-    "new_question": 2
-  },
-  "pk": 1
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Not even once",
-    "old_question": 1,
-    "new_question": 3
-  },
-  "pk": 2
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Maybe when I was a kid",
-    "old_question": 1,
-    "new_question": 3
-  },
-  "pk": 3
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Don't really know--I fell asleep",
-    "old_question": 2,
-    "new_question": 3,
-    "comment": "Yeah",
-  },
-  "pk":  I've been there.",4
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Loved it!",
-    "old_question": 2,
-    "new_question": 3,
-    "comment": "Cool. "
-  },
-  "pk": 5
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "How do I put this gently…It was awful",
-    "old_question": 2,
-    "new_question": 3,
-    "comment": "Guess what? It's way less boring now!"
-  },
-  "pk": 6
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Chilling with friends",
-    "old_question": 3,
-    "new_question": 5
-  },
-  "pk": 7
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Going out and partying hard",
-    "old_question": 3,
-    "new_question": 5,
-    "comment": "Woooo!"
-  },
-  "pk": 8
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Soaking up some culture ",
-    "old_question": 3,
-    "new_question": 5
-  },
-  "pk": 9
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Binge-watching Netflix",
-    "old_question": 3,
-    "new_question": 5,
-    "comment": "Have you seen House of Cards yet?"
-  },
-  "pk": 10
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Time with the kids",
-    "old_question": 3,
-    "new_question": 4,
-    "comment": "Aww, cute."
-  },
-  "pk": 11
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Tiny toddlers",
-    "old_question": 4,
-    "new_question": 5
-  },
-  "pk": 12
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Elementary school age",
-    "old_question": 4,
-    "new_question": 5
-  },
-  "pk": 13
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Teens",
-    "old_question": 4,
-    "new_question": 5
-  },
-  "pk": 14
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "We're all grown-ups now",
-    "old_question": 4,
-    "new_question": 5
-  },
-  "pk": 15
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "The brilliant, hot-tempered composer",
-    "old_question": 5,
-    "new_question": 6
-  },
-  "pk": 16
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "The lovable St. Bernard who stars in a movie",
-    "old_question": 5,
-    "new_question": 6
-  },
-  "pk": 17
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Tapping your foot and singing along to a familiar tune",
-    "old_question": 6,
-    "new_question": 7
-  },
-  "pk": 18
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Admiring the artists",
-    "old_question": 6,
-    "new_question": 7
-  },
-  "pk": 19
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Sound of Music",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 20
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "James Bond 007: Goldfinger",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 21
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "The Notebook",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 22
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "The Exorcist",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 23
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Yellow Submarine",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 24
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "A documentary about Bach",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 25
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "The Lion King",
-    "old_question": 7,
-    "new_question": 8
-  },
-  "pk": 26
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "Entertain me",
-    "old_question": 8,
-    "new_question": 
-  },
-  "pk": 27
-},
-{
-  "model": "appcode.answer",
-  "fields": {
-    "answer": "I want to be moved, deep in my soul",
-    "old_question": 8,
-    "new_question": 
-  },
-  "pk": 28
-}
+  {
+    "pk": "1", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "Have you ever \"symphony'd\" before?"
+    }
+  }, 
+  {
+    "pk": "2", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "How'd that go?"
+    }
+  }, 
+  {
+    "pk": "3", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "What are Saturdays for:"
+    }
+  }, 
+  {
+    "pk": "4", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "How old are they?"
+    }
+  }, 
+  {
+    "pk": "5", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "Which Beethoven are you most familiar with?"
+    }
+  }, 
+  {
+    "pk": "6", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "Is music more about:"
+    }
+  }, 
+  {
+    "pk": "7", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "If you had to pick a move to watch this evening:"
+    }
+  }, 
+  {
+    "pk": "8", 
+    "model": "appcode.questions", 
+    "fields": {
+      "question": "Are you seeking light entertainment, or do you want to feel something?"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Yeah!", 
+      "new_question": "2", 
+      "old_question": "1"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Not even once", 
+      "new_question": "3", 
+      "old_question": "1"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Maybe when I was a kid", 
+      "new_question": "3", 
+      "old_question": "1"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Don't really know--I fell asleep", 
+      "new_question": "3", 
+      "comment": "Yeah, I've been there.", 
+      "old_question": "2"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Loved it!", 
+      "new_question": "3", 
+      "comment": "Cool. ", 
+      "old_question": "2"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "How do I put this gently\u2026It was awful", 
+      "new_question": "3", 
+      "comment": "Guess what? It's way less boring now!", 
+      "old_question": "2"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Chilling with friends", 
+      "new_question": "5", 
+      "old_question": "3"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Going out and partying hard", 
+      "new_question": "5", 
+      "comment": "Woooo!", 
+      "old_question": "3"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Soaking up some culture ", 
+      "new_question": "5", 
+      "old_question": "3"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Binge-watching Netflix", 
+      "new_question": "5", 
+      "comment": "Have you seen House of Cards yet?", 
+      "old_question": "3"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Time with the kids", 
+      "new_question": "4", 
+      "comment": "Aww, cute.", 
+      "old_question": "3"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Tiny toddlers", 
+      "new_question": "5", 
+      "old_question": "4"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Elementary school age", 
+      "new_question": "5", 
+      "old_question": "4"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Teens", 
+      "new_question": "5", 
+      "old_question": "4"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "We're all grown-ups now", 
+      "new_question": "5", 
+      "old_question": "4"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "The brilliant, hot-tempered composer", 
+      "new_question": "6", 
+      "old_question": "5"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "The lovable St. Bernard who stars in a movie", 
+      "new_question": "6", 
+      "old_question": "5"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Tapping your foot and singing along to a familiar tune", 
+      "new_question": "7", 
+      "old_question": "6"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Admiring the artists", 
+      "new_question": "7", 
+      "old_question": "6"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Sound of Music", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "James Bond 007: Goldfinger", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "The Notebook", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "The Exorcist", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Yellow Submarine", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "A documentary about Bach", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "The Lion King", 
+      "new_question": "8", 
+      "old_question": "7"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "Entertain me", 
+      "old_question": "8"
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "appcode.questions", 
+    "fields": {
+      "answer": "I want to be moved, deep in my soul", 
+      "old_question": "8"
+    }
+  }
 ]

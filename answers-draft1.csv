@@ -1,28 +1,28 @@
-"Yeah!",1,1,2,"."
-"Not even once",2,1,3,"."
-"Maybe when I was a kid",3,1,3,"."
-"Don't really know--I fell asleep",4,2,3,"Yeah, I've been there."
-"Loved it!",5,2,3,"Cool. "
-"How do I put this gently…It was awful",6,2,3,"Guess what? It's way less boring now!"
-"Chilling with friends",7,3,5,"."
-"Going out and partying hard",8,3,5,"Woooo!"
-"Soaking up some culture ",9,3,5,"."
-"Binge-watching Netflix",10,3,5,"Have you seen House of Cards yet?"
-"Time with the kids",11,3,4,"Aww, cute."
-"Tiny toddlers",12,4,5,"."
-"Elementary school age",13,4,5,"."
-"Teens",14,4,5,"."
-"We're all grown-ups now",15,4,5,"."
-"The brilliant, hot-tempered composer",16,5,6,"."
-"The lovable St. Bernard who stars in a movie",17,5,6,"."
-"Tapping your foot and singing along to a familiar tune",18,6,7,"."
-"Admiring the artists",19,6,7,"."
-"Sound of Music",20,7,8,"."
-"James Bond 007: Goldfinger",21,7,8,"."
-"The Notebook",22,7,8,"."
-"The Exorcist",23,7,8,"."
-"Yellow Submarine",24,7,8,"."
-"A documentary about Bach",25,7,8,"."
-"The Lion King",26,7,8,"."
-"Entertain me",27,8,,"."
-"I want to be moved, deep in my soul",28,8,,"."
+Yeah!,1,2,
+Not even once,1,3,
+Maybe when I was a kid,1,3,
+Don't really know--I fell asleep,2,3,"Yeah, I've been there."
+Loved it!,2,3,Cool. 
+How do I put this gently…It was awful,2,3,Guess what? It's way less boring now!
+Chilling with friends,3,5,
+Going out and partying hard,3,5,Woooo!
+Soaking up some culture ,3,5,
+Binge-watching Netflix,3,5,Have you seen House of Cards yet?
+Time with the kids,3,4,"Aww, cute."
+Tiny toddlers,4,5,
+Elementary school age,4,5,
+Teens,4,5,
+We're all grown-ups now,4,5,
+"The brilliant, hot-tempered composer",5,6,
+The lovable St. Bernard who stars in a movie,5,6,
+Tapping your foot and singing along to a familiar tune,6,7,
+Admiring the artists,6,7,
+Sound of Music,7,8,
+James Bond 007: Goldfinger,7,8,
+The Notebook,7,8,
+The Exorcist,7,8,
+Yellow Submarine,7,8,
+A documentary about Bach,7,8,
+The Lion King,7,8,
+Entertain me,8,,
+"I want to be moved, deep in my soul",8,,
