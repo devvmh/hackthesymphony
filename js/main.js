@@ -103,11 +103,13 @@ function populateCurrentQuestion(id) {
   var html = '<p>';
   html += q.attributes.question;
   html += '</p>';
+  html += '<div class="answers">';
   $.each(q.answers(), function(index, value) {
     var answer = value.attributes.answer;
     var id = value.attributes.id;
     html += '<div class="answer answer-' + id + '">' + answer + '</div>';
   });
+  html += '</div>';
   $('#content').html(html);
 }//populateCurrentQuestion
 
