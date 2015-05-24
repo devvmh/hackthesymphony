@@ -2,290 +2,315 @@
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Have you ever "symphony'd" before?",
+    "question": "Have you ever \"symphony'd\" before?"
   },
   "pk": 1
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "How'd that go?",
+    "question": "How'd that go?"
   },
-  "pk": 2,
+  "pk": 2
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "What are Saturdays for:",
+    "question": "What are Saturdays for:"
   },
-  "pk": 3,
+  "pk": 3
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "How old are they?",
+    "question": "How old are they?"
   },
-  "pk": 4,
+  "pk": 4
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Which Beethoven are you most familiar with?",
+    "question": "Which Beethoven are you most familiar with?"
   },
-  "pk": 5,
+  "pk": 5
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Is music more about:",
+    "question": "Is music more about:"
   },
-  "pk": 6,
+  "pk": 6
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "If you had to pick a move to watch this evening:",
+    "question": "If you had to pick a move to watch this evening:"
   },
-  "pk": 7,
+  "pk": 7
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Are you seeking light entertainment, or do you want to feel something?",
+    "question": "Are you seeking light entertainment, or do you want to feel something?"
   },
-  "pk": 8,
+  "pk": 8
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Yeah!",
     "old_question": 1,
-    "new_question": 2,
+    "new_question": 2
   },
-  "pk": 1,
+  "pk": 1
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Not even once",
     "old_question": 1,
-    "new_question": 3,
+    "new_question": 3
   },
-  "pk": 2,
+  "pk": 2
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Maybe when I was a kid",
     "old_question": 1,
-    "new_question": 3,
+    "new_question": 3
   },
-  "pk": 3,
+  "pk": 3
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Don't really know--I fell asleep",
     "old_question": 2,
-    "new_question": 3,"Yeah, I've been there."
+    "new_question": 3,
+    "comment": "Yeah",
   },
-  "pk": 4,
+  "pk":  I've been there.",4
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Loved it!",
     "old_question": 2,
-    "new_question": 3,"Cool. "
+    "new_question": 3,
+    "comment": "Cool. "
   },
-  "pk": 5,
+  "pk": 5
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "How do I put this gently…It was awful",
     "old_question": 2,
-    "new_question": 3,"Guess what? It's way less boring now!"
+    "new_question": 3,
+    "comment": "Guess what? It's way less boring now!"
   },
-  "pk": 6,
+  "pk": 6
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Chilling with friends",
     "old_question": 3,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 7,
+  "pk": 7
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Going out and partying hard",
     "old_question": 3,
-    "new_question": 5,"Woooo!"
+    "new_question": 5,
+    "comment": "Woooo!"
   },
-  "pk": 8,
+  "pk": 8
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Soaking up some culture ",
     "old_question": 3,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 9,
+  "pk": 9
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Binge-watching Netflix",
     "old_question": 3,
-    "new_question": 5,"Have you seen House of Cards yet?"
+    "new_question": 5,
+    "comment": "Have you seen House of Cards yet?"
   },
-  "pk": 10,
+  "pk": 10
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Time with the kids",
     "old_question": 3,
-    "new_question": 4,"Aww, cute."
+    "new_question": 4,
+    "comment": "Aww, cute."
   },
-  "pk": 11,
+  "pk": 11
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Tiny toddlers",
     "old_question": 4,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 12,
+  "pk": 12
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Elementary school age",
     "old_question": 4,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 13,
+  "pk": 13
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Teens",
     "old_question": 4,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 14,
+  "pk": 14
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "We're all grown-ups now",
     "old_question": 4,
-    "new_question": 5,
+    "new_question": 5
   },
-  "pk": 15,
+  "pk": 15
 },
 {
   "model": "appcode.answer",
   "fields": {
-    "answer": "The brilliant,
-    "old_question":  hot-tempered composer",
-    "new_question": 5,6,
+    "answer": "The brilliant, hot-tempered composer",
+    "old_question": 5,
+    "new_question": 6
   },
-  "pk": 16,
+  "pk": 16
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "The lovable St. Bernard who stars in a movie",
     "old_question": 5,
-    "new_question": 6,
+    "new_question": 6
   },
-  "pk": 17,
+  "pk": 17
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Tapping your foot and singing along to a familiar tune",
     "old_question": 6,
-    "new_question": 7,
+    "new_question": 7
   },
-  "pk": 18,
+  "pk": 18
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Admiring the artists",
     "old_question": 6,
-    "new_question": 7,
+    "new_question": 7
   },
-  "pk": 19,
+  "pk": 19
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Sound of Music",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 20,
+  "pk": 20
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "James Bond 007: Goldfinger",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 21,
+  "pk": 21
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "The Notebook",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 22,
+  "pk": 22
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "The Exorcist",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 23,
+  "pk": 23
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "Yellow Submarine",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 24,
+  "pk": 24
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "A documentary about Bach",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 25,
+  "pk": 25
 },
 {
   "model": "appcode.answer",
   "fields": {
     "answer": "The Lion King",
     "old_question": 7,
-    "new_question": 8,
+    "new_question": 8
   },
-  "pk": 2r65,
+  "pk": 26
 },
+{
+  "model": "appcode.answer",
+  "fields": {
+    "answer": "Entertain me",
+    "old_question": 8,
+    "new_question": 
+  },
+  "pk": 27
+},
+{
+  "model": "appcode.answer",
+  "fields": {
+    "answer": "I want to be moved, deep in my soul",
+    "old_question": 8,
+    "new_question": 
+  },
+  "pk": 28
+}
+]

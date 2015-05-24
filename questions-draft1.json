@@ -1,56 +1,56 @@
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Have you ever "symphony'd" before?",
+    "question": "Have you ever \"symphony'd\" before?"
   },
   "pk": 1
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "How'd that go?",
+    "question": "How'd that go?"
   },
-  "pk": 2,
+  "pk": 2
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "What are Saturdays for:",
+    "question": "What are Saturdays for:"
   },
-  "pk": 3,
+  "pk": 3
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "How old are they?",
+    "question": "How old are they?"
   },
-  "pk": 4,
+  "pk": 4
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Which Beethoven are you most familiar with?",
+    "question": "Which Beethoven are you most familiar with?"
   },
-  "pk": 5,
+  "pk": 5
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Is music more about:",
+    "question": "Is music more about:"
   },
-  "pk": 6,
+  "pk": 6
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "If you had to pick a move to watch this evening:",
+    "question": "If you had to pick a move to watch this evening:"
   },
-  "pk": 7,
+  "pk": 7
 },
 {
   "model": "appcode.question",
   "fields": {
-    "question": "Are you seeking light entertainment, or do you want to feel something?",
+    "question": "Are you seeking light entertainment, or do you want to feel something?"
   },
-  "pk": 8,
+  "pk": 8
 },
