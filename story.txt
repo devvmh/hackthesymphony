@@ -1,12 +1,20 @@
 ## Inspiration
 
+The four of us all are excited (or at least feel guilty enough) to want to go to the symphony. We don't believe you need to water down the symphony's music to make it exciting though; we believe the music stands on its own, and we only need to remove barriers to entry. These barriers include comfort in the space, not having a pre-existing emotional connection with the music, understanding the rituals and typical misconceptions of the symphony experience, and navigating the jargon of the symphony (what is a POP series? What is an A-series?). 
+
 ## How it works
 
-## Challenges I ran into
+Our app is light and humorous, which engages those users who are interested in giving the symphony a try. It draws the user along a path into a gamified learning experience, learning from the successes of Codeacademy and Duolingo. As the user answers questions and navigates the app, content is curated and personalized to their demographics and level of expertise, making this app an invaluable sidekick whether it's their first concert or their fiftieth.
 
-## Accomplishments that I'm proud of
+## Challenges we ran into
 
-## What I learned
+The two challenges we had this weekend were lack of time and in-depth user data. We were able to gather fantastic preliminary insights and spent the first 50% of our time on sense-making and problem definition. The prelude on Friday night and each of the concert experiences this weekend built our own connection to the symphony and helped us identify barriers to entry that hold novice symphony goers back. These preliminary insights were invaluable in driving the content design of our app. This design can continue to evolve as we track the effectiveness of each component.
+
+## Accomplishments that we're proud of
+
+
+
+## What we learned
 
 Behaviour change requires the user to have the motivation, ability and a trigger. Our app focuses on motivating new symphony goers to take the leap by giving them a personal connection to the concerts, improving their ability to change by lowering the barriers to entry, and  triggering the behavior change with a fantastic ticketing experience. We found this comprehensive approach does not exist in any of the symphony’s current marketing approachers (or if it does, it isn’t obvious to the user). We learned that each one of these three components has unique challenges to overcome. We also personally grew, sharing our strengths with fellow team members, and learning from the hackathon community at large.
 
