@@ -1,61 +1,99 @@
 
+/**********************************************************
+MAIN STYLES
+**********************************************************/
+
+
 body {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: Verdana , Arial, sans-serif;
 }
+
+
+
+/**********************************************************
+HEADER
+**********************************************************/
+
 
 header {
 	width: 100%;
 	height: 100px;
-	background: forestgreen;
+	background: rgb(245,78,109);
 }
 
 #logo { 
-	font: 1.5em 'Changa One', sans-serif;
+	font: 2em 'Changa One', sans-serif;
 	width: 60%;
 	margin: 2.5%;
 	float: left;
 }
 
 #nav {
-	font: 'Open Sans', sans-serif;
+	font:'Open Sans', sans-serif;
 	width: 20%;
 	margin: 2.5%;
 	text-align: right;
 	float: right;
 }
 
+
+/**********************************************************
+MAIN CONTENT
+**********************************************************/
+
+
 #back-button a {
-	font-family: 'Changa One';
+	font-family:'Changa One';
 	text-decoration: none;
+	font-size: 1.5em;
+	margin: 2.5%;
+	color: black;
 }
 
 #content {
-	max-width: 75%;
+	max-width: 480px;
 	margin: 0 auto;
 	padding: 120px 5%;
 	text-align: center;
 }
 
-#content ul {
+#content p {
+	margin-bottom: 50px;
+	font-size: 1.5em;
+}
+
+.answers ul {
 	list-style: none;
-	display: inline-block;
+	width: 50%;
+	margin: auto;
 }
 
-#answer-1 {
-	width: 50px;
-	margin: 20px;
-	float: left;
+.answer {
+	width: 100%;
+	padding: 10px;
+	margin: 0 10px;
+	display: block;
+	font-size: 1.25em;
+	text-align: top;
+	background: rgb(245,78,109);
+	box-shadow: 0 0 10px #888;
+
 }
 
-#answer-2 {
-	width: 50px;
-	margin: 20px;
-	float: right;
+
+/**********************************************************
+FOOTER
+**********************************************************/
+
+footer {
+
 }
 
-
-
-
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
 
 
 
