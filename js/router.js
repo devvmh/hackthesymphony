@@ -41,8 +41,9 @@ function renderAnswersOnQuestionPage(answers) {
         $('.question').show();
         if (answerObject.attributes.comment) {
           $('.question').before('<div class="comment">' + answerObject.attributes.comment + '</div>');
+        var comment_length = answerObject.attributes.comment.length*40;
           $.when(
-            $('.comment').fadeIn('slow').delay(2000).fadeOut('slow')
+            $('.comment').fadeIn('slow').delay(comment_length).fadeOut('slow')
           ).then(function() {
             $('.comment').remove();
             goToNextPage(answerObject);
