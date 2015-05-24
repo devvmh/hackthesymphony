@@ -2,23 +2,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{% static "normalize.css" %}">
     {% block css %}
     {% endblock css %}
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="//underscorejs.org/underscore-min.js" ></script>
     <script type="text/javascript" src="//backbonejs.org/backbone-min.js" ></script>
-    <script type="text/javascript" src="{% static "custom.js" %}"></script>
     {% block js %}
     {% endblock js %}
+	<title>How Do I Symphony?</title>
   </head>
   <body>
-    {% block header %}
-    {% endblock header %}
+  	<header>
+  		<!-- Replace with meme/logo when we have it -->
+  		<h1 id="logo"><a href="http://www.kwsymphony.ca/index.php">Can I Has Symphony?</a></h1>
+  		<h3 id="nav-top"><a href="">What is this?</a></h3>
+  	</header>  	
+
     <div id="content">
       {% block main %}
       {% endblock main %}
     </div>
+  	
+    <p id="back-button"><a href="javascript:void(0);">Back</a></p>
+    
+    <footer>
+      <h3 id="nav-bottom"><a href="">What is this?</a></h3>
+      <a href="http://twitter.com/kw_symphony/" target="_blank"><img src="static/twitter.png" alt="Twitter" class="social-icon"></a>
+      <a href="http://facebook.com/kwsymphony" target="_blank"><img src="static/facebook2.png" alt="Facebook" class="social-icon"></a>
+      <a href="http://youtube.com/kwsymphony" target="_blank"><img src="static/youtube.png" alt="YouTube" class="social-icon"></a>
+      <a href="http://procatinator.com/" target="_blank"><img src="static/cat.png" class="social-icon" alt="Procatinator"></a>
+      <p>&copy; 2015 Kitchener-Waterloo Symphony</a></p>
+    </footer>
   </body>
 </html>
     

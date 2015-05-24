@@ -1,4 +1,6 @@
+{% extends "base.html" %}
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -46,7 +48,6 @@
     <p id="back-button"><a href="javascript:void(0);">Back</a></p>
     
     <footer>
-      <h3 id="nav-bottom"><a href="">What is this?</a></h3>
       <a href="http://twitter.com/kw_symphony/" target="_blank"><img src="static/twitter.png" alt="Twitter" class="social-icon"></a>
       <a href="http://facebook.com/kwsymphony" target="_blank"><img src="static/facebook2.png" alt="Facebook" class="social-icon"></a>
       <a href="http://youtube.com/kwsymphony" target="_blank"><img src="static/youtube.png" alt="YouTube" class="social-icon"></a>
@@ -56,3 +57,32 @@
   </body>
 </html>
     
+=======
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "responsive.css" %}">
+{% endblock css %}
+
+{% block js %}
+<script type="text/javascript">
+  ORCA = new Object();
+  ORCA.ip_address = "{{ ip_address }}"; //not working
+  ORCA.ip_address = "192.168.5.100";
+</script>
+<script type="text/javascript" src="{% static "helpers.js" %}"></script>
+<script type="text/javascript" src="{% static "models.js" %}"></script>
+<script type="text/javascript" src="{% static "collections.js" %}"></script>
+<script type="text/javascript" src="{% static "auth.js" %}"></script>
+<script type="text/javascript" src="{% static "router.js" %}"></script>
+<script type="text/javascript" src="{% static "main.js" %}"></script>
+<script type="text/javascript" src="{% static "custom.js" %}"></script>
+{% endblock js %}
+
+{% block main %}
+<div class="question">
+</div>
+<div class="answers">
+</div>
+{% endblock main %}
+>>>>>>> origin/develop
