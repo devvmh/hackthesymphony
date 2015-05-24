@@ -6,6 +6,13 @@
   max-width: 100%;
 }
 
+.concert {
+  padding: 1.5em;
+  padding-top: 1em;
+  background-color: rgba(143,143,143,0.2);
+  margin: 1.5em;
+}
+
 .concert-title {
   font-weight: bold;
   float: left;
@@ -26,9 +33,6 @@
   text-align: left;
 }
 
-.concert {
-  padding: 1.5em;
-  padding-top: 1em;
-  background-color: rgba(143,143,143,0.2);
-  margin: 1.5em;
+.suggestions-explanation {
+  padding: 0 1.5em;
 }
