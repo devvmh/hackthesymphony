@@ -11,4 +11,5 @@ Session = Backbone.Model.extend({
   urlRoot: '/api/sessions',
 });
 SessionAnswer = Backbone.Model.extend({
+  urlRoot: '/api/session-answers',
 });

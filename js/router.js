@@ -1,10 +1,28 @@
+function goToNextPage(answerObject) {
+  var id = answerObject.attributes.id;
+  var new_question = answerObject.attributes.new_question;
+  var session_answer = new SessionAnswer({
+    session: ORCA.session.url(),
+    question: ORCA.session.attributes.current_question,
+    answer: ORCA.answers.get(id).url(),
+  });
+  ORCA.session.attributes.current_question = answerObject.attributes.new_question;
+  $.when(
+    session_answer.save(),
+    ORCA.session.save()
+  ).then(function() {
+    new_question = new_question.replace(window.location.origin + '/api/', '');
+    ORCA.router.navigate(new_question, {trigger: true});
+  });
+}//goToNextPage
+
 function renderAnswersOnQuestionPage(answers) {
   $('.answers').html('');
-  $.each(answers, function(index, value) {
-    var answer = value.attributes.answer;
-    var id = value.attributes.id;
-    var comment = value.attributes.comment;
-    var new_question = value.attributes.new_question;
+  $.each(answers, function(index, answerObject) {
+    var answer = answerObject.attributes.answer;
+    var id = answerObject.attributes.id;
+    var comment = answerObject.attributes.comment;
+    var new_question = answerObject.attributes.new_question;
     new_question = new_question.replace(window.location.origin + '/api/', '');
     var html = '<div class="answer answer-' + id + '">';
     html += '<a href="javascript:void(0);">' + answer + '</a>';
@@ -17,18 +35,16 @@ function renderAnswersOnQuestionPage(answers) {
       ).then(function() {
         $('.question').html('');
         $('.question').show();
-        console.log(value.attributes.comment);
-        if (value.attributes.comment) {
-          console.log("got here");
-          $('.question').before('<div class="comment">' + value.attributes.comment + '</div>');
+        if (answerObject.attributes.comment) {
+          $('.question').before('<div class="comment">' + answerObject.attributes.comment + '</div>');
           $.when(
             $('.comment').fadeIn('slow').delay(2000).fadeOut('slow')
           ).then(function() {
             $('.comment').remove();
-            ORCA.router.navigate(new_question, {trigger: true});
+            goToNextPage(answerObject);
           });
         } else {
-          ORCA.router.navigate(new_question, {trigger: true});
+          goToNextPage(answerObject);
         }//if
       });
     });
