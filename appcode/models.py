@@ -31,3 +31,11 @@ class SessionAnswer(Model):
   answer = ForeignKey(Answer, related_name='sessions_using_this_answer')
   def __unicode__(self):
     return str(self.session) + " answered '" + str(self.answer) + "' to '" + str(self.question) + "'."
+
+class Concert(Model):
+  title = CharField(max_length=255)
+  date = DateField()
+  image = URLField()
+  description = TextField()
+  def __unicode__(self):
+    return content[0:25]
