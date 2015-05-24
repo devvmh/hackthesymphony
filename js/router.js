@@ -36,12 +36,10 @@ ORCARouter = Backbone.Router.extend({
     //set up back button
     $('#back-button a').unbind('click');
     $('#back-button a').click(function() {
-      console.log(ORCA.router.history);
       //pop current page, then pop previous page to use;
       //navigate will add the previous page back on
       ORCA.router.history.pop();
       ORCA.router.navigate(ORCA.router.history.pop().fragment, {trigger: true});
-      console.log(ORCA.router.history);
     });
   },
 });
