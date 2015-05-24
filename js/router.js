@@ -2,7 +2,7 @@ function goToNextPage(answerObject) {
   var id = answerObject.attributes.id;
   var new_question = answerObject.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
-  if (new_question_id == 666) {
+  if (new_question_id == "666") {
     window.location = 'suggestions/' + ORCA.session.attributes.id;
   }//if
   var session_answer = new SessionAnswer({
