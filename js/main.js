@@ -6,8 +6,16 @@ $(document).ready(function() {
     ip: ORCA.ip_address,
     current_question: window.location.origin + '/api/questions/1',
   });
-  $.when(ORCA.questions.fetch(), 
-         ORCA.answers.fetch()
+  $.when(ORCA.questions.fetch({
+           'error': function() {
+             window.location = 'api-auth/login?next=/';
+           },
+         }),
+         ORCA.answers.fetch({
+           'error': function() {
+             window.location = 'api-auth/login?next=/';
+           },
+         })
   ).then(function() {
     ORCA.router = new ORCARouter();
     Backbone.history.start();
