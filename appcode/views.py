@@ -28,12 +28,10 @@ def suggestions(request, pk):
   concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
   for session_answer in session_answer_list:
     ans = session_answer.answer.pk
-    print "Working with answer number", str(ans)
     for i in range(0,14):
-      print "Adding score of", str(knowledge[ans][i+1]), "to concert", str(concerts[i]['pk'])
       concerts[i]['score'] += knowledge[ans][i+1]
   concerts = sorted(concerts, key=lambda x: -x['score'])
-  concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
+  oncert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
