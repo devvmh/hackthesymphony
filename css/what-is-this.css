@@ -1,19 +1,37 @@
 
 
 #title {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	font-size: 1.5em;
 	font-weight: bolder;
 	max-width: 100%;
 }
-	
-#cat-gif {
-	float: left;
-	width: 200px;
+
+@media screen and (min-width: 481px) {
+
+	#cat-gif-mobile {
+		display: none;
+	}
+
 }
 
+@media screen and (max-width: 480px) {
 
-#words {
-	float: right;
+	#cat-gif-large {
+		display: none;
+	}
+
+	#cat-gif-mobile {
+		display: block;
+	}
+
+	#words {
+		float: right;
+	}
+
 }
 
+#words p {
+	text-align: left;
+	margin: 10px 10px 20px;
+}
