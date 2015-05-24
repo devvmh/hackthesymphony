@@ -24,8 +24,14 @@ def what_is_this(request):
 def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session.pk)
-  
-  concert_list = Concert.objects.all();
+  knowledge = get_answer_concert_array()
+  for session_answer in session_answer_list:
+    ans = session_answer.answer.pk
+    concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
+    for i in range(0,14):
+      concerts[i]['score'] += knowledge[ans][i+1]
+  concerts = sorted(concerts, key=lambda x: -x['score'])
+  concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
@@ -50,3 +56,38 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
+
+def get_answer_concert_array():
+  #this is indexed by answer and then by concert
+  rows = []
+  rows.append([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+  rows.append([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
+  rows.append([2,0,0,0,1,0,0,0,0,0,0,0,0,0,0])
+  rows.append([3,0,0,0,0,0,0,0,0,0,0,0,0,1,0])
+  rows.append([4,1,0,1,0,0,1,0,0,0,1,0,0,0,0])
+  rows.append([5,0,0,0,0,0,0,0,1,1,0,1,0,1,0])
+  rows.append([6,0,0,0,0,0,0,0,0,-1,1,-1,0,0,-1])
+  rows.append([7,1,1,0,1,0,1,0,1,0,1,0,0,0,1])
+  rows.append([8,0,1,1,1,0,1,0,0,0,1,0,0,0,0])
+  rows.append([9,1,-1,0,0,1,0,2,2,2,1,2,0,1,2])
+  rows.append([10,1,2,0,1,1,1,0,1,0,1,0,0,0,0])
+  rows.append([11,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
+  rows.append([12,0,0,0,0,0,0,0,0,0,0,0,4,1,0])
+  rows.append([13,0,0,2,0,0,0,0,0,0,0,0,4,1,0])
+  rows.append([14,0,1,1,0,0,1,0,1,0,1,1,0,1,0])
+  rows.append([15,1,1,1,1,0,1,1,1,0,2,1,0,1,0])
+  rows.append([16,0,0,0,0,0,0,0,1,2,0,2,0,1,1])
+  rows.append([17,0,1,0,1,0,1,0,0,-1,0,-1,1,0,0])
+  rows.append([18,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
+  rows.append([19,1,0,0,0,1,0,1,1,1,0,1,0,0,1])
+  rows.append([20,0,0,0,0,0,0,0,1,2,0,2,0,1,1])
+  rows.append([21,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
+  rows.append([22,0,0,0,0,0,0,3,0,0,0,0,0,0,0])
+  rows.append([23,0,3,0,0,0,0,0,0,0,0,0,0,0,0])
+  rows.append([24,2,0,0,0,3,0,0,0,0,0,0,0,0,0])
+  rows.append([25,0,0,0,3,0,0,0,0,0,0,0,0,0,0])
+  rows.append([26,0,0,0,0,0,0,0,0,3,0,3,0,0,0])
+  rows.append([27,0,0,2,0,0,1,0,0,0,0,0,2,1,0])
+  rows.append([28,1,1,1,2,1,2,1,0,0,2,0,0,1,0])
+  rows.append([29,0,0,0,0,1,0,1,0,2,0,2,0,1,1])
+  return rows 
