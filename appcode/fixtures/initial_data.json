@@ -123,7 +123,7 @@
     "pk": 4, 
     "model": "appcode.answer", 
     "fields": {
-      "answer": "Don't really know--I fell asleep", 
+      "answer": “It didn’t blow my mind“, 
       "new_question": "3", 
       "comment": "Yeah, I've been there.", 
       "old_question": "2"
@@ -366,7 +366,7 @@
     "pk": 29, 
     "model": "appcode.answer", 
     "fields": {
-      "answer": "I want to be moved, to feel it in my soul", 
+      "answer": "I want the feelz“, 
       "new_question": "666", 
       "old_question": "8"
     }
