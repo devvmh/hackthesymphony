@@ -1,0 +1,63 @@
+@media screen and (max-width: 480px) {
+
+	/**********************************************************
+	HEADER
+	**********************************************************/
+
+	header {
+		height: 75px;
+	}
+
+	#logo, #nav {
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+
+	#logo {
+		padding: 7px;
+		font-size: 1.5em;
+	}
+
+	#nav {
+		padding: 2.5px 0 2.5px;
+		font-size: 1em;
+	}
+
+
+	/**********************************************************
+	MAIN CONTENT
+	**********************************************************/
+
+	#back-button {
+		font-size: .75em;
+		padding: 5px;
+	}
+
+	#content {
+		max-width: 95%;
+		padding: 0;
+		margin-top, margin-bottom: 0;
+	}
+
+	#content p {
+		margin-bottom: 5%;
+		font-size: 1.25em;
+	}
+
+	.answer {
+		width: 100%;
+		max-width: 100%;
+		padding: 5px;
+		font-size: 1em;
+	}
+
+
+
+
+
+
+
+}
+

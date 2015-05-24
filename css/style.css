@@ -29,6 +29,11 @@ header {
 	float: left;
 }
 
+#logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
 #nav {
 	font:'Open Sans', sans-serif;
 	width: 20%;
@@ -37,6 +42,10 @@ header {
 	float: right;
 }
 
+#nav a {
+	text-decoration: none;
+	color: #fff;
+}
 
 /**********************************************************
 BACK BUTTON
@@ -45,10 +54,13 @@ BACK BUTTON
 
 #back-button a {
 	font-family:'Changa One';
+	text-align: center;
 	text-decoration: none;
 	font-size: 1.5em;
-	margin: 2.5%;
+	width: 50px;
+	margin: 0 auto 15%;
 	color: black;
+	display: block;
 }
 
 
@@ -60,32 +72,34 @@ MAIN CONTENT
 #content {
 	max-width: 480px;
 	margin: 0 auto;
-	padding: 50px 5% 60px;
+	padding: 50px 5px 60px;
 	text-align: center;
 }
 
 #content p {
 	margin-bottom: 50px;
 	font-size: 1.5em;
+	max-width: 100%;
 }
 
 .answers ul {
 	list-style: none;
 	width: 50%;
 	margin: auto;
+	max-width: 100%;
 }
 
 .answer {
 	width: 100%;
+	max-width: 100%;
 	padding: 10px;
 	margin: 10px;
 	display: block;
 	font-size: 1.25em;
-	text-align: top;
 	background: rgb(168,53,58);
-	box-shadow: 0 0 10px #888;
 	color: #fff;
 	text-align: center;
+	overflow: none;
 
 }
 
@@ -97,30 +111,6 @@ MAIN CONTENT
   display: none;
 }
 
-/**********************************************************
-CAT BUTTON
-**********************************************************/
-
-
-
-#cat-video {
-	position: fixed;
-	top: 120px;
-	right: 3%;
-	width: 11%;
-}
-
-#grumpy-cat {
-	width: 100%;
-	height: auto;
-}
-
-#cat-video a {
-	text-decoration: none;
-	font-family: 'Changa One', sans-serif;
-	text-align: center;
-	color: black;
-}
 
 /**********************************************************
 FOOTER
@@ -129,13 +119,24 @@ FOOTER
 footer {
 	text-align: center;
 	font-size: .75em;
-	padding: 10px 0 5px;
+	padding-top: 10px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+footer p {
+	margin: 10px auto 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
 }
 
 .social-icon {
 	width: 25px;
 	height: 25px;
-	margin: 0 5px;
+	margin: 5px;
 }
 
 
