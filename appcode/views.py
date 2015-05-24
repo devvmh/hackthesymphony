@@ -25,11 +25,8 @@ def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session.pk)
   
-  concert_list = [
-    Concert.objects.get(pk=1),
-    Concert.objects.get(pk=1),
-    Concert.objects.get(pk=1),
-  ]
+  concert_list = Concert.objects.all();
+
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
   })
