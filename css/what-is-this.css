@@ -1,36 +1,6 @@
 
 
-#title {
-	margin-bottom: 20px;
-	font-size: 1.5em;
-	font-weight: bolder;
-	max-width: 100%;
-}
 
 
-@media screen and (min-width: 511px) {
 
-	#cat-gif-mobile {
-		display: none;
-	}
 
-}
-
-@media screen and (max-width: 510px) {
-
-	#cat-gif-large {
-		display: none;
-	}
-
-	#cat-gif-mobile {
-		display: block;
-	}
-
-	#words {
-		float: right;
-		display: block;
-		margin: 0 10px 30px;
-		text-align: left;
-	}
-		
-}
