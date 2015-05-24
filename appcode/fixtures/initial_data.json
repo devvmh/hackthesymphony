@@ -56,6 +56,13 @@
     }
   }, 
   {
+    "pk": "666", 
+    "model": "appcode.question", 
+    "fields": {
+      "question": "Redirect me to a url",
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "appcode.answer", 
     "fields": {
@@ -300,7 +307,7 @@
     "model": "appcode.answer", 
     "fields": {
       "answer": "Entertain me", 
-      "new_question": "1", 
+      "new_question": "666",
       "old_question": "8"
     }
   }, 
@@ -309,7 +316,7 @@
     "model": "appcode.answer", 
     "fields": {
       "answer": "I want to be moved, deep in my soul", 
-      "new_question": "1", 
+      "new_question": "666",
       "old_question": "8"
     }
   }
