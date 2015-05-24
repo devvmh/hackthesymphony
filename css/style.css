@@ -78,6 +78,10 @@ MAIN CONTENT
 	max-width: 100%;
 }
 
+#content img {
+  max-width: 100%;
+}
+
 .answers {
 	width: 95%;
 	margin: 0 auto;
