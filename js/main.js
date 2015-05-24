@@ -44,6 +44,11 @@ function declareModelsAndCollections() {
   });
   Question = Backbone.Model.extend({
   });
+  Question.prototype.answers = function() {
+    return ORCA.answers.where({
+      old_question: window.location.href + this.url().substring(1),
+    });
+  };
   Answer = Backbone.Model.extend({
   });
   Session = Backbone.Model.extend({
