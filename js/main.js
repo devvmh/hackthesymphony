@@ -46,7 +46,7 @@ function declareModelsAndCollections() {
   });
   Question.prototype.answers = function() {
     return ORCA.answers.where({
-      old_question: window.location.href + this.url().substring(1),
+      old_question: window.location.origin + '/' + this.url().substring(1),
     });
   };
   Answer = Backbone.Model.extend({
@@ -89,7 +89,7 @@ function declareModelsAndCollections() {
 function declareMainObject() {
   ORCA.questions = new Questions();
   ORCA.answers = new Answers();
-  ORCA.first_question_url = window.location.href + 'api/questions/1';
+  ORCA.first_question_url = window.location.origin + '/api/questions/1';
   ORCA.session = new Session({
     username: "Anonymous",
     ip: ORCA.ip_address,
@@ -102,15 +102,13 @@ function declareRouter() {
     routes: {
       "questions/:id": "renderQuestion",
     },
-    renderQuestion(query, id) {
-      console.log("got here");
+    renderQuestion(id) {
       q = ORCA.questions.get(id);
       $('.question p').html(q.attributes.question);
       $('.answers').html('');
       $.each(q.answers(), function(index, value) {
-      console.log("got here2");
-        var answer = object.attributes.answer;
-        var id = object.attributes.id;
+        var answer = value.attributes.answer;
+        var id = value.attributes.id;
         var html = '<div class="answer answer-' + id + '">';
         html += '<a href="javascript:void(0);">' + answer + '</a>';
         html += '</div>';
