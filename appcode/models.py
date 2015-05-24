@@ -37,6 +37,6 @@ class Concert(Model):
   date = DateField()
   image = URLField()
   description = TextField()
-  highlights = TextField()
+  highlights = TextField(blank=True)
   def __unicode__(self):
     return self.title
