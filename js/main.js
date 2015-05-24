@@ -100,7 +100,17 @@ function declareMainObject() {
   ORCA.session.save();
 }//declareMainObject
 
+function populateCurrentQuestion(id) {
+  q = ORCA.questions.get(id);
+  console.log(q);
+}//populateCurrentQuestion
+
 $(document).ready(function() {
   declareModelsAndCollections();
   declareMainObject();
+  $.when(ORCA.questions.fetch(), 
+         ORCA.answers.fetch(), 
+         ORCA.session.save()).then(function() {
+    populateCurrentQuestion(1);
+  });
 });
