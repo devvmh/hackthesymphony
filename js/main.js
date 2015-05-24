@@ -11,6 +11,6 @@ $(document).ready(function() {
          ORCA.session.save()).then(function() {
     ORCA.router = new ORCARouter();
     Backbone.history.start();
-    ORCA.router.navigate('questions/1', {trigger: true});
+    ORCA.router.navigate('questions/2', {trigger: true});
   });
 });
