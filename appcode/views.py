@@ -31,7 +31,7 @@ def suggestions(request, pk):
     for i in range(0,14):
       concerts[i]['score'] += knowledge[ans][i+1]
   concerts = sorted(concerts, key=lambda x: -x['score'])
-  oncert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
+  concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,

@@ -3,7 +3,8 @@ function goToNextPage(answerObject) {
   var new_question = answerObject.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
   if (new_question_id == "666") {
-    window.location = 'suggestions/' + ORCA.session.attributes.id;
+    goToSuggestions(new_question_id);
+    window.location = 'suggestions/' + new_question_id + '/';
   }//if
   var session_answer = new SessionAnswer({
     session: ORCA.session.url(),
@@ -19,6 +20,10 @@ function goToNextPage(answerObject) {
   });
 }//goToNextPage
 
+function goToSuggestions(new_question_id) {
+  window.location = 'suggestions/' + new_question_id + '/';
+}
+
 function renderAnswersOnQuestionPage(answers) {
   $('.answers').html('');
   $.each(answers, function(index, answerObject) {
@@ -32,6 +37,7 @@ function renderAnswersOnQuestionPage(answers) {
     html += '</div>';
     $('.answers').append(html);
     $('.answer-' + id).click(function() {
+      $('.answer-' + id).unbind('click');
       $.when(
         $('.answer').fadeOut('slow'),
         $('.question').fadeOut('slow'),
