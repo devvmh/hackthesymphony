@@ -23,9 +23,15 @@ def what_is_this(request):
 
 def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
-  session_answer_list = SessionAnswer.objects.filter(session=session)
+  session_answer_list = SessionAnswer.objects.filter(session=session.pk)
+  
+  concert_list = [
+    Concert.objects.get(pk=1),
+    Concert.objects.get(pk=1),
+    Concert.objects.get(pk=1),
+  ]
   return render(request, 'suggestions.html', {
-    session_answer_list: session_answer_list,
+    'concert_list': concert_list,
   })
 
 class QuestionViewSet(viewsets.ModelViewSet):

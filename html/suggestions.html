@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block main %}
-  {% for item in session_answer_list %}
-    <p>{{ item }}</p>
+  {% for concert in concert_list %}
+    {% include "concert.html" with concert=concert %}
   {% endfor %}
 {% endblock main %}

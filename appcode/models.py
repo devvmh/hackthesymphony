@@ -38,4 +38,4 @@ class Concert(Model):
   image = URLField()
   description = TextField()
   def __unicode__(self):
-    return content[0:25]
+    return self.title
