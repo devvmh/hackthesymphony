@@ -25,10 +25,12 @@ def suggestions(request, pk):
   session = Session.objects.get(pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session.pk)
   knowledge = get_answer_concert_array()
+  concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
   for session_answer in session_answer_list:
     ans = session_answer.answer.pk
-    concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
+    print "Working with answer number", str(ans)
     for i in range(0,14):
+      print "Adding score of", str(knowledge[ans][i+1]), "to concert", str(concerts[i]['pk'])
       concerts[i]['score'] += knowledge[ans][i+1]
   concerts = sorted(concerts, key=lambda x: -x['score'])
   concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
