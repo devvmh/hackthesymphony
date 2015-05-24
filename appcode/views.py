@@ -17,6 +17,13 @@ def index(request):
     'ip_address': '192.168.1.99',
   })
 
+def suggestions(request, pk):
+  session = Session.objects.get(pk=pk)
+  session_answer_list = SessionAnswer.objects.get(session=session)
+  return render(request, 'suggestions.html', {
+    session_answer_list: session_answer_list,
+  })
+
 class QuestionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
     queryset = Question.objects.all()
