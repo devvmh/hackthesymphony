@@ -33,6 +33,7 @@ function renderAnswersOnQuestionPage(answers) {
       });
     });
   });
+$('.answer').fadeIn('slow');
 }//renderAnswersOnQuestionPage
 
 ORCARouter = Backbone.Router.extend({
@@ -52,7 +53,9 @@ ORCARouter = Backbone.Router.extend({
   renderQuestionPage(id) {
     //render question text
     q = ORCA.questions.get(id);
+    $('.question').hide();
     $('.question').html(q.attributes.question);
+    $('.question').fadeIn('slow');
     
     //render answers
     renderAnswersOnQuestionPage(q.answers());
