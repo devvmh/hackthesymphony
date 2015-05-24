@@ -72,39 +72,41 @@ MAIN CONTENT
 #content {
 	max-width: 480px;
 	margin: 0 auto;
-	padding: 50px 5px 60px;
+	padding: 50px 0 60px;
 	text-align: center;
 }
 
-#content p {
+#content .question {
 	margin-bottom: 50px;
 	font-size: 1.5em;
 	max-width: 100%;
 }
 
+.answers {
+	width: 95%;
+	margin: auto;
+}
+
 .answers ul {
 	list-style: none;
-	width: 50%;
-	margin: auto;
 	max-width: 100%;
 }
 
 .answer {
-	width: 100%;
-	max-width: 100%;
+	width: 95%;
+	max-width: 95%;
 	padding: 10px;
 	margin: 10px;
 	display: block;
 	font-size: 1.25em;
 	background: rgb(168,53,58);
-	color: #fff;
 	text-align: center;
 	overflow: none;
-
 }
 
 .answer a {
 	text-decoration: none;
+	color: #fff;
 }
 
 .comment {
