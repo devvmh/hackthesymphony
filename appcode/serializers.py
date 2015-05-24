@@ -14,7 +14,7 @@ class AnswerSerializer(serializers.HyperlinkedModelSerializer):
 class SessionSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Session
-    fields = ('csrftoken', 'username', 'current_question', 'ip')
+    fields = ('id', 'username', 'current_question', 'ip')
 
 class SessionAnswerSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:

@@ -94,14 +94,13 @@ function declareMainObject() {
     username: "Anonymous",
     ip: ORCA.ip_address,
     current_question: ORCA.first_question_url,
-    csrftoken: getCookie('csrftoken'),
   });
 }//declareMainObject
 
 function declareRouter() {
   ORCARouter = Backbone.Router.extend({
     routes: {
-      "#questions/:id": "renderQuestion",
+      "questions/:id": "renderQuestion",
     },
     renderQuestion(query, id) {
       console.log("got here");
@@ -117,7 +116,7 @@ function declareRouter() {
         html += '</div>';
         $('.answers').append(html);
         $('.answers-' + id).click(function() {
-          ORCA.router.navigate('questions/' + id);
+          ORCA.router.navigate('questions/' + id, {trigger: true});
           console.log('lol');
         });
       });
@@ -134,6 +133,6 @@ $(document).ready(function() {
          ORCA.session.save()).then(function() {
     declareRouter();
     Backbone.history.start();
-    ORCA.router.navigate('questions/1');
+    ORCA.router.navigate('questions/1', {trigger: true});
   });
 });
