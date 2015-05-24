@@ -13,9 +13,13 @@
 		text-align: center;
 		width: 100%;
 		margin: auto;
+		margin-left: -2em;
 		padding: 10px;
 	}
 
+	#arrow {
+		display: inline-block;
+	}
 
 	/**********************************************************
 	MAIN CONTENT
@@ -43,39 +47,8 @@
 	#back-button {
 		font-size: .75em;
 		padding: 5px;
+		display: none;
 	}
-
-
-	/**********************************************************
-	FOOTER
-	**********************************************************/
-
-
-
-}
-
-
-@media screen and (max-width: 480px) {
-
-
-	header {
-		height: 50px;
-	}
-
-	#logo {
-		font-size: 1.5em;
-	}
-
-
-
-
-
-
-
-
-
-
-
 
 
 	/**********************************************************
@@ -90,6 +63,42 @@
 			display: block;
 			padding: 10px;
 		}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+	header {
+		height: 50px;
+	}
+
+	#logo {
+		font-size: 1.5em;
+		margin-left: -1.5em;
+	}
+
+	#arrow {
+		height: 1.5em;
+		width: 1.5em;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/**********************************************************
+	FOOTER
+	**********************************************************/
+
 
 
 }

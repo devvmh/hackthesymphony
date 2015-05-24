@@ -24,6 +24,14 @@ header {
 	border-bottom: 5px solid #C4666A;
 }
 
+#arrow {
+	width: 2em;
+	height: 2em;
+	float: left;
+	margin: 2.5%;
+	display: none;
+}
+
 #logo { 
 	font: 2em 'Changa One', sans-serif;
 	width: 60%;
@@ -60,6 +68,7 @@ MAIN CONTENT
 	margin: 0 auto;
 	padding: 50px 0 60px;
 	text-align: center;
+	min-height: 425px;
 }
 
 #content .question {
@@ -72,11 +81,11 @@ MAIN CONTENT
 .answers {
 	width: 95%;
 	margin: 0 auto;
+	max-width: 95%;
 }
 
 .answers ul {
 	list-style: none;
-	max-width: 95%;
 }
 
 .answer {
@@ -87,7 +96,6 @@ MAIN CONTENT
 	max-width: 95%;
 	padding: 10px;
 	margin: 12px auto;
-	margin: 10px;
 	display: none;
 	font-size: 1.25em;
 	background: rgb(168,53,58);
@@ -102,6 +110,10 @@ MAIN CONTENT
 
 .answer:hover {
 	background: #C4666A;
+}
+
+.answer:active {
+	background: #000;
 }
 
 .comment {
@@ -121,7 +133,7 @@ BACK BUTTON
 	text-decoration: none;
 	font-size: 1.5em;
 	width: 50px;
-	margin: 0 auto 15%;
+	margin: 0 auto 30px;
 	color: black;
 	display: block;
 }
