@@ -4,14 +4,15 @@
 
 4) Clone the git repository with the git app: https://github.com/devvmh/hackthesymphony
 
-5) Open a terminal and type these commands, one to a line, hitting Enter after each one:
+5) In the github app, right click on "hackthesymphony" and select "Open in Terminal". It will open a Terminal in the correct directory.
 
-    cd ~/Github/hackthesymphony
-    sudo -H easy_install pip
-    ./install-requirements.command
-    ./sync-database.command
-    ./run-server.command
+6) Enter the following commands, one to a line. Press Enter after each one.
 
-6) The terminal will show you error messages from the Python server, if any.
+    cd ~/hackthesymphony #or wherever your 
+    scripts/install-requirements.command
+    scripts/create-database.command
+    scripts/run-server.command
 
-7) Use a text editor (I recommend http://www.sublimetext.com/2) to edit the Javascript/CSS/other files as needed
+7) The terminal will show you error messages from the Python server, if any.
+
+8) Use a text editor (I recommend http://www.sublimetext.com/2) to edit the Javascript/CSS/other files as needed
