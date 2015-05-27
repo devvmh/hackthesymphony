@@ -28,8 +28,13 @@ def suggestions(request, pk):
   concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
   for session_answer in session_answer_list:
     ans = session_answer.answer.pk
+    print 'ans', ans
     for i in range(0,14):
-      concerts[i]['score'] += knowledge[ans][i+1]
+      print 'i', i
+      try:
+        concerts[i]['score'] += knowledge[ans][i+1]
+      except:
+        print 'fixme TODO: that answer or concert doesn\'t exist in array'
   concerts = sorted(concerts, key=lambda x: -x['score'])
   concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
 
