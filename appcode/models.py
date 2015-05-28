@@ -40,3 +40,10 @@ class Concert(Model):
   highlights = TextField(blank=True)
   def __unicode__(self):
     return self.title
+
+class ConcertAnswerScore(Model):
+  concert = ForeignKey(Concert)
+  answer = ForeignKey(Answer)
+  score = IntegerField()
+  def __unicode__(self):
+    return str(self.concert) + ' Ans:' + str(self.answer.pk) + ' Score:' + str(self.score)
