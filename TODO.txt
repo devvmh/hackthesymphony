@@ -1,6 +1,6 @@
 1) Handle reloading page and having persistent sessions -> probably need to use localstorage
 2) Add Backbone Views
 3) Stop using 666 and start using blank version of the column
-4) Concert to Answer mappings
+4) Concert to Answer mappings - actually use them in code
 5) Concert to Answer mapping interface
 

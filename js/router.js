@@ -20,20 +20,40 @@ function goToNextPage(answerObject) {
   });
 }//goToNextPage
 
+function showComment(comment) {
+  if (!comment) {
+    return;
+  }//if
+
+  //hidden by default
+  $('.question').before('<div class="comment">' + comment + '</div>');
+
+  var comment_length = comment.length * 50;
+  if (comment_length < 800) comment_length = 800;
+  $.when(
+    $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
+  ).then(function() {
+    $('.comment').remove();
+  });
+}//if
+
 function renderAnswersOnQuestionPage(answers) {
   $('.answers').html('');
   $.each(answers, function(index, answerObject) {
+    //grab info
     var answer = answerObject.attributes.answer;
     var id = answerObject.attributes.id;
-    var comment = answerObject.attributes.comment;
-    var new_question = answerObject.attributes.new_question;
-    new_question = new_question.replace(window.location.origin + '/api/', '');
+
+    //add the answer to the page
     var html = '<div class="answer answer-' + id + '">';
     html += '<a href="javascript:void(0);">' + answer + '</a>';
     html += '</div>';
     $('.answers').append(html);
+
+    //answer click handler
     $('.answer-' + id).click(function() {
-      $('.answer-' + id).unbind('click');
+      $('.answer').unbind('click');
+      var answer_clicked = ORCA.answers.get(id);
       $.when(
         $('.answer').fadeOut('slow'),
         $('.question').fadeOut('slow'),
@@ -41,23 +61,14 @@ function renderAnswersOnQuestionPage(answers) {
       ).then(function() {
         $('.question').html('');
         $('.question').show();
-        if (answerObject.attributes.comment) {
-          $('.question').before('<div class="comment">' + answerObject.attributes.comment + '</div>');
-        var comment_length = answerObject.attributes.comment.length*50;
-        if (comment_length < 800) comment_length = 800;
-          $.when(
-            $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
-          ).then(function() {
-            $('.comment').remove();
-            goToNextPage(answerObject);
-          });
-        } else {
-          goToNextPage(answerObject);
-        }//if
+        showComment(answer_clicked.attributes.comment);
+        goToNextPage(answerObject);
       });
     });
   });
-$('.answer').fadeIn('slow');
+
+  //once this is done, show answers so there's no delay
+  $('.answer').fadeIn('slow');
 }//renderAnswersOnQuestionPage
 
 ORCARouter = Backbone.Router.extend({
