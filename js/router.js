@@ -20,25 +20,24 @@ function goToNextPage(answerObject) {
   });
 }//goToNextPage
 
-function showComment(comment) {
-  if (!comment) {
-    return;
-  }//if
-
-  //hidden by default
-  $('.question').before('<div class="comment">' + comment + '</div>');
-
+function showComment(answerObject) {
+  var comment = answerObject.attributes.comment;
   var comment_length = comment.length * 50;
   if (comment_length < 800) comment_length = 800;
+
+  //hidden by default, but populate html
+  $('.question').before('<div class="comment">' + comment + '</div>');
+
+  //fade in, wait a bit, fade out, then remove it and go to next page
   $.when(
     $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
   ).then(function() {
     $('.comment').remove();
+    goToNextPage(answerObject);
   });
 }//if
 
 function renderAnswersOnQuestionPage(answers) {
-  $('.answers').html('');
   $.each(answers, function(index, answerObject) {
     //grab info
     var answer = answerObject.attributes.answer;
@@ -53,16 +52,21 @@ function renderAnswersOnQuestionPage(answers) {
     //answer click handler
     $('.answer-' + id).click(function() {
       $('.answer').unbind('click');
-      var answer_clicked = ORCA.answers.get(id);
       $.when(
         $('.answer').fadeOut('slow'),
         $('.question').fadeOut('slow'),
         $('.back-button a').fadeOut('slow')
       ).then(function() {
-        $('.question').html('');
-        $('.question').show();
-        showComment(answer_clicked.attributes.comment);
-        goToNextPage(answerObject);
+        //now that they're faded out, clear the old content and
+        //show the empty divs
+        $('.question').html('').show();
+        $('.answers').html('').show();
+        if (answerObject.attributes.comment) {
+          showComment(answerObject)
+          //goToNextPage(answerObject); //called by showComment
+        } else {
+          goToNextPage(answerObject);
+        }//if
       });
     });
   });
