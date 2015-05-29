@@ -1,6 +1,6 @@
-function goToNextPage(answerObject) {
-  var id = answerObject.attributes.id;
-  var new_question = answerObject.attributes.new_question;
+function goToNextPage(ans) {
+  var id = ans.attributes.id;
+  var new_question = ans.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
   if (new_question_id == "666") {
@@ -13,7 +13,7 @@ function goToNextPage(answerObject) {
     question: ORCA.session.attributes.current_question,
     answer: ORCA.answers.get(id).url(),
   });
-  ORCA.session.attributes.current_question = answerObject.attributes.new_question;
+  ORCA.session.attributes.current_question = ans.attributes.new_question;
   $.when(
     session_answer.save(),
     ORCA.session.save()
@@ -22,21 +22,21 @@ function goToNextPage(answerObject) {
   });
 }//goToNextPage
 
-function transitionToNextQuestion(answerObject) {
+function transitionToNextQuestion(ans) {
   $('.answer').unbind('click');
 
-  var comment = answerObject.attributes.comment;
+  var comment = ans.attributes.comment;
   var comment_length = comment.length * 50;
 
   //chain then calls to run animations in sequence
   $.when().then(function() {
-    $('.question, .answer, .back-button a').fadeOut('slow'),
+    $('.question, .answer, .back-button a').fadeOut('slow');
   }).then(function() {
     //clear the content for later
     $('.question').html('');
     $('.answers').html('');
   }).then(function() {
-    if (answerObject.attributes.comment) {
+    if (ans.attributes.comment) {
       //floor on value of comment_length
       if (comment_length < 800) comment_length = 800;
     
@@ -49,7 +49,7 @@ function transitionToNextQuestion(answerObject) {
       $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
     ).then(function() {
       $('.comment').remove(); //if it's even there
-      goToNextPage(answerObject);
+      goToNextPage(ans);
     });
   });
 }//if
@@ -73,23 +73,16 @@ ORCARouter = Backbone.Router.extend({
     //render question text
     q = ORCA.questions.get(id);
     $('.question').hide();
-    $('.question').html(q.attributes.question);
+    $('.question').html(ORCA.templates.question({question: q}));
     
     //render answers
-    $.each(q.answers(), function(index, answerObject) {
-      //grab info
-      var answer = answerObject.attributes.answer;
-      var id = answerObject.attributes.id;
-  
+    $.each(q.answers(), function(index, ans) {
       //add the answer to the page
-      var html = '<div class="answer answer-' + id + '">';
-      html += '<a href="javascript:void(0);">' + answer + '</a>';
-      html += '</div>';
-      $('.answers').append(html);
+      $('.answers').append(ORCA.templates.answer({answer: ans}));
   
       //answer click handler
-      $('.answer-' + id).click(function() {
-        transitionToNextQuestion(answerObject);
+      $('.answer-' + ans.attributes.id).click(function() {
+        transitionToNextQuestion(ans);
       });
     });
   
