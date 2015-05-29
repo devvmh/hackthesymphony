@@ -2,10 +2,12 @@ function goToNextPage(answerObject) {
   var id = answerObject.attributes.id;
   var new_question = answerObject.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
+
   if (new_question_id == "666") {
     window.location = '/suggestions/' + ORCA.session.attributes.id + '/';
     return;
   }//if
+
   var session_answer = new SessionAnswer({
     session: ORCA.session.url(),
     question: ORCA.session.attributes.current_question,
@@ -20,20 +22,37 @@ function goToNextPage(answerObject) {
   });
 }//goToNextPage
 
-function showComment(answerObject) {
+function transitionToNextQuestion(answerObject) {
+  $('.answer').unbind('click');
+
   var comment = answerObject.attributes.comment;
   var comment_length = comment.length * 50;
-  if (comment_length < 800) comment_length = 800;
 
-  //hidden by default, but populate html
-  $('.question').before('<div class="comment">' + comment + '</div>');
-
-  //fade in, wait a bit, fade out, then remove it and go to next page
-  $.when(
-    $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
-  ).then(function() {
-    $('.comment').remove();
-    goToNextPage(answerObject);
+  //chain then calls to run animations in sequence
+  $.when().then(function() {
+    $('.answer').fadeOut('slow'),
+    $('.question').fadeOut('slow'),
+    $('.back-button a').fadeOut('slow')
+  }).then(function() {
+    //clear the content for later
+    $('.question').html('');
+    $('.answers').html('');
+  }).then(function() {
+    if (answerObject.attributes.comment) {
+      //floor on value of comment_length
+      if (comment_length < 800) comment_length = 800;
+    
+      //hidden by default, but populate html
+      $('.question').before('<div class="comment">' + comment + '</div>');
+    }//if
+  }).then(function() {
+    //fade in, wait a bit, fade out, then remove it and go to next page
+    $.when(
+      $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
+    ).then(function() {
+      $('.comment').remove(); //if it's even there
+      goToNextPage(answerObject);
+    });
   });
 }//if
 
@@ -51,23 +70,7 @@ function renderAnswersOnQuestionPage(answers) {
 
     //answer click handler
     $('.answer-' + id).click(function() {
-      $('.answer').unbind('click');
-      $.when(
-        $('.answer').fadeOut('slow'),
-        $('.question').fadeOut('slow'),
-        $('.back-button a').fadeOut('slow')
-      ).then(function() {
-        //now that they're faded out, clear the old content and
-        //show the empty divs
-        $('.question').html('').show();
-        $('.answers').html('').show();
-        if (answerObject.attributes.comment) {
-          showComment(answerObject)
-          //goToNextPage(answerObject); //called by showComment
-        } else {
-          goToNextPage(answerObject);
-        }//if
-      });
+      transitionToNextQuestion(answerObject);
     });
   });
 
@@ -77,6 +80,7 @@ function renderAnswersOnQuestionPage(answers) {
 
 ORCARouter = Backbone.Router.extend({
   initialize: function(options) {
+    //set up history storage for use with back button
     this.history = [];
     this.listenTo(this, 'route', function(name, args) {
       this.history.push({
