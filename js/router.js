@@ -30,9 +30,7 @@ function transitionToNextQuestion(answerObject) {
 
   //chain then calls to run animations in sequence
   $.when().then(function() {
-    $('.answer').fadeOut('slow'),
-    $('.question').fadeOut('slow'),
-    $('.back-button a').fadeOut('slow')
+    $('.question, .answer, .back-button a').fadeOut('slow'),
   }).then(function() {
     //clear the content for later
     $('.question').html('');
@@ -56,28 +54,6 @@ function transitionToNextQuestion(answerObject) {
   });
 }//if
 
-function renderAnswersOnQuestionPage(answers) {
-  $.each(answers, function(index, answerObject) {
-    //grab info
-    var answer = answerObject.attributes.answer;
-    var id = answerObject.attributes.id;
-
-    //add the answer to the page
-    var html = '<div class="answer answer-' + id + '">';
-    html += '<a href="javascript:void(0);">' + answer + '</a>';
-    html += '</div>';
-    $('.answers').append(html);
-
-    //answer click handler
-    $('.answer-' + id).click(function() {
-      transitionToNextQuestion(answerObject);
-    });
-  });
-
-  //once this is done, show answers so there's no delay
-  $('.answer').fadeIn('slow');
-}//renderAnswersOnQuestionPage
-
 ORCARouter = Backbone.Router.extend({
   initialize: function(options) {
     //set up history storage for use with back button
@@ -98,13 +74,26 @@ ORCARouter = Backbone.Router.extend({
     q = ORCA.questions.get(id);
     $('.question').hide();
     $('.question').html(q.attributes.question);
-    $('.question').fadeIn('slow');
     
     //render answers
-    renderAnswersOnQuestionPage(q.answers());
-
+    $.each(q.answers(), function(index, answerObject) {
+      //grab info
+      var answer = answerObject.attributes.answer;
+      var id = answerObject.attributes.id;
+  
+      //add the answer to the page
+      var html = '<div class="answer answer-' + id + '">';
+      html += '<a href="javascript:void(0);">' + answer + '</a>';
+      html += '</div>';
+      $('.answers').append(html);
+  
+      //answer click handler
+      $('.answer-' + id).click(function() {
+        transitionToNextQuestion(answerObject);
+      });
+    });
+  
     //set up back button
-    $('.back-button a').fadeIn('slow');
     $('.back-button a').unbind('click');
     $('.back-button a').click(function() {
       //pop current page, then pop previous page to use;
@@ -115,5 +104,8 @@ ORCARouter = Backbone.Router.extend({
         ORCA.router.navigate(ORCA.router.history.pop().fragment, {trigger: true});
       }//if
     });
+
+    //once this is done, show everything together
+    $('.question, .answer, .back-button a').fadeIn('slow');
   },
 });
