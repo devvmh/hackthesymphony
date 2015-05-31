@@ -15,10 +15,12 @@ from .serializers import *
 def index(request):
   return render(request, 'index.html', {
     'ip_address': '192.168.1.99',
+    'body_classes': 'index main-quiz',
   })
 
 def what_is_this(request):
   return render(request, 'what-is-this.html', {
+    'body_classes': 'what-is-this',
   })
 
 def suggestions(request, pk):
@@ -40,6 +42,7 @@ def suggestions(request, pk):
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
+    'body_classes': 'suggestions',
   })
 
 class QuestionViewSet(viewsets.ModelViewSet):
@@ -61,6 +64,36 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
+
+@login_required
+def concert_scores_edit_table(request):
+  concert_list = Concert.objects.all()
+  answer_list = Answer.objects.all()
+
+  #generate an array filled with scores and blank entries
+  score_list = {}
+  for answer in answer_list:
+    #this is the "rows": each answer maps to a bunch of concerts
+    aindex = str(answer.pk)
+    #create a new python dictionary to store the concert scores for this answer
+    score_list[aindex] = {}
+    for concert in concert_list:
+      cindex = str(concert.pk)
+      try:
+        #if the score exists, grab it
+        score_list[aindex][cindex] = ConcertAnswerScore.objects.get(answer=answer, concert=concert).score
+      except:
+        #if the score doesn't exist, make it exist and equal to 0
+        mapping = ConcertAnswerScore(answer=answer, concert=concert, score=0)
+        mapping.save()
+        score_list[aindex][cindex] = 0
+
+  return render(request, 'concert_scores_edit_table.html', {
+    'concert_list': concert_list,
+    'answer_list': answer_list,
+    'score_list': score_list,
+    'body_classes': 'suggestions quiz-complete',
+  })
 
 def get_answer_concert_array():
   #this is indexed by answer and then by concert
