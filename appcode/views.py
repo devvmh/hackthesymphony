@@ -62,6 +62,29 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
 
+@login_required
+def concert_scores_edit_table(request):
+  concert_list = Concert.objects.all()
+  answer_list = Answer.objects.all()
+
+  #generate an array filled with scores and blank entries
+  score_list = {}
+  for answer in answer_list:
+    aindex = str(answer.pk)
+    score_list[aindex] = {}
+    for concert in concert_list:
+      cindex = str(concert.pk)
+      try:
+        score_list[cindex] = ConcertAnswerScore.objects.get(answer=answer, concert=concert).score
+      except:
+        score_list[cindex] = ''
+
+  return render(request, 'concert_scores_edit_table.html', {
+    'concert_list': concert_list,
+    'answer_list': answer_list,
+    'score_list': score_list,
+  })
+
 def get_answer_concert_array():
   #this is indexed by answer and then by concert
   rows = []

@@ -18,4 +18,5 @@ urlpatterns = patterns('appcode.views',
   url(r'suggestions/(?P<pk>\d+)/$', 'suggestions', name='suggestions'),
   url(r'^api/', include(router.urls)),
   url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+  url(r'^scores/$', 'concert_scores_edit_table', name='concert-scores-edit-table'),
 )

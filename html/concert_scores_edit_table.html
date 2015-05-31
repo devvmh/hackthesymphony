@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load appcode_extras %}
+
+{% block main %}
+<table><thead>
+  <th>Answer</th>
+  {% for concert in concert_list %}
+    <th>{{concert}}</th>
+  {% endfor %}
+</thead><tbody>
+  {% for answer in answer_list %}
+    <tr>
+      <td>{{answer.answer}} ({{answer.pk}})</td>
+      {% for concert in concert_list %}
+        {% with answer.pk as aindex %}
+        {% with concert.pk as cindex %}
+        <td>{{score_list | get_item:answer.pk | get_item:concert.pk }}</td>
+        {% endwith %} {% endwith %}
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</tbody></table>
+{% endblock main %}
