@@ -52,7 +52,20 @@ function transitionToNextQuestion(ans) {
       goToNextPage(ans);
     });
   });
-}//if
+} //transitionToNextQuestion
+
+function backButtonOnClick() {
+      //only use back button if not on first page
+      if (ORCA.router.history.length > 1) {
+        //clear question and answer
+        $('.question').html('');
+        $('.answers').html('');
+        //pop current page, then pop previous page to use;
+        //navigate will add the previous page back on
+        ORCA.router.history.pop();
+        ORCA.router.navigate(ORCA.router.history.pop().fragment, {trigger: true});
+      }//if
+} //backButtonOnClick
 
 ORCARouter = Backbone.Router.extend({
   initialize: function(options) {
@@ -88,14 +101,8 @@ ORCARouter = Backbone.Router.extend({
   
     //set up back button
     $('.back-button a').unbind('click');
-    $('.back-button a').click(function() {
-      //pop current page, then pop previous page to use;
-      //navigate will add the previous page back on
-      //only use back button if not on first page
-      if (ORCA.router.history.length > 1) {
-        ORCA.router.history.pop();
-        ORCA.router.navigate(ORCA.router.history.pop().fragment, {trigger: true});
-      }//if
+    $('.back-button a').click(function() 
+        {backButtonOnClick();
     });
 
     //once this is done, show everything together
