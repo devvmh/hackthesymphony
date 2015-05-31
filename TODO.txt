@@ -1,6 +1,8 @@
-1) Handle reloading page and having persistent sessions -> probably need to use localstorage
-2) Add Backbone Views
-3) Stop using 666 and start using blank version of the column
-4) Concert to Answer mappings - actually use them in code
-5) Concert to Answer mapping interface
+1) CSS Selectors by page
+2) Concert to Answer mapping interface
+3) Concert to Answer mappings - actually use them in code
+4) Pro tips and comments are different and have different css
 
+5) Handle reloading page and having persistent sessions -> probably need to use localstorage
+6) Stop using 666 and start using blank version of the column
+7) Add Backbone Views

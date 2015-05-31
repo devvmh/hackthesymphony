@@ -1,0 +1,30 @@
+# Copy this file to localconfig.py and then edit the values in order to set up for production use
+# If you don't have a localconfig.py file, it should fall back to these default values anyway
+
+# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = 'CHANGEME'
+DEBUG = True
+ALLOWED_HOSTS = []
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+  }
+}
+
+# Production settings sample:
+#   change the secret key, enter your real domain name(s)
+#
+# SECRET_KEY = gpa+w4w03u3)8u_#^*ujhm3aqs_b3___-%g#+h=-(if_e(aiwh'
+# DEBUG = False
+# ALLOWED_HOSTS = ['howdoisymphony.ca']
+# DATABASES = {
+#   'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'HOST': 'localhost',
+#     'NAME': 'database_name_goes_here',
+#     'USER': 'database_user_name_goes_here',
+#     'PASSWORD': 'database_password_goes_here',
+# },
+

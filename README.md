@@ -8,7 +8,7 @@
 
 6) Enter the following commands, one to a line. Press Enter after each one.
 
-    cd ~/hackthesymphony #or wherever your 
+    cd ~/hackthesymphony #or wherever your app is
     scripts/install-requirements.command
     scripts/create-database.command
     scripts/run-server.command
