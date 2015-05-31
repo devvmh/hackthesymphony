@@ -42,7 +42,7 @@ def suggestions(request, pk):
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
-    'body_classes': 'suggestions',
+    'body_classes': 'suggestions quiz-complete',
   })
 
 class QuestionViewSet(viewsets.ModelViewSet):
@@ -66,7 +66,7 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     serializer_class = SessionAnswerSerializer
 
 @login_required
-def concert_scores_edit_table(request):
+def scores_edit_table(request):
   concert_list = Concert.objects.all()
   answer_list = Answer.objects.all()
 
@@ -92,7 +92,7 @@ def concert_scores_edit_table(request):
     'concert_list': concert_list,
     'answer_list': answer_list,
     'score_list': score_list,
-    'body_classes': 'suggestions quiz-complete',
+    'body_classes': 'scores scores-edit scores-edit-table',
   })
 
 def get_answer_concert_array():
