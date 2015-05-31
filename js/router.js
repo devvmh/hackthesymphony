@@ -92,6 +92,9 @@ ORCARouter = Backbone.Router.extend({
       //pop current page, then pop previous page to use;
       //navigate will add the previous page back on
       //only use back button if not on first page
+      //clear question and answer before all of this; Ryan testing
+      $('.question').html('');
+      $('.answers').html('');
       if (ORCA.router.history.length > 1) {
         ORCA.router.history.pop();
         ORCA.router.navigate(ORCA.router.history.pop().fragment, {trigger: true});
