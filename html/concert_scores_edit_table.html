@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load appcode_extras %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static "scores.css" %}" />
+{% endblock css %}
+
 {% block main %}
 <table><thead>
   <th>Answer</th>
