@@ -54,12 +54,16 @@ function transitionToNextQuestion(ans) {
   });
 } //transitionToNextQuestion
 
+function clearPage() {
+        $('.question').html('');
+        $('.answers').html('');
+} //clearPage
+
 function backButtonOnClick() {
       //only use back button if not on first page
       if (ORCA.router.history.length > 1) {
         //clear question and answer
-        $('.question').html('');
-        $('.answers').html('');
+        clearPage();
         //pop current page, then pop previous page to use;
         //navigate will add the previous page back on
         ORCA.router.history.pop();
