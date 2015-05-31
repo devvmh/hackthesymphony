@@ -70,14 +70,20 @@ def concert_scores_edit_table(request):
   #generate an array filled with scores and blank entries
   score_list = {}
   for answer in answer_list:
+    #this is the "rows": each answer maps to a bunch of concerts
     aindex = str(answer.pk)
+    #create a new python dictionary to store the concert scores for this answer
     score_list[aindex] = {}
     for concert in concert_list:
       cindex = str(concert.pk)
       try:
-        score_list[cindex] = ConcertAnswerScore.objects.get(answer=answer, concert=concert).score
+        #if the score exists, grab it
+        score_list[aindex][cindex] = ConcertAnswerScore.objects.get(answer=answer, concert=concert).score
       except:
-        score_list[cindex] = ''
+        #if the score doesn't exist, make it exist and equal to 0
+        mapping = ConcertAnswerScore(answer=answer, concert=concert, score=0)
+        mapping.save()
+        score_list[aindex][cindex] = 0
 
   return render(request, 'concert_scores_edit_table.html', {
     'concert_list': concert_list,
