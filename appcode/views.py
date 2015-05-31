@@ -88,7 +88,7 @@ def scores_edit_table(request):
         mapping.save()
         score_list[aindex][cindex] = 0
 
-  return render(request, 'concert_scores_edit_table.html', {
+  return render(request, 'scores_edit_table.html', {
     'concert_list': concert_list,
     'answer_list': answer_list,
     'score_list': score_list,
