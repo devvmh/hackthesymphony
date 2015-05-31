@@ -18,13 +18,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gpa+w4w03u3)8u_#^*ujhm3aqs_b3___-%g#+h=-(if_e(aiwh'
+try:
+  from localconfig import SECRET_KEY
+  from localconfig import DEBUG
+  from localconfig import ALLOWED_HOSTS
+except:
+  SECRET_KEY = 'gpa+w4w03u3)8u_#^*ujhm3aqs_b3___-%g#+h=-(if_e(aiwh'
+  DEBUG = True
+  ALLOWED_HOSTS = []
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -73,12 +75,15 @@ WSGI_APPLICATION = 'djangostuff.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
+try:
+  from localconfig import DATABASES
+except:
+  DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+      'ENGINE': 'django.db.backends.sqlite3',
+      'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
+  }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
