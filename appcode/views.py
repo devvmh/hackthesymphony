@@ -123,7 +123,7 @@ def scores_edit_table_submit(request):
     #update the score
     if oldscore != mapping.score:
       mapping.save()
-      messages.success(request, 'Updated score for mapping #' + str(mapping.pk))
+      messages.success(request, 'Updated score for mapping #' + str(mapping.pk) + ', which deals with Answer "' + str(mapping.answer.answer) + '" and Concert "' + str(mapping.concert.title) + '".')
 
   return redirect('scores-edit-table')
 
