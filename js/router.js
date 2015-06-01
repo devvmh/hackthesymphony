@@ -95,8 +95,9 @@ ORCARouter = Backbone.Router.extend({
   renderQuestionPage(id) {
     //render question text
     q = ORCA.questions.get(id);
-    $('.question').html(ORCA.templates.question({question: q}));
     clearPage();
+    $('.question').html(ORCA.templates.question({question: q}));
+
     
     //render answers
     $.each(q.answers(), function(index, ans) {
