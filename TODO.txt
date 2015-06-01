@@ -1,8 +1,6 @@
-1) CSS Selectors by page
-2) Concert to Answer mapping interface
-3) Concert to Answer mappings - actually use them in code
-4) Pro tips and comments are different and have different css
+1) Concert to Answer mappings - actually use them in code
+2) Pro tips and comments are different and have different css
 
-5) Handle reloading page and having persistent sessions -> probably need to use localstorage
-6) Stop using 666 and start using blank version of the column
-7) Add Backbone Views
+3) Handle reloading page and having persistent sessions -> probably need to use localstorage
+4) Stop using 666 and start using blank version of the column
+5) Add Backbone Views
