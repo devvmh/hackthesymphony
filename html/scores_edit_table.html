@@ -7,7 +7,9 @@
 {% endblock css %}
 
 {% block main %}
-<form method="POST">
+<form method="POST" action="/scores/submit/">
+{% csrf_token %}
+<input type="submit" value="Submit">
 <table class="table table-striped table-hover table-bordered table-condensed table-responsive"><thead>
   <th>Answer</th>
   {% for concert in concert_list %}
@@ -19,9 +21,9 @@
       <td>{{answer.answer}} ({{answer.pk}})</td>
       {% for concert in concert_list %}
         {% with score=score_list|get_item:answer.pk|get_item:concert.pk %}
-          <td {% if score %}class="success"{% endif %}>
-            <input name="mapping-a{{answer.pk}}-c{{concert.pk}}" 
-                   value="{{score}}"
+          <td {% if score.score %}class="success"{% endif %}>
+            <input name="mapping-{{score.pk}}"
+                   value="{{score.score}}"
                    size="3" />
           </td>
         {% endwith %}
@@ -29,5 +31,6 @@
     </tr>
   {% endfor %}
 </tbody></table>
+<input type="submit" value="Submit">
 </form>
 {% endblock main %}

@@ -19,4 +19,5 @@ urlpatterns = patterns('appcode.views',
   url(r'^api/', include(router.urls)),
   url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
   url(r'^scores/$', 'scores_edit_table', name='scores-edit-table'),
+  url(r'^scores/submit/$', 'scores_edit_table_submit', name='scores-edit-table-submit'),
 )

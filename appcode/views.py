@@ -3,9 +3,11 @@ from django.contrib.auth.decorators import login_required
 from django.core import serializers
 from django.core.urlresolvers import reverse
 
-from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpResponseForbidden
+from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpResponseForbidden, HttpResponseNotAllowed
 from django.shortcuts import get_object_or_404, get_list_or_404, render, redirect
 from django.views.generic import DetailView, UpdateView, ListView
+
+import re
 
 from rest_framework import viewsets
 
@@ -81,12 +83,12 @@ def scores_edit_table(request):
       cindex = str(concert.pk)
       try:
         #if the score exists, grab it
-        score_list[aindex][cindex] = ConcertAnswerScore.objects.get(answer=answer, concert=concert).score
+        mapping = ConcertAnswerScore.objects.get(answer=answer, concert=concert)
       except:
         #if the score doesn't exist, make it exist and equal to 0
         mapping = ConcertAnswerScore(answer=answer, concert=concert, score=0)
         mapping.save()
-        score_list[aindex][cindex] = 0
+      score_list[aindex][cindex] = mapping
 
   return render(request, 'scores_edit_table.html', {
     'concert_list': concert_list,
@@ -94,6 +96,36 @@ def scores_edit_table(request):
     'score_list': score_list,
     'body_classes': 'scores scores-edit scores-edit-table',
   })
+
+@login_required
+def scores_edit_table_submit(request):
+  if not request.POST:
+    return HttpResponseNotAllowed
+  
+  #check each key in the post, and if it's an integer then update the score
+  #the keys must be in the form mapping-<number> to work
+  for key in request.POST:
+    #get pk
+    r = re.compile('mapping-(\d*)')
+    if r.match(key) is None:
+      continue
+    mapping_pk = int(key.replace('mapping-', ''))
+
+    #make sure that pk exists and the input value is a number
+    try:
+      mapping = ConcertAnswerScore.objects.get(pk=mapping_pk)
+      oldscore = mapping.score
+      mapping.score = int(request.POST[key])
+    except:
+      messages.error(request, 'error on ' + request.POST[key])
+      continue
+
+    #update the score
+    if oldscore != mapping.score:
+      mapping.save()
+      messages.success(request, 'Updated score for mapping #' + str(mapping.pk))
+
+  return redirect('scores-edit-table')
 
 def get_answer_concert_array():
   #this is indexed by answer and then by concert
