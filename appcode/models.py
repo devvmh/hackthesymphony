@@ -33,7 +33,7 @@ class SessionAnswer(Model):
     return str(self.session) + " answered '" + str(self.answer) + "' to '" + str(self.question) + "'."
 
 class Concert(Model):
-  title = CharField(max_length=255)
+  title = CharField(max_length=2550)
   date = DateField()
   image = URLField()
   description = TextField()
