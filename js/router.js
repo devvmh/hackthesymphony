@@ -36,22 +36,28 @@ function transitionToNextQuestion(ans) {
     $('.question').html('');
     $('.answers').html('');
   }).then(function() {
-    if (ans.attributes.comment) {
+    if (ans.attributes.comment) 
+    
+    $.when().then(function() {
       //floor on value of comment_length
       if (comment_length < 800) comment_length = 800;
     
       //hidden by default, but populate html
       $('.question').before('<div class="comment">' + comment + '</div>');
-    }//if
+    }).then(function() {
+      
+        //fade in, wait a bit, fade out, then remove it and go to next page
+        $.when().then(function() {
+            $('.comment').fadeIn().delay(comment_length).fadeOut('slow');
+        }).then(function() {
+            $('.comment').remove(); //if it's even there
+        });
+    })
+      
+      
   }).then(function() {
-    //fade in, wait a bit, fade out, then remove it and go to next page
-    $.when(
-      $('.comment').fadeIn().delay(comment_length).fadeOut('slow')
-    ).then(function() {
-      $('.comment').remove(); //if it's even there
       goToNextPage(ans);
     });
-  });
 } //transitionToNextQuestion
 
 function clearPage() {
