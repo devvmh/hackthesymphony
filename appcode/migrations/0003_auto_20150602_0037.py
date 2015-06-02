@@ -14,11 +14,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='answer',
             name='protip',
-            field=models.CharField(max_length=2550, null=True, blank=True),
+            field=models.CharField(max_length=2550, blank=True),
         ),
         migrations.AlterField(
             model_name='answer',
             name='comment',
-            field=models.CharField(max_length=2550, null=True, blank=True),
+            field=models.CharField(max_length=2550, blank=True),
         ),
     ]
