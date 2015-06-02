@@ -123,9 +123,13 @@ MAIN CONTENT
 	background: #000;
 }
 
+.protip,
 .comment {
   display: none;
-  min-height: 500px;
+}
+
+.protip {
+  font-weight: bold;
 }
 
 /**********************************************************

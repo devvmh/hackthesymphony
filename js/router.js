@@ -42,7 +42,7 @@ function popUpComment(ans, dequeuer) {
     var reading_length = comment.length * 50;
     if (reading_length < 800) comment_length = 800;
 
-    var protip = ans.attributes.comment;
+    var protip = ans.attributes.protip;
     var protip_length = protip.length * 50;
     if (protip_length > reading_length) reading_length = protip_length;
 
