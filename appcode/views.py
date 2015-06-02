@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpRespo
 from django.shortcuts import get_object_or_404, get_list_or_404, render, redirect
 from django.views.generic import DetailView, UpdateView, ListView
 
-import re
+import re, random
 
 from rest_framework import viewsets
 
@@ -26,21 +26,26 @@ def what_is_this(request):
   })
 
 def suggestions(request, pk):
+  #grab the session and its answers
   session = get_object_or_404(Session, pk=pk)
   session_answer_list = SessionAnswer.objects.filter(session=session.pk)
-  knowledge = get_answer_concert_array()
-  concerts = [{'pk': x+1, 'score': 0} for x in range(0,14)]
+
+  #set up a dict of the scores for each concert
+  concert_scores = {}
+  for concert in Concert.objects.all():
+    concert_scores[str(concert.pk)] = {'pk': concert.pk, 'score': 0}
+
+  #for each answer the user provided, add scores for each relevant concert
   for session_answer in session_answer_list:
-    ans = session_answer.answer.pk
-    print 'ans', ans
-    for i in range(0,14):
-      print 'i', i
-      try:
-        concerts[i]['score'] += knowledge[ans][i+1]
-      except:
-        print 'fixme TODO: that answer or concert doesn\'t exist in array'
-  concerts = sorted(concerts, key=lambda x: -x['score'])
-  concert_list = [Concert.objects.get(pk=x['pk']) for x in concerts[:3]]
+    for concert in Concert.objects.all():
+      concert_scores[str(concert.pk)]['score'] += get_score(session_answer.answer, concert)
+
+  #sort the concerts by score in descending order; grab the top 3
+  #random.shuffle means that ties will be randomized
+  concert_scores = [concert_scores[x] for x in concert_scores]
+  random.shuffle(concert_scores)
+  concert_scores = sorted(concert_scores, key=lambda x: -x['score'])
+  concert_list = [Concert.objects.get(pk=x['pk']) for x in concert_scores[:3]]
 
   return render(request, 'suggestions.html', {
     'concert_list': concert_list,
@@ -127,37 +132,10 @@ def scores_edit_table_submit(request):
 
   return redirect('scores-edit-table')
 
-def get_answer_concert_array():
-  #this is indexed by answer and then by concert
-  rows = []
-  rows.append([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])
-  rows.append([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-  rows.append([2,0,0,0,1,0,0,0,0,0,0,0,0,0,0])
-  rows.append([3,0,0,0,0,0,0,0,0,0,0,0,0,1,0])
-  rows.append([4,1,0,1,0,0,1,0,0,0,1,0,0,0,0])
-  rows.append([5,0,0,0,0,0,0,0,1,1,0,1,0,1,0])
-  rows.append([6,0,0,0,0,0,0,0,0,-1,1,-1,0,0,-1])
-  rows.append([7,1,1,0,1,0,1,0,1,0,1,0,0,0,1])
-  rows.append([8,0,1,1,1,0,1,0,0,0,1,0,0,0,0])
-  rows.append([9,1,-1,0,0,1,0,2,2,2,1,2,0,1,2])
-  rows.append([10,1,2,0,1,1,1,0,1,0,1,0,0,0,0])
-  rows.append([11,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-  rows.append([12,0,0,0,0,0,0,0,0,0,0,0,4,1,0])
-  rows.append([13,0,0,2,0,0,0,0,0,0,0,0,4,1,0])
-  rows.append([14,0,1,1,0,0,1,0,1,0,1,1,0,1,0])
-  rows.append([15,1,1,1,1,0,1,1,1,0,2,1,0,1,0])
-  rows.append([16,0,0,0,0,0,0,0,1,2,0,2,0,1,1])
-  rows.append([17,0,1,0,1,0,1,0,0,-1,0,-1,1,0,0])
-  rows.append([18,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-  rows.append([19,1,0,0,0,1,0,1,1,1,0,1,0,0,1])
-  rows.append([20,0,0,0,0,0,0,0,1,2,0,2,0,1,1])
-  rows.append([21,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-  rows.append([22,0,0,0,0,0,0,3,0,0,0,0,0,0,0])
-  rows.append([23,0,3,0,0,0,0,0,0,0,0,0,0,0,0])
-  rows.append([24,2,0,0,0,3,0,0,0,0,0,0,0,0,0])
-  rows.append([25,0,0,0,3,0,0,0,0,0,0,0,0,0,0])
-  rows.append([26,0,0,0,0,0,0,0,0,3,0,3,0,0,0])
-  rows.append([27,0,0,2,0,0,1,0,0,0,0,0,2,1,0])
-  rows.append([28,1,1,1,2,1,2,1,0,0,2,0,0,1,0])
-  rows.append([29,0,0,0,0,1,0,1,0,2,0,2,0,1,1])
-  return rows 
+def get_score(answer, concert):
+  try:
+    mapping = ConcertAnswerScore.objects.get(answer=answer, concert=concert)
+    return mapping.score
+  except:
+    print "Problem retrieving score mapping for concert=" + str(concert.pk) + " and answer=" + str(answer.pk) + "; returning 0."
+    return 0
