@@ -35,9 +35,10 @@ class SessionAnswer(Model):
 class Concert(Model):
   title = CharField(max_length=2550)
   date = DateField()
-  image = URLField()
   description = TextField()
-  highlights = TextField(blank=True)
+  highlights = TextField(blank=True, null=True)
+  image = URLField(blank=True, null=True)
+  youtube_embed_link = URLField(blank=True, null=True)
   def __unicode__(self):
     return self.title
 
