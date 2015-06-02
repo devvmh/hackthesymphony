@@ -10,7 +10,9 @@ function backButtonOnClick() {
 
 function answerOnClick(ans) {
   $('.answer').unbind('click');
-  popUpComment(ans);
+  $(document).queue(function() {
+    popUpComment(ans, this);
+  });
   goToNextPage(ans);
 }//answerOnClick
 
@@ -22,27 +24,24 @@ function clearPage() {
 function fadePage() {
   $('.question, .answers, .back-button a').fadeOut('slow');
   $('.question, .answers').html('');
-  $('.comment').remove();
 }//fadePage
 
-function popUpComment(ans) {
+function popUpComment(ans, dequeuer) {
   if (!ans.attributes.comment) {
+    $(dequeuer).dequeue();
     return;
   }
-  fadePage();
-  var comment = ans.attributes.comment;
-  var comment_length = comment.length * 50;
-  if (comment_length < 800) comment_length = 800;
 
-  //chain then calls to run animations in sequence
-  //hidden by default, but populate html
-  $('.question').before(ORCA.templates.comment({answer: ans}));
-  $.when().then(function() {
-    $('.comment').fadeIn().delay(comment_length);
-  }).then(function() {
-    $('.comment').fadeOut('slow').delay(0);
-  }).then(function() {
-    $('.comment').remove();
+  $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
+    var comment = ans.attributes.comment;
+    var comment_length = comment.length * 50;
+    if (comment_length < 800) comment_length = 800;
+
+    //chain then calls to run animations in sequence
+    //hidden by default, but populate html
+    $('.question').before(ORCA.templates.comment({answer: ans}))
+    $('.comment').fadeIn().delay(comment_length).fadeOut('slow');
+    $(dequeuer).dequeue();
   });
 }//answerOnClick
 
@@ -87,28 +86,32 @@ ORCARouter = Backbone.Router.extend({
   renderQuestionPage(id) {
     //render question text
     q = ORCA.questions.get(id);
-    clearPage();
-    $('.question').html(ORCA.templates.question({question: q}));
-    
-    //render answers
-    $.each(q.answers(), function(index, ans) {
-      //add the answer to the page
-      $('.answers').append(ORCA.templates.answer({answer: ans}));
-  
-      //answer click handler
-      $('.answer-' + ans.attributes.id).click(function() {
-        answerOnClick(ans);
-      });
-    });
-  
-    //set up back button
-    $('.back-button a').unbind('click');
-    $('.back-button a').click(function() {
-      backButtonOnClick();
-    });
 
-    //once this is done, show everything together
-    $('.question, .answers, .back-button a').fadeIn('slow');
+    $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
+
+      $('.question, .answers').html('');
+      $('.question').html(ORCA.templates.question({question: q}));
+     
+      //render answers
+      $.each(q.answers(), function(index, ans) {
+        //add the answer to the page
+        $('.answers').append(ORCA.templates.answer({answer: ans}));
+     
+        //answer click handler
+        $('.answer-' + ans.attributes.id).click(function() {
+          answerOnClick(ans);
+        });
+      });
+     
+      //set up back button
+      $('.back-button a').unbind('click');
+      $('.back-button a').click(function() {
+        backButtonOnClick();
+      });
+ 
+      //once this is done, show everything together
+      $('.question, .answers, .back-button a').fadeIn('slow');
+    });
   },
 });
 
