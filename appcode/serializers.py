@@ -9,7 +9,7 @@ class QuestionSerializer(serializers.HyperlinkedModelSerializer):
 class AnswerSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Answer
-    fields = ('id', 'old_question', 'answer', 'new_question', 'redirect_url_if_no_new_question', 'comment')
+    fields = ('id', 'old_question', 'answer', 'new_question', 'redirect_url_if_no_new_question', 'comment', 'protip')
 
 class SessionSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:

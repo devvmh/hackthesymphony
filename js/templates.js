@@ -14,5 +14,8 @@ ORCA.templates.question = _.template(
   '{{ question.attributes.question }}'
 );
 ORCA.templates.comment = _.template(
-  '<div class="comment comment-comment">{{ answer.attributes.comment }}</div>'
+  '<div class="comment">{{ answer.attributes.comment }}</div>'
+);
+ORCA.templates.protip = _.template(
+  '<div class="protip">{{ answer.attributes.protip }}</div>'
 );

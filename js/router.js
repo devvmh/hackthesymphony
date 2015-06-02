@@ -28,7 +28,7 @@ function fadePage() {
 }//fadePage
 
 function popUpComment(ans, dequeuer) {
-  if (!ans.attributes.comment) {
+  if (!ans.attributes.comment && !ans.attributes.protip) {
     $(dequeuer).dequeue();
     return;
   }
@@ -39,17 +39,22 @@ function popUpComment(ans, dequeuer) {
   $('.question, .answers, .back-button a').fadeOut('slow')
   .promise().done(function() {
     var comment = ans.attributes.comment;
-    var comment_length = comment.length * 50;
-    if (comment_length < 800) comment_length = 800;
+    var reading_length = comment.length * 50;
+    if (reading_length < 800) comment_length = 800;
+
+    var protip = ans.attributes.comment;
+    var protip_length = protip.length * 50;
+    if (protip_length > reading_length) reading_length = protip_length;
 
     //chain then calls to run animations in sequence
     //hidden by default, but populate html
     $('.question').before(ORCA.templates.comment({answer: ans}));
-    $('.comment').fadeIn().delay(comment_length)
+    $('.question').before(ORCA.templates.protip({answer: ans}));
+    $('.comment, .protip').fadeIn().delay(reading_length)
   .promise().done(function() {
-    $('.comment').fadeOut('slow')
+    $('.comment, .protip').fadeOut('slow')
   .promise().done(function() {
-    $('.comment').remove();
+    $('.comment, .protip').remove();
     $(dequeuer).dequeue();
   }); }); });
 }//answerOnClick
@@ -60,7 +65,9 @@ function goToNextPage(ans) {
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
   if (new_question_id == "666") {
-    window.location = '/suggestions/' + ORCA.session.attributes.id + '/';
+    $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
+      window.location = '/suggestions/' + ORCA.session.attributes.id + '/';
+    });
     return;
   }//if
 
