@@ -88,6 +88,7 @@ MAIN CONTENT
 	width: 95%;
 	margin: 0 auto;
 	max-width: 95%;
+    display: none;
 }
 
 .answers ul {
@@ -102,7 +103,6 @@ MAIN CONTENT
 	max-width: 95%;
 	padding: 10px;
 	margin: 12px auto;
-	display: none;
 	font-size: 1.25em;
 	background: rgb(168,53,58);
 	text-align: center;

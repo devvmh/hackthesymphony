@@ -13,3 +13,6 @@ ORCA.templates.answer = _.template(
 ORCA.templates.question = _.template(
   '{{ question.attributes.question }}'
 );
+ORCA.templates.comment = _.template(
+  '<div class="comment comment-comment">{{ answer.attributes.comment }}</div>'
+);

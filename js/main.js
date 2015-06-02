@@ -20,6 +20,10 @@ $(document).ready(function() {
     ORCA.router = new ORCARouter();
     Backbone.history.start();
     ORCA.router.navigate('questions/1', {trigger: true});
-    ORCA.session.save();
+    ORCA.session.save({
+      'error': function() {
+        window.location = 'api-auth/login?next=/';
+      },
+    });
   });
 });
