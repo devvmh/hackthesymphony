@@ -10,10 +10,11 @@ function backButtonOnClick() {
 
 function answerOnClick(ans) {
   $('.answer').unbind('click');
-  $(document).queue(function() {
+  $(document).delay(0).queue(function() {
     popUpComment(ans, this);
+  }).promise().done(function() {
+    goToNextPage(ans);
   });
-  goToNextPage(ans);
 }//answerOnClick
 
 function clearPage() {
@@ -32,17 +33,25 @@ function popUpComment(ans, dequeuer) {
     return;
   }
 
-  $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
+  //as long as there is an animation at the end of each block, you can hook the
+  //promise function call on to the end of that, making sequential animations
+  //look somewhat sane
+  $('.question, .answers, .back-button a').fadeOut('slow')
+  .promise().done(function() {
     var comment = ans.attributes.comment;
     var comment_length = comment.length * 50;
     if (comment_length < 800) comment_length = 800;
 
     //chain then calls to run animations in sequence
     //hidden by default, but populate html
-    $('.question').before(ORCA.templates.comment({answer: ans}))
-    $('.comment').fadeIn().delay(comment_length).fadeOut('slow');
+    $('.question').before(ORCA.templates.comment({answer: ans}));
+    $('.comment').fadeIn().delay(comment_length)
+  .promise().done(function() {
+    $('.comment').fadeOut('slow')
+  .promise().done(function() {
+    $('.comment').remove();
     $(dequeuer).dequeue();
-  });
+  }); }); });
 }//answerOnClick
 
 function goToNextPage(ans) {
@@ -87,8 +96,8 @@ ORCARouter = Backbone.Router.extend({
     //render question text
     q = ORCA.questions.get(id);
 
-    $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
-
+    $('.question, .answers, .back-button a').fadeOut('slow')
+    .promise().done(function() {
       $('.question, .answers').html('');
       $('.question').html(ORCA.templates.question({question: q}));
      
