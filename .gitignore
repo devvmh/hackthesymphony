@@ -2,3 +2,5 @@ db.sqlite3
 assets/*
 *.pyc
 djangostuff/localconfig.py
+nohup.out
+venv
