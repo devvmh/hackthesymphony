@@ -99,7 +99,7 @@ ORCARouter = Backbone.Router.extend({
   routes: {
     "questions/:id": "renderQuestionPage",
   },
-  renderQuestionPage(id) {
+  renderQuestionPage: function(id) {
     //render question text
     q = ORCA.questions.get(id);
 
