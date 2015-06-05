@@ -1,13 +1,13 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.core import serializers
+from django.core.serializers import serialize
 from django.core.urlresolvers import reverse
 
 from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpResponseForbidden, HttpResponseNotAllowed
 from django.shortcuts import get_object_or_404, get_list_or_404, render, redirect
 from django.views.generic import DetailView, UpdateView, ListView
 
-import re, random
+import re, random, json
 
 from rest_framework import viewsets
 
@@ -15,9 +15,14 @@ from .models import *
 from .serializers import *
 
 def index(request):
+  questions_json = serialize("json", Question.objects.all())
+  answers_json = serialize("json", Answer.objects.all())
+
   return render(request, 'index.html', {
     'ip_address': '192.168.1.99',
     'body_classes': 'index main-quiz',
+    'questions_json': questions_json,
+    'answers_json': answers_json,
   })
 
 def what_is_this(request):

@@ -2,7 +2,7 @@ Question = Backbone.Model.extend({
 });
 Question.prototype.answers = function() {
   return ORCA.answers.where({
-    old_question: window.location.origin + '/' + this.url().substring(1),
+    old_question: window.location.origin + this.url(),
   });
 };
 Answer = Backbone.Model.extend({
