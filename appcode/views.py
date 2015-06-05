@@ -67,7 +67,7 @@ class SessionViewSetPermission(permissions.BasePermission):
     if request.method == 'POST':
       return True
     elif request.method == 'PUT':
-      return obj.session_token == request.META['HTTP_X_CSRFTOKEN']
+      return obj.session_token == request.META['HTTP_X_SESSION_TOKEN']
     else:
       return False #todo use DjangoModelPermissions
 
@@ -77,7 +77,7 @@ class SessionAnswerViewSetPermission(permissions.BasePermission):
   def has_object_permission(self, request, view, obj):
     if request.method == 'POST':
       session = obj.session
-      return session.session_token == request.META['HTTP_X_CSRFTOKEN']
+      return session.session_token == request.META['HTTP_X_SESSION_TOKEN']
     else:
       return False #todo use DjangoModelPermissions
 
