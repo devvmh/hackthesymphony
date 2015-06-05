@@ -12,7 +12,6 @@ class Answer(Model):
   comment = CharField(max_length=2550, blank=True)
   protip = CharField(max_length=2550, blank=True)
   new_question = ForeignKey(Question, related_name='answer_leading_here', blank=True)
-  redirect_url_if_no_new_question = URLField(blank=True)
   def __unicode__(self): return self.answer + ' (' + self.old_question.question + ')'
 
 class Session(Model):
