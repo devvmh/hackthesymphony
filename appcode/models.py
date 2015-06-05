@@ -19,12 +19,10 @@ class Session(Model):
   username = CharField(max_length=255, blank=True)
   current_question = ForeignKey(Question, blank=True, default=1)
   ip = CharField(max_length=15)
+  session_token = CharField(max_length=255)
   #answers - foreign key from SessionAnswer
   def __unicode__(self):
-    if self.username:
-      return self.username
-    else:
-      return "Anonymous - on Question #" + str(self.current_question.pk)
+    return self.session_token
 
 class SessionAnswer(Model):
   session = ForeignKey(Session, related_name='answers')

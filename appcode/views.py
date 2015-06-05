@@ -21,7 +21,7 @@ def index(request):
   answers_json = serialize("json", Answer.objects.all())
 
   return render(request, 'index.html', {
-    'ip_address': '192.168.1.99',
+    'ip_address': request.META['REMOTE_ADDR'],
     'body_classes': 'index main-quiz',
     'questions_json': questions_json,
     'answers_json': answers_json,
