@@ -80,6 +80,7 @@ function goToNextPage(ans) {
 
   session_answer.save(session_answer.attributes, {'success': function() {
     ORCA.session.save(ORCA.session.attributes, {'success': function() {
+      localStorage.setItem('session', JSON.stringify(ORCA.session));
       ORCA.router.navigate('questions/' + new_question_id, {trigger: true});
   }})}});
 }//goToNextPage
@@ -100,8 +101,6 @@ ORCARouter = Backbone.Router.extend({
     "questions/:id": "renderQuestionPage",
   },
   renderQuestionPage: function(id) {
-//    ORCA.session.current_question = window.location.origin + 'api/questions/' + id,
-//    ORCA.session.save();
     //render question text
     q = ORCA.questions.get(id);
 

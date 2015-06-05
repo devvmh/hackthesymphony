@@ -4,11 +4,11 @@ $(document).ready(function() {
   ORCA.router = new ORCARouter();
   Backbone.history.start();
 
-//  if (localStorage.getItem('session')) {
-//    ORCA.session = new Session(JSON.parse(localStorage.getItem('session')));
-//    var current_route = ORCA.session.attributes.current_question.replace(window.location.origin + '/api/', '');
-//    ORCA.router.navigate(current_route, {trigger: true});
-//  } else {
+  if (localStorage.getItem('session')) {
+    ORCA.session = new Session(JSON.parse(localStorage.getItem('session')));
+    var current_route = ORCA.session.attributes.current_question.replace(window.location.origin + '/api/', '');
+    ORCA.router.navigate(current_route, {trigger: true});
+  } else {
     ORCA.session = new Session({
       username: "Anonymous",
       ip: ORCA.ip_address,
@@ -16,7 +16,7 @@ $(document).ready(function() {
       session_token: Math.random().toString(36).slice(2),
     });
     ORCA.router.navigate('questions/1', {trigger: true});
-    ORCA.session.save();
     localStorage.setItem('session', JSON.stringify(ORCA.session));
-//  }//if
+    ORCA.session.save();
+  }//if
 });
