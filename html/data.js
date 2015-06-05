@@ -1,5 +1,6 @@
 ORCA = new Object();
 ORCA.ip_address = "{{ ip_address }}";
+ORCA.csrf_token = "{{ csrf_token }}";
 ORCA.questions = {{ questions_json | safe }};
 ORCA.questions = $.map(ORCA.questions, function(elt, index) {
   //we only want the fields portion + the pk as id for backbone
