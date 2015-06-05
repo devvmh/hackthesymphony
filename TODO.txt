@@ -1,2 +1,0 @@
-1) Stop using 666 and start using blank version of the column
-2) Store session object in localStorage, then recover using it
