@@ -1,11 +1,12 @@
 $(document).ready(function() {
   ORCA.questions = new Questions(ORCA.questions);
   ORCA.answers = new Answers(ORCA.answers);
+  var csrftoken = getCookie('csrftoken');
   ORCA.session = new Session({
     username: "Anonymous",
     ip: ORCA.ip_address,
     current_question: window.location.origin + '/api/questions/1',
-    session_token: Math.random().toString(36).slice(2),
+    session_token: csrftoken,
   });
   ORCA.router = new ORCARouter();
   Backbone.history.start();

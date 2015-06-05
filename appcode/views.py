@@ -67,19 +67,19 @@ class SessionViewSetPermission(permissions.BasePermission):
     if request.method == 'POST':
       return True
     elif request.method == 'PUT':
-      return obj.ip == request.META['REMOTE_ADDR'] #todo add csrf_token field
+      return obj.session_token == request.META['HTTP_X_CSRFTOKEN']
     else:
-      return False
+      return False #todo use DjangoModelPermissions
 
 class SessionAnswerViewSetPermission(permissions.BasePermission):
   """You can create a new session answer only with a valid session's 
      csrf_token"""
   def has_object_permission(self, request, view, obj):
     if request.method == 'POST':
-      #return obj.csrf_token == request.POST['csrf_token']
-      return True
+      session = obj.session
+      return session.session_token == request.META['HTTP_X_CSRFTOKEN']
     else:
-      return False
+      return False #todo use DjangoModelPermissions
 
 class QuestionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
