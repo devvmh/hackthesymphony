@@ -1,6 +1,13 @@
 [
 {
   "fields": {
+    "question": "Done Quiz"
+  },
+  "model": "appcode.question",
+  "pk": 0
+},
+{
+  "fields": {
     "question": "Have you been to the symphony before?"
   },
   "model": "appcode.question",
@@ -82,13 +89,6 @@
   },
   "model": "appcode.question",
   "pk": 13
-},
-{
-  "fields": {
-    "question": "Redirect"
-  },
-  "model": "appcode.question",
-  "pk": 666
 },
 {
   "fields": {
@@ -421,7 +421,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 8,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 28
@@ -433,7 +433,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 8,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 29
@@ -457,7 +457,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 10,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 31
@@ -481,7 +481,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 10,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 33
@@ -493,7 +493,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 11,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 34
@@ -505,7 +505,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 11,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 35
@@ -517,7 +517,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 36
@@ -529,7 +529,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 37
@@ -541,7 +541,7 @@
     "protip": "",
     "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 38
