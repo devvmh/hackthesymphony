@@ -1,6 +1,2 @@
-1) Concert to Answer mappings - actually use them in code
-2) Pro tips and comments are different and have different css
-
-3) Handle reloading page and having persistent sessions -> probably need to use localstorage
-4) Stop using 666 and start using blank version of the column
-5) Add Backbone Views
+1) Stop using 666 and start using blank version of the column
+2) Store session object in localStorage, then recover using it
