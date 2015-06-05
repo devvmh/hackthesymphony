@@ -5,7 +5,7 @@ $(document).ready(function() {
     username: "Anonymous",
     ip: ORCA.ip_address,
     current_question: window.location.origin + '/api/questions/1',
-    session_token: ORCA.csrf_token,
+    session_token: Math.random().toString(36).slice(2),
   });
   ORCA.router = new ORCARouter();
   Backbone.history.start();
