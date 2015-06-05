@@ -1,11 +1,5 @@
 {% extends "base.html" %}
-
-{% block js %}
-<script type="text/javascript">
-  console.log("you could use this to set the real back link.");
-</script>
-{% endblock js %}
-
+{% load appcode_extras %}
 
 {% block main %}
 <h3 id="title">We want you to have a great time enjoying great music.</h3>
@@ -27,9 +21,9 @@
 {% endblock main %}
 
 {% block backlink %}
-  <a href="/"><img src="/static/arrow-282-48.png" id="arrow"></a>
+  <a href="{{ request.META | get_item:"HTTP_REFERER" }}"><img src="/static/arrow-282-48.png" id="arrow"></a>
 {% endblock backlink %}
 
 {% block backlink2 %}
-  <a href="/">Back</a>
+  <a href="{{ request.META | get_item:"HTTP_REFERER" }}">Back</a>
 {% endblock backlink2 %}

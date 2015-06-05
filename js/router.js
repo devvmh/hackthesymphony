@@ -64,9 +64,13 @@ function goToNextPage(ans) {
   var new_question = ans.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
-  if (new_question_id == "666") {
+  if (new_question_id == "0") {
     $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
-      window.location = '/suggestions/' + ORCA.session.attributes.id + '/';
+      ORCA.session.attributes.current_question = window.location.origin + '/api/questions/0';
+      localStorage.removeItem('session');
+      ORCA.session.save(ORCA.session.attributes, {success: function () {
+        window.location = '/suggestions/' + ORCA.session.attributes.id + '/';
+      }});
     });
     return;
   }//if
@@ -80,7 +84,8 @@ function goToNextPage(ans) {
 
   session_answer.save(session_answer.attributes, {'success': function() {
     ORCA.session.save(ORCA.session.attributes, {'success': function() {
-    ORCA.router.navigate('questions/' + new_question_id, {trigger: true});
+      localStorage.setItem('session', JSON.stringify(ORCA.session));
+      ORCA.router.navigate('questions/' + new_question_id, {trigger: true});
   }})}});
 }//goToNextPage
 

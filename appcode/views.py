@@ -1,23 +1,30 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.core import serializers
+from django.core.serializers import serialize
 from django.core.urlresolvers import reverse
 
 from django.http import HttpResponse, HttpResponseBadRequest, Http404, HttpResponseForbidden, HttpResponseNotAllowed
 from django.shortcuts import get_object_or_404, get_list_or_404, render, redirect
 from django.views.generic import DetailView, UpdateView, ListView
 
-import re, random
+import re, random, json
 
 from rest_framework import viewsets
+from rest_framework import permissions
+from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
 
 from .models import *
 from .serializers import *
 
 def index(request):
+  questions_json = serialize("json", Question.objects.all())
+  answers_json = serialize("json", Answer.objects.all())
+
   return render(request, 'index.html', {
-    'ip_address': '192.168.1.99',
+    'ip_address': request.META['REMOTE_ADDR'],
     'body_classes': 'index main-quiz',
+    'questions_json': questions_json,
+    'answers_json': answers_json,
   })
 
 def what_is_this(request):
@@ -52,23 +59,50 @@ def suggestions(request, pk):
     'body_classes': 'suggestions quiz-complete',
   })
 
+
+class SessionViewSetPermission(permissions.BasePermission):
+  """You can create (POST) a new session for free with a csrf_token; then you 
+     need that csrf_token to be able to update (PUT) it"""
+  def has_object_permission(self, request, view, obj):
+    if request.method == 'POST':
+      return True
+    elif request.method == 'PUT' and request.META.get('HTTP_X_SESSION_TOKEN'):
+      return obj.session_token == request.META['HTTP_X_SESSION_TOKEN']
+    else:
+      return request.user.is_staff #todo use DjangoModelPermissions
+
+class SessionAnswerViewSetPermission(permissions.BasePermission):
+  """You can create a new session answer only with a valid session's 
+     csrf_token"""
+  def has_object_permission(self, request, view, obj):
+    if request.method == 'POST' and request.META.get('HTTP_X_SESSION_TOKEN'):
+      session = obj.session
+      
+      return session.session_token == request.META['HTTP_X_SESSION_TOKEN']
+    else:
+      return request.user.is_staff #todo use DjangoModelPermissions
+
 class QuestionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (DjangoModelPermissionsOrAnonReadOnly, )
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
 class AnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (DjangoModelPermissionsOrAnonReadOnly, )
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
 
 class SessionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (SessionViewSetPermission, )
     queryset = Session.objects.all()
     serializer_class = SessionSerializer
 
 class SessionAnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (SessionAnswerViewSetPermission, )
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
 

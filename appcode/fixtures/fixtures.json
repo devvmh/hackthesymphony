@@ -1,6 +1,13 @@
 [
 {
   "fields": {
+    "question": "Done Quiz"
+  },
+  "model": "appcode.question",
+  "pk": 0
+},
+{
+  "fields": {
     "question": "Have you been to the symphony before?"
   },
   "model": "appcode.question",
@@ -85,17 +92,9 @@
 },
 {
   "fields": {
-    "question": "Redirect"
-  },
-  "model": "appcode.question",
-  "pk": 666
-},
-{
-  "fields": {
     "answer": "Yeah!",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 1,
     "new_question": 2
   },
@@ -107,7 +106,6 @@
     "answer": "Not even once",
     "comment": "But you'll try anything once, right?",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 1,
     "new_question": 3
   },
@@ -119,7 +117,6 @@
     "answer": "Maybe when I was a kid",
     "comment": "Kinda like that one time you saw a Shakespeare play.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 1,
     "new_question": 3
   },
@@ -131,7 +128,6 @@
     "answer": "Don't know-I fell asleep.",
     "comment": "Yeah, I've been there.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 2,
     "new_question": 3
   },
@@ -143,7 +139,6 @@
     "answer": "Loved it!",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 2,
     "new_question": 3
   },
@@ -155,7 +150,6 @@
     "answer": "It didn't exactly blow my mind. ",
     "comment": "Guess what? It's way less boring now!",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 2,
     "new_question": 3
   },
@@ -167,7 +161,6 @@
     "answer": "Chilling with friends",
     "comment": "BBQs? Board games? Beers? Whatever it is, I'm in",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 5
   },
@@ -179,7 +172,6 @@
     "answer": "Going out and partying hard",
     "comment": "Woooo!",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 5
   },
@@ -191,7 +183,6 @@
     "answer": "Soaking up some culture ",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 5
   },
@@ -203,7 +194,6 @@
     "answer": "Binge-watching Netflix",
     "comment": " They just added the next season of Brooklyn Nine-Nine. How can you not?",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 5
   },
@@ -215,7 +205,6 @@
     "answer": "Time with the kids",
     "comment": "Aww, cute.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 4
   },
@@ -227,7 +216,6 @@
     "answer": "Tiny toddlers",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 4,
     "new_question": 5
   },
@@ -239,7 +227,6 @@
     "answer": "Elementary school age",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 4,
     "new_question": 5
   },
@@ -251,7 +238,6 @@
     "answer": "Teens",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 4,
     "new_question": 5
   },
@@ -263,7 +249,6 @@
     "answer": "We're all grown-ups now",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 4,
     "new_question": 5
   },
@@ -275,7 +260,6 @@
     "answer": "The brilliant, hot-tempered composer",
     "comment": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 5,
     "new_question": 6
   },
@@ -287,7 +271,6 @@
     "answer": "The lovable Saint Bernard who stars in a movie",
     "comment": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 5,
     "new_question": 6
   },
@@ -299,7 +282,6 @@
     "answer": "Beers in the theatre",
     "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 6,
     "new_question": 7
   },
@@ -311,7 +293,6 @@
     "answer": "Jeans and T's",
     "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 6,
     "new_question": 7
   },
@@ -323,7 +304,6 @@
     "answer": "Pop music and silent films",
     "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 6,
     "new_question": 7
   },
@@ -335,7 +315,6 @@
     "answer": "Ice cream bars",
     "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 6,
     "new_question": 7
   },
@@ -347,7 +326,6 @@
     "answer": "Sound of Music",
     "comment": "How do you solve a problem like Maria?",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -359,7 +337,6 @@
     "answer": "James Bond 007: Goldfinger",
     "comment": "Perhaps you'd also like a Martini? Shaken, not stirred. ",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -371,7 +348,6 @@
     "answer": "Casablanca",
     "comment": "Here's looking at you, kid.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -383,7 +359,6 @@
     "answer": "Yellow Submarine",
     "comment": "I've heard the Octupus's Garden is particularly lovely",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -395,7 +370,6 @@
     "answer": "A documentary about Bach",
     "comment": "Do you really need this survey? Just buy your season tickets already.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -407,7 +381,6 @@
     "answer": "The Lion King",
     "comment": "Can you feel the love tonight?",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 7,
     "new_question": 8
   },
@@ -419,9 +392,8 @@
     "answer": "Entertain me",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 8,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 28
@@ -431,9 +403,8 @@
     "answer": "I want the feelz",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 8,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 29
@@ -443,7 +414,6 @@
     "answer": "The composer(s) and their stories",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 10,
     "new_question": 11
   },
@@ -455,9 +425,8 @@
     "answer": "The musicians and their instruments",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 10,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 31
@@ -467,7 +436,6 @@
     "answer": "The venue",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 10,
     "new_question": 12
   },
@@ -479,9 +447,8 @@
     "answer": "Parking",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 10,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 33
@@ -491,9 +458,8 @@
     "answer": "Beethoven Marathon",
     "comment": "\"I like your opera. I think I will set it to music\"  This is what a Beethoven burn sounds like.",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 11,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 34
@@ -503,9 +469,8 @@
     "answer": "Sgt. Pepper",
     "comment": "Fun Fact: The Beatles spent 700 hours recording Sgt. Pepper (In contrast, they spent 10 hours on their first album, Please Please Me)",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 11,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 35
@@ -515,9 +480,8 @@
     "answer": "Front row",
     "comment": "There's really not a bad seat in the house",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 36
@@ -527,9 +491,8 @@
     "answer": "In the middle half way up",
     "comment": "There's really not a bad seat in the house",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 37
@@ -539,9 +502,8 @@
     "answer": "The top left corner of the mezzanine",
     "comment": "There's really not a bad seat in the house",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 12,
-    "new_question": 666
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 38
@@ -551,7 +513,6 @@
     "answer": "Relaxing after a long week",
     "comment": "",
     "protip": "",
-    "redirect_url_if_no_new_question": "",
     "old_question": 3,
     "new_question": 5
   },

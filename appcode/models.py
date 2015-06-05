@@ -12,19 +12,16 @@ class Answer(Model):
   comment = CharField(max_length=2550, blank=True)
   protip = CharField(max_length=2550, blank=True)
   new_question = ForeignKey(Question, related_name='answer_leading_here', blank=True)
-  redirect_url_if_no_new_question = URLField(blank=True)
   def __unicode__(self): return self.answer + ' (' + self.old_question.question + ')'
 
 class Session(Model):
   username = CharField(max_length=255, blank=True)
   current_question = ForeignKey(Question, blank=True, default=1)
   ip = CharField(max_length=15)
+  session_token = CharField(max_length=255)
   #answers - foreign key from SessionAnswer
   def __unicode__(self):
-    if self.username:
-      return self.username
-    else:
-      return "Anonymous - on Question #" + str(self.current_question.pk)
+    return self.session_token
 
 class SessionAnswer(Model):
   session = ForeignKey(Session, related_name='answers')

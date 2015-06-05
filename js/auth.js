@@ -5,10 +5,12 @@ Backbone._sync = Backbone.sync;
 Backbone.sync = function(method, model, options) {
     /* only need a token for non-get requests */
     if (method == 'create' || method == 'update' || method == 'delete') {
-        var csrftoken = getCookie('csrftoken');
+        var csrf_token = getCookie('csrftoken');
+        var session_token = ORCA.session.attributes.session_token;
 
         options.beforeSend = function(xhr){
-          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+          xhr.setRequestHeader('X-CSRFToken', csrf_token);
+          xhr.setRequestHeader('X-Session-Token', session_token);
         };
     }//if
 
