@@ -10,6 +10,8 @@ from django.views.generic import DetailView, UpdateView, ListView
 import re, random, json
 
 from rest_framework import viewsets
+from rest_framework import permissions
+from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
 
 from .models import *
 from .serializers import *
@@ -57,23 +59,49 @@ def suggestions(request, pk):
     'body_classes': 'suggestions quiz-complete',
   })
 
+
+class SessionViewSetPermission(permissions.BasePermission):
+  """You can create (POST) a new session for free with a csrf_token; then you 
+     need that csrf_token to be able to update (PUT) it"""
+  def has_object_permission(self, request, view, obj):
+    if request.method == 'POST':
+      return True
+    elif request.method == 'PUT':
+      return obj.ip == request.META['REMOTE_ADDR'] #todo add csrf_token field
+    else:
+      return False
+
+class SessionAnswerViewSetPermission(permissions.BasePermission):
+  """You can create a new session answer only with a valid session's 
+     csrf_token"""
+  def has_object_permission(self, request, view, obj):
+    if request.method == 'POST':
+      #return obj.csrf_token == request.POST['csrf_token']
+      return True
+    else:
+      return False
+
 class QuestionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (DjangoModelPermissionsOrAnonReadOnly, )
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
 class AnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (DjangoModelPermissionsOrAnonReadOnly, )
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
 
 class SessionViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (SessionViewSetPermission, )
     queryset = Session.objects.all()
     serializer_class = SessionSerializer
 
 class SessionAnswerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows users to be viewed or edited."""
+    permission_classes = (SessionAnswerViewSetPermission, )
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
 
