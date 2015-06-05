@@ -4,3 +4,5 @@ assets/*
 djangostuff/localconfig.py
 nohup.out
 venv
+static
+uwsgi_params

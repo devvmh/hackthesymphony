@@ -27,7 +27,6 @@ except:
   DEBUG = True
   ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -103,6 +102,7 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, "css"),
   os.path.join(BASE_DIR, "js"),
 )
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # rest framework config
 
