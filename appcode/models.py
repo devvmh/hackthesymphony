@@ -35,7 +35,7 @@ class Concert(Model):
   date = DateField()
   description = TextField()
   highlights = TextField(blank=True, null=True)
-  image = URLField(blank=True, null=True)
+  image = TextField(blank=True, null=True)
   youtube_embed_link = URLField(blank=True, null=True)
   def __unicode__(self):
     return self.title
