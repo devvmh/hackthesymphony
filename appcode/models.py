@@ -32,7 +32,7 @@ class SessionAnswer(Model):
 
 class Concert(Model):
   title = CharField(max_length=2550)
-  date = DateField()
+  date = TextField()
   description = TextField()
   highlights = TextField(blank=True, null=True)
   image = TextField(blank=True, null=True)
