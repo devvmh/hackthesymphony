@@ -8,6 +8,11 @@ $(document).ready(function() {
     ORCA.session = new Session(JSON.parse(localStorage.getItem('session')));
     var current_route = ORCA.session.attributes.current_question.replace(window.location.origin + '/api/', '');
     ORCA.router.navigate(current_route, {trigger: true});
+    ORCA.session.save(ORCA.session.attributes, {error: function() {
+      alert("invalid session");
+      localStorage.removeItem('session');
+      window.location = window.origin;
+    }});
   } else {
     ORCA.session = new Session({
       username: "Anonymous",
