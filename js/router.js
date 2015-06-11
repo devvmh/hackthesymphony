@@ -29,7 +29,7 @@ function fadePage() {
 
 function popUpComment(ans, dequeuer) {
   if (!ans.attributes.comment && !ans.attributes.protip) {
-    $(dequeuer).dequeue();
+    $(dequeuer).dequeue(); //don't go through the rest of this animation
     return;
   }
 
@@ -46,10 +46,14 @@ function popUpComment(ans, dequeuer) {
     var protip_length = protip.length * 50;
     if (protip_length > reading_length) reading_length = protip_length;
 
-    //chain then calls to run animations in sequence
-    //hidden by default, but populate html
-    $('.question').before(ORCA.templates.comment({answer: ans}));
-    $('.question').before(ORCA.templates.protip({answer: ans}));
+    //chain calls to run animations in sequence
+    if (ans.attributes.comment) {
+      $('.question').before(ORCA.templates.comment({answer: ans}));
+    }
+    if (ans.attributes.protip) {
+      $('.question').before(ORCA.templates.protip({answer: ans}));
+    }//if
+
     $('.comment, .protip').fadeIn().delay(reading_length)
   .promise().done(function() {
     $('.comment, .protip').fadeOut('slow')
