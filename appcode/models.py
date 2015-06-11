@@ -24,8 +24,8 @@ class Session(Model):
     return self.session_token
 
 class SessionAnswer(Model):
-  session = ForeignKey(Session, related_name='answers')
-  question = ForeignKey(Question, related_name='sessions_answered_this_question')
+  session = ForeignKey(Session, related_name='session_answers')
+  question = ForeignKey(Question, related_name='session_answers')
   answer = ForeignKey(Answer, related_name='sessions_using_this_answer')
   def __unicode__(self):
     return str(self.session) + " answered '" + str(self.answer) + "' to '" + str(self.question) + "'."
