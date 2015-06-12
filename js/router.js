@@ -23,7 +23,7 @@ function clearPage() {
 }//clearPage
 
 function fadePage() {
-  $('.question, .answers, .back-button a').fadeOut('slow');
+  $('.question, .answers, .back-button-text a').fadeOut('slow');
   $('.question, .answers').html('');
 }//fadePage
 
@@ -36,7 +36,7 @@ function popUpComment(ans, dequeuer) {
   //as long as there is an animation at the end of each block, you can hook the
   //promise function call on to the end of that, making sequential animations
   //look somewhat sane
-  $('.question, .answers, .back-button a').fadeOut('slow')
+  $('.question, .answers, .back-button-text a').fadeOut('slow')
   .promise().done(function() {
     var comment = ans.attributes.comment;
     var reading_length = comment.length * 50;
@@ -69,7 +69,7 @@ function goToNextPage(ans) {
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
   if (new_question_id == "0") {
-    $('.question, .answers, .back-button a').fadeOut('slow').promise().done(function() {
+    $('.question, .answers, .back-button-text a').fadeOut('slow').promise().done(function() {
       ORCA.session.attributes.current_question = window.location.origin + '/api/questions/0';
       localStorage.removeItem('session');
       ORCA.session.save(ORCA.session.attributes, {success: function () {
@@ -115,7 +115,7 @@ ORCARouter = Backbone.Router.extend({
     //render question text
     q = ORCA.questions.get(id);
 
-    $('.question, .answers, .back-button a').fadeOut('slow')
+    $('.question, .answers, .back-button-text a').fadeOut('slow')
     .promise().done(function() {
       $('.question, .answers').html('');
       $('.question').html(ORCA.templates.question({question: q}));
@@ -138,7 +138,7 @@ ORCARouter = Backbone.Router.extend({
       });
  
       //once this is done, show everything together
-      $('.question, .answers, .back-button a').fadeIn('slow');
+      $('.question, .answers, .back-button-text a').fadeIn('slow');
     });
   },
 });
