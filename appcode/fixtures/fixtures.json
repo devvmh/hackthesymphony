@@ -258,8 +258,8 @@
 {
   "fields": {
     "answer": "The brilliant, hot-tempered composer",
-    "comment": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
-    "protip": "",
+    "comment": "",
+    "protip": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
     "old_question": 5,
     "new_question": 6
   },
@@ -269,8 +269,8 @@
 {
   "fields": {
     "answer": "The lovable Saint Bernard who stars in a movie",
-    "comment": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
-    "protip": "",
+    "comment": "",
+    "protip": "Protip: Come to the Prelude to learn more about how the same composer who threw soup at his waiter wrote music that threw the all the rules out the window. ",
     "old_question": 5,
     "new_question": 6
   },
@@ -680,12 +680,228 @@
     "description": "Opera returns to Kitchener-Waterloo! In this concert version of Johann Strauss, Jr.\u2019s beloved opera, Die Fledermaus, the KWS joins forces with Wilfrid Laurier University music faculty, host Daniel Isengart and surprise guests to present an evening of glorious melody, great laughs and unforgettable performances. We are thrilled to present opera at the Centre In The Square as part of the 70th anniversary celebrations.",
     "title": "Die Fledermaus: Comic Opera in Concert",
     "highlights": "",
-    "image": "https://kwsymphony.ca/2015_16/subscription/signature-banner.jpg",
+    "image": "https://localhost:8000/static/orchestrashots/KWSorch.jpg",
     "date": "2016-01-15",
-    "youtube_embed_link": null
+    "youtube_embed_link": ""
   },
   "model": "appcode.concert",
   "pk": 14
+},
+{
+  "fields": {
+    "description": "Pianist Orion Weiss returns to the KWS to perform one of Haydn\u2019s greatest symphonies and one of Mozart\u2019s most sublime piano concertos. Weiss will perform these pieces alongside delightful and surprising works both old and new.",
+    "title": "Weiss plays Mozart and Haydn",
+    "highlights": "Experience a delightful symphony and one of the most sublime piano concertos - all in one night!",
+    "image": "",
+    "date": "2015-10-30",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 15
+},
+{
+  "fields": {
+    "description": "Bruckner\u2019s epic Symphony No. 4 evokes ancient castles, hunting horns, snow-capped mountains and misty forests. It is one of the great romantic works for orchestra\u2014majestic and transcendent. The music of Donovan Seidle opens the program, and Bruch\u2019s famous violin concerto will be played by the fiery and expressive violinist Elena Urioste, making her KWS debut.",
+    "title": "Bruckner's Romantic Symphony",
+    "highlights": "One of the greatest romantic works for orchestra - majestic and transcendent",
+    "image": "",
+    "date": "2015-11-27",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 16
+},
+{
+  "fields": {
+    "description": "Three Russian masterpieces are combined to create a program bursting with musical colour, virtuosity and fantasy. Tchaikovsky\u2019s rarely heard music to The Tempest opens the program (a favourite of Edwin\u2019s); Alon Goldstein makes his KWS debut in Prokofiev\u2019s fiendishly challenging Piano Concerto No. 3; and Scheherazade takes us on a magical journey of sound, storytelling and imagination.",
+    "title": "Scheherazade",
+    "highlights": "A program bursting with musical colour, virtuosity and fantasy",
+    "image": "",
+    "date": "2016-02-26",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 17
+},
+{
+  "fields": {
+    "description": "One of Canada\u2019s great pianists makes a long-awaited return to the KWS, sharing the music that made her famous. Janina Fialkowska\u2019s performances of Chopin are legendary, and she plays his Piano Concerto No. 2 on this beautiful program. Conductor Heiichiro Ohyama makes his KWS conducting debut, featuring Dvo\u0159\u00e1k's powerful Symphony No. 7.",
+    "title": "Janina Plays Chopin",
+    "highlights": "Janina Fialkowska\u2019s performances of Chopin are legendary",
+    "image": "",
+    "date": "2016-04-01",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 18
+},
+{
+  "fields": {
+    "description": "Members of the KWS take centre stage in a celebration of the remarkable individual talents that make up the Orchestra. You\u2019ll hear beautiful concerto performances from oboist James Mason, bassoonist Ian Hopkin, violist Natasha Sharko and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re. Then, the entire Orchestra takes a solo turn in Bart\u00f3k\u2019s masterpiece, Concerto for Orchestra.",
+    "title": "KWS Concerto Celebration",
+    "highlights": "A showcase of remarkable individual talents that make up your orchestra",
+    "image": "",
+    "date": "2016-04-29",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 19
+},
+{
+  "fields": {
+    "description": "Dynamic young conductor Marcelo Lehninger leads the season finale, performing the music of young Canadian composer Jordan Pal and glorious music of Brahms. Brahms\u2019 Symphony No. 1 carried on the great German symphonic tradition of Beethoven, and his Shicksalslied is a profound and touching work for chorus and orchestra.",
+    "title": "Lehninger conducts Brahms",
+    "highlights": "The dynamic young conductor leads the season finale!",
+    "image": "",
+    "date": "2016-05-27",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 20
+},
+{
+  "fields": {
+    "description": "A major new work commissioned by the KWS! Take the first silent horror movie, commission a wild new score by Canadian composer Scott Good, perform the film with a live orchestra, piano by Gregory Oh and vocals by Stacie Dunlop, and you have an evening of creative mayhem like no other. One of the most exciting concerts of the season!",
+    "title": "The Hands of Orlac",
+    "highlights": "An evening of creative mayhem like no other. It will be a scream!",
+    "image": "",
+    "date": "2015-11-20",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 21
+},
+{
+  "fields": {
+    "description": "Songwriter, throat singer, rock star, Polaris prizewinner: Tanya Tagaq brings her visionary voice and music to the Intersections Series. Featuring her own songs as well as a stunning work for throat singer and orchestra by Derek Charke, Tanya Tagaq\u2019s music is powerful and revolutionary. This is a must-hear concert featuring one of the most compelling Canadian artists of our time.",
+    "title": "Tanya Tagaq",
+    "highlights": "A must-hear concert featuring one of the most compelling Canadian artists of our time",
+    "image": "",
+    "date": "2016-02-05",
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 22
+},
+{
+  "fields": {
+    "description": "Join the KWS for a concert that celebrates the French horn repertoire of Baroque masters Vivaldi, Handel and Telemann, curated by KWS hornist Jessie Brooks. From unaccompanied hunting horns to Handel\u2019s call and response concerto and Telemann\u2019s exciting but rarely heard Alster Echo for horn quartet, these works showcase the amazing talents of the KWS horn section.",
+    "title": "Ode to the Horn",
+    "highlights": "",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 23
+},
+{
+  "fields": {
+    "description": "Friedrich II of Prussia (1712-86) was not only King, but also a flute player and composer. The musical establishment of his court, particularly at his summer home at Sanssouci Palace, featured prominent composers C.P.E Bach, Quantz and Benda, and was for a time a centre of German musical life. This concert, curated by KWS bassist Bruce McGillivray, brings together works by composers of this \u201cmusical household,\u201d and features the talents of KWS musicians Thomas Kay, John Helmers and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re.",
+    "title": "Music at Sanssouci - The Musical Court of Friedrich \"the Great\"",
+    "highlights": "C.P.E. Bach, Quantz, Benda and more",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 24
+},
+{
+  "fields": {
+    "description": "Join Guest Director Jeanne Lamon, celebrated Music Director Emerita of Tafelmusik and Member of the Order of Canada, as she leads the KWS through a joyful and energetic program of Baroque music. Curated by KWS violinist Allene Chomyn, this concert is a musical memoir of her time studying Baroque violin with Jeanne and members of Tafelmusik at their Summer and Winter Institutes, and features works by Handel, Corelli, Rameau and more!",
+    "title": "Becoming Baroque",
+    "highlights": "Handel, Corelli, Rameau and more",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 25
+},
+{
+  "fields": {
+    "description": "Join us for an evening of musical exploration into the genre of classical music as it has transformed and evolved over time, curated by KWS bassoonist Michael Macaulay. A genre is a living thing and, once in a while, a radical development emerges that both changes the future of music and pays homage to the work of generations past. Join the KWS and featured Orchestra soloists to trace the evolution of the classical symphony; a story told through the music of the composers who laid its foundation, as well as those who refined it.",
+    "title": "Evolution",
+    "highlights": "Handel, Corelli, J.C. Bach, Haydn and more",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 26
+},
+{
+  "fields": {
+    "description": "The musical Mendelssohn Mouse family is rehearsing and getting ready for a concert, but Fannie Mouse has disappeared! Help the Mouse family find Fannie, and discover a musical canon and fugue along the way.",
+    "title": "Cabbages and Counterpoint",
+    "highlights": "An adventure with the musical Mendelssohn Mouse family ",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 27
+},
+{
+  "fields": {
+    "description": "What do trumpets, French horns, trombones, tubas and conch shells have in common? Join Teddy as he learns that the Brass family are like bees\u2026always buzzing!",
+    "title": "Buzzing Brass",
+    "highlights": "This will \"bee\" a fun concert!",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 28
+},
+{
+  "fields": {
+    "description": "The harp, trombone and oboe introduce you to three talented bears that sing, dance and cook the perfect porridge for Goldilocks in this delightful version of the classic fairy tale.",
+    "title": "Goldilocks and the Three Musical Bears",
+    "highlights": "A delightful musical version of the classic fairytale",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 29
+},
+{
+  "fields": {
+    "description": "In this entertaining concert, the KWS explores music as it occurs in diverse cultures around the world. Music is truly universal, and you will be amazed by the variety of styles and genres you hear in this action-packed concert, featuring special guests Suubi Fusion Troupe from the Dream for Uganda project.",
+    "title": "Music Around the World",
+    "highlights": "Explore music as it occurs in diverse cultures around the world",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 30
+},
+{
+  "fields": {
+    "description": "Music is a big part of our everyday life \u2014 we come in contact with music and sometimes we don\u2019t even realize it! The KWS brings music to life with pieces you will recognize and love. You will laugh as you find music in places you didn\u2019t know it was hiding!",
+    "title": "Music at Your House",
+    "highlights": "Laugh as you find music in places you didn't know it was hiding!",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 31
+},
+{
+  "fields": {
+    "description": "Kitchener and Waterloo Region are rich in history, landscape and legacy. Come hear music inspired by our city in a concert that features local celebrities and locally inspired music that will open your eyes and ears to everything the Region has to offer. Expect surprises!",
+    "title": "Music in Your Neighbourhood",
+    "highlights": "Music and surprises inspired by our community",
+    "image": "",
+    "date": null,
+    "youtube_embed_link": ""
+  },
+  "model": "appcode.concert",
+  "pk": 32
 },
 {
   "fields": {
