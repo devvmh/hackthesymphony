@@ -35,6 +35,9 @@
 
 .suggestions-explanation {
   padding: 0 1.5em;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  max-width: 100%;
 }
 
 .youtube {
