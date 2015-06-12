@@ -4,7 +4,7 @@ from .models import *
 class QuestionSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Question
-    fields = ('id', 'question')
+    fields = ('id', 'question', 'answers')
 
 class AnswerSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
@@ -14,7 +14,8 @@ class AnswerSerializer(serializers.HyperlinkedModelSerializer):
 class SessionSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Session
-    fields = ('id', 'username', 'current_question', 'ip', 'session_token')
+    fields = ('id', 'username', 'ip', 'session_token', 'session_answers')
+    depth = 1 #show all session_answers
 
 class SessionAnswerSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:

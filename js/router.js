@@ -84,9 +84,12 @@ function goToNextPage(ans) {
     question: ORCA.session.attributes.current_question,
     answer: ORCA.answers.get(id).url(),
   });
-  ORCA.session.attributes.current_question = ans.attributes.new_question;
 
-  session_answer.save(session_answer.attributes, {'success': function() {
+  session_answer.save(session_answer.attributes, {'success': function(model) {
+    //refer to the newly saved session_answer
+    session_answer_url = window.location.origin + model.url();
+    ORCA.session.attributes.session_answers.push(session_answer_url);
+    ORCA.session.attributes.current_question = ans.attributes.new_question;
     ORCA.session.save(ORCA.session.attributes, {'success': function() {
       localStorage.setItem('session', JSON.stringify(ORCA.session));
       ORCA.router.navigate('questions/' + new_question_id, {trigger: true});
