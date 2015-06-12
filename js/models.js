@@ -1,4 +1,5 @@
 Question = Backbone.Model.extend({
+  urlRoot: '/api/questions',
 });
 Question.prototype.answers = function() {
   return ORCA.answers.where({
@@ -6,6 +7,7 @@ Question.prototype.answers = function() {
   });
 };
 Answer = Backbone.Model.extend({
+  urlRoot: '/api/answers',
 });
 Session = Backbone.Model.extend({
   urlRoot: '/api/sessions',
