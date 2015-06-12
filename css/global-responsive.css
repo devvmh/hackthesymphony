@@ -1,3 +1,7 @@
+/**********************************************************
+RESPONSIVE CSS FOR 510px - 660 px
+**********************************************************/
+
 @media screen and (max-width: 660px) {
 
 	/**********************************************************
@@ -17,10 +21,18 @@
 		padding: 20px 10px 25px;
 	}
 
-    .back-button.arrow,
-	#arrow {
+	.back-button-arrow {
 		display: inline-block;
 	}
+	
+	.back-button-arrow img {
+		height: 2em;
+		width: 2em;
+		padding: 20px 10px 25px;
+		margin: 20px 2.5%;
+	}
+
+
 
 	/**********************************************************
 	MAIN CONTENT
@@ -37,7 +49,6 @@
 	#content .question {
 		margin-bottom: 5%;
 		max-width: 95%;
-		/*font-size: 1em;*/
 	}
 
 	.answer {
@@ -46,7 +57,7 @@
 		font-size: 1em;
 	}
 
-	.back-button {
+	.back-button-text {
 		font-size: .75em;
 		padding: 5px;
 		display: none;
@@ -68,28 +79,20 @@
 		display: block;
 		padding: 10px;
 		font-size: 1em;
-
 	}
 
 	.footer {
 		font-size: 1em;
 	}
-
 }
 
 
 
 
-@media screen and (min-width: 511px) {
 
-	#cat-gif-mobile {
-		display: none;
-	}
-
-}
-
-
-
+/**********************************************************
+RESPONSIVE CSS FOR 510px and under
+**********************************************************/
 
 
 @media screen and (max-width: 510px) {
@@ -105,12 +108,6 @@
 		padding: 17px 10px;
 	}
 
-    .back-button.arrow,
-	#arrow {
-		height: 1.5em;
-		width: 1.5em;
-	}
-
 	#cat-gif-large {
 		display: none;
 	}
@@ -118,14 +115,6 @@
 	#cat-gif-mobile {
 		display: block;
 	}
-
-	#words {
-		float: right;
-		display: block;
-		margin: 0 10px 30px;
-		text-align: left;
-	}
-
 
 	#content .concert-date, 
 	#content .concert-title {
@@ -138,6 +127,14 @@
 		margin-top: 5px;
 	}
 
+	#title {
+		font-size: 1.25em;
+	}
+
+	.back-button-arrow img {
+		height: 1.5em;
+		width: 1.5em;
+	}
 
 }
 
