@@ -1,3 +1,7 @@
+/**********************************************************
+RESPONSIVE CSS FOR 510px - 660 px
+**********************************************************/
+
 @media screen and (max-width: 660px) {
 
 	/**********************************************************
@@ -17,9 +21,18 @@
 		padding: 20px 10px 25px;
 	}
 
-    .back-button-arrow {
+	.back-button-arrow {
 		display: inline-block;
 	}
+	
+	.back-button-arrow img {
+		height: 2em;
+		width: 2em;
+		padding: 20px 10px 25px;
+		margin: 20px 2.5%;
+	}
+
+
 
 	/**********************************************************
 	MAIN CONTENT
@@ -36,7 +49,6 @@
 	#content .question {
 		margin-bottom: 5%;
 		max-width: 95%;
-		/*font-size: 1em;*/
 	}
 
 	.answer {
@@ -67,30 +79,20 @@
 		display: block;
 		padding: 10px;
 		font-size: 1em;
-
 	}
 
 	.footer {
 		font-size: 1em;
 	}
-
 }
+
+
+
 
 
 /**********************************************************
-RESPONSIVE FOR 511px to 
+RESPONSIVE CSS FOR 510px and under
 **********************************************************/
-
-@media screen and (min-width: 511px) {
-
-	#cat-gif-mobile {
-		display: none;
-	}
-
-}
-
-
-
 
 
 @media screen and (max-width: 510px) {
@@ -106,11 +108,6 @@ RESPONSIVE FOR 511px to
 		padding: 17px 10px;
 	}
 
-    .back-button-arrow {
-		height: 1.5em;
-		width: 1.5em;
-	}
-
 	#cat-gif-large {
 		display: none;
 	}
@@ -118,7 +115,6 @@ RESPONSIVE FOR 511px to
 	#cat-gif-mobile {
 		display: block;
 	}
-
 
 	#content .concert-date, 
 	#content .concert-title {
@@ -133,6 +129,11 @@ RESPONSIVE FOR 511px to
 
 	#title {
 		font-size: 1.25em;
+	}
+
+	.back-button-arrow img {
+		height: 1.5em;
+		width: 1.5em;
 	}
 
 }

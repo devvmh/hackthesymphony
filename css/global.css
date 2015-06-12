@@ -5,7 +5,7 @@ MAIN STYLES
 
 
 body {
-	font-family: 'Roboto' , sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	min-height: 750px;
 	background-image: url('/static/symphony.png');
@@ -126,12 +126,12 @@ MAIN CONTENT
 
 .protip,
 .comment {
-  font-weight: bold;
-  background-color: rgba(0, 180, 209, 1);
-  padding: 10px;
-  margin: 10px;
-  display: block;
-  color: #fff;
+	font-weight: bold;
+	background-color: rgba(0, 180, 209, 1);
+	padding: 10px;
+	margin: 10px;
+	display: block;
+	color: #fff;
 }
 
 
@@ -152,6 +152,10 @@ WHAT IS THIS PAGE
 	text-align: left;
 }
 
+#cat-gif-mobile {
+	display: none;
+}
+
 /**********************************************************
 BACK BUTTON
 **********************************************************/
@@ -166,7 +170,10 @@ BACK BUTTON
 	width: 80%;
 	margin: 0 auto 30px;
 	color: black;
-	display: block;
+}
+
+.back-button-text {
+	display: none;
 }
 
 
