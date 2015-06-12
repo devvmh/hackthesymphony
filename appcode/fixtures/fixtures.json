@@ -280,8 +280,8 @@
 {
   "fields": {
     "answer": "Beers in the theatre",
-    "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
-    "protip": "",
+    "comment": "Did we fool you? You can do all these things at the symphony!",
+    "protip": "Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "old_question": 6,
     "new_question": 7
   },
@@ -291,8 +291,8 @@
 {
   "fields": {
     "answer": "Jeans and T's",
-    "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
-    "protip": "",
+    "comment": "Did we fool you? You can do all these things at the symphony! ",
+    "protip": "Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "old_question": 6,
     "new_question": 7
   },
@@ -302,8 +302,8 @@
 {
   "fields": {
     "answer": "Pop music and silent films",
-    "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
-    "protip": "",
+    "comment": "Did we fool you? You can do all these things at the symphony! ",
+    "protip": "Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "old_question": 6,
     "new_question": 7
   },
@@ -313,8 +313,8 @@
 {
   "fields": {
     "answer": "Ice cream bars",
-    "comment": "Did we fool you? You can do all these things at the symphony! Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
-    "protip": "",
+    "comment": "Did we fool you? You can do all these things at the symphony! ",
+    "protip": "Protip: Pre-order drinks for intermission so that they're ready the moment you are.",
     "old_question": 6,
     "new_question": 7
   },
