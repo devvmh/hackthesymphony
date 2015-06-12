@@ -789,7 +789,7 @@
     "title": "Ode to the Horn",
     "highlights": "",
     "image": "",
-    "date": null,
+    "date": "WED OCTOBER 14, 8 PM\r\nFRI OCTOBER 16, 8 PM\r\nSAT OCTOBER 17, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -801,7 +801,7 @@
     "title": "Music at Sanssouci - The Musical Court of Friedrich \"the Great\"",
     "highlights": "C.P.E. Bach, Quantz, Benda and more",
     "image": "",
-    "date": null,
+    "date": "WED NOVEMBER 11, 8 PM\r\nFRI NOVEMBER 13, 8 PM\r\nSAT NOVEMBER 14, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -813,7 +813,7 @@
     "title": "Becoming Baroque",
     "highlights": "Handel, Corelli, Rameau and more",
     "image": "",
-    "date": null,
+    "date": "WED APRIL 6, 8 PM\r\nFRI APRIL 8, 8 PM\r\nSAT APRIL 9, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -825,7 +825,7 @@
     "title": "Evolution",
     "highlights": "Handel, Corelli, J.C. Bach, Haydn and more",
     "image": "",
-    "date": null,
+    "date": "WED MAY 4, 8 PM\r\nFRI MAY 6, 8 PM\r\nSAT MAY 7, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -837,7 +837,7 @@
     "title": "Cabbages and Counterpoint",
     "highlights": "An adventure with the musical Mendelssohn Mouse family ",
     "image": "",
-    "date": null,
+    "date": "SAT OCT 17, 10 & 11 AM\r\nSAT OCT 31, 10:30 AM\r\nSAT NOV 7, 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -849,7 +849,7 @@
     "title": "Buzzing Brass",
     "highlights": "This will \"bee\" a fun concert!",
     "image": "",
-    "date": null,
+    "date": "SAT JAN 30, 10:30 AM\r\nSAT FEB 6, 10 & 11 AM\r\nSAT FEB 20, 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -861,7 +861,7 @@
     "title": "Goldilocks and the Three Musical Bears",
     "highlights": "A delightful musical version of the classic fairytale",
     "image": "",
-    "date": null,
+    "date": "SAT APRIL 9, 10:30 AM\r\nSAT APRIL 23, 10 & 11 AM\r\nSAT MAY 7, 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -873,7 +873,7 @@
     "title": "Music Around the World",
     "highlights": "Explore music as it occurs in diverse cultures around the world",
     "image": "",
-    "date": null,
+    "date": "SAT OCTOBER 10, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -885,7 +885,7 @@
     "title": "Music at Your House",
     "highlights": "Laugh as you find music in places you didn't know it was hiding!",
     "image": "",
-    "date": null,
+    "date": "SAT FEBRUARY 13, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -897,7 +897,7 @@
     "title": "Music in Your Neighbourhood",
     "highlights": "Music and surprises inspired by our community",
     "image": "",
-    "date": null,
+    "date": "SAT April 30, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
