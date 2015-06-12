@@ -64,7 +64,7 @@ function popUpComment(ans, dequeuer) {
 }//answerOnClick
 
 function goToNextPage(ans) {
-  var id = ans.attributes.id;
+  var answer_id = ans.attributes.id;
   var new_question = ans.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
@@ -80,15 +80,15 @@ function goToNextPage(ans) {
   }//if
 
   var session_answer = new SessionAnswer({
-    session: ORCA.session.url(),
+    session: ORCA.session.id,
     question: ORCA.session.attributes.current_question,
-    answer: ORCA.answers.get(id).url(),
+    answer: answer_id,
   });
 
   session_answer.save(session_answer.attributes, {'success': function(model) {
     //refer to the newly saved session_answer
     session_answer_url = window.location.origin + model.url();
-    ORCA.session.attributes.session_answers.push(session_answer_url);
+    ORCA.session.attributes.session_answers.push({id: model.id});
     ORCA.session.attributes.current_question = ans.attributes.new_question;
     ORCA.session.save(ORCA.session.attributes, {'success': function() {
       localStorage.setItem('session', JSON.stringify(ORCA.session));
