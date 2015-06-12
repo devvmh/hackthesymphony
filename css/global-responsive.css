@@ -17,8 +17,7 @@
 		padding: 20px 10px 25px;
 	}
 
-    .back-button.arrow,
-	#arrow {
+    .back-button-arrow {
 		display: inline-block;
 	}
 
@@ -46,7 +45,7 @@
 		font-size: 1em;
 	}
 
-	.back-button {
+	.back-button-text {
 		font-size: .75em;
 		padding: 5px;
 		display: none;
@@ -78,7 +77,9 @@
 }
 
 
-
+/**********************************************************
+RESPONSIVE FOR 511px to 
+**********************************************************/
 
 @media screen and (min-width: 511px) {
 
@@ -105,8 +106,7 @@
 		padding: 17px 10px;
 	}
 
-    .back-button.arrow,
-	#arrow {
+    .back-button-arrow {
 		height: 1.5em;
 		width: 1.5em;
 	}
@@ -117,13 +117,6 @@
 
 	#cat-gif-mobile {
 		display: block;
-	}
-
-	#words {
-		float: right;
-		display: block;
-		margin: 0 10px 30px;
-		text-align: left;
 	}
 
 
@@ -138,6 +131,9 @@
 		margin-top: 5px;
 	}
 
+	#title {
+		font-size: 1.25em;
+	}
 
 }
 

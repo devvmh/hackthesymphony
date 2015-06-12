@@ -26,8 +26,7 @@ header {
 	border-bottom: 5px solid #C4666A;
 }
 
-.back-button.arrow,
-#arrow {
+.back-button-arrow {
 	width: 2em;
 	height: 2em;
 	float: left;
@@ -147,12 +146,18 @@ WHAT IS THIS PAGE
 	max-width: 100%;
 }
 
+#words {
+	display: block;
+	margin: 10px 10px 30px;
+	text-align: left;
+}
+
 /**********************************************************
 BACK BUTTON
 **********************************************************/
 
 
-.back-button a {
+.back-button-text a {
 	font-family:'Roboto';
 	font-weight: 700;
 	text-align: center;
