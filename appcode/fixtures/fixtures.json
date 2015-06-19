@@ -4,7 +4,7 @@
     "question": "Done Quiz"
   },
   "model": "appcode.question",
-  "pk": 0
+  "pk": -1
 },
 {
   "fields": {
@@ -393,7 +393,7 @@
     "comment": "",
     "protip": "",
     "old_question": 8,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 28
@@ -404,7 +404,7 @@
     "comment": "",
     "protip": "",
     "old_question": 8,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 29
@@ -426,7 +426,7 @@
     "comment": "",
     "protip": "",
     "old_question": 10,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 31
@@ -448,7 +448,7 @@
     "comment": "",
     "protip": "",
     "old_question": 10,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 33
@@ -459,7 +459,7 @@
     "comment": "\"I like your opera. I think I will set it to music\"  This is what a Beethoven burn sounds like.",
     "protip": "",
     "old_question": 11,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 34
@@ -470,7 +470,7 @@
     "comment": "Fun Fact: The Beatles spent 700 hours recording Sgt. Pepper (In contrast, they spent 10 hours on their first album, Please Please Me)",
     "protip": "",
     "old_question": 11,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 35
@@ -481,7 +481,7 @@
     "comment": "There's really not a bad seat in the house",
     "protip": "",
     "old_question": 12,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 36
@@ -492,7 +492,7 @@
     "comment": "There's really not a bad seat in the house",
     "protip": "",
     "old_question": 12,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 37
@@ -503,7 +503,7 @@
     "comment": "There's really not a bad seat in the house",
     "protip": "",
     "old_question": 12,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 38
