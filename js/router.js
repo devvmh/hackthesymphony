@@ -68,7 +68,7 @@ function goToNextPage(ans) {
   var new_question = ans.attributes.new_question;
   var new_question_id = new_question.replace(window.location.origin + '/api/questions/', '');
 
-  if (new_question_id == "0") {
+  if (new_question_id == "-1") {
     $('.question, .answers, .back-button-text a').fadeOut('slow').promise().done(function() {
       ORCA.session.attributes.current_question = window.location.origin + '/api/questions/0';
       localStorage.removeItem('session');
