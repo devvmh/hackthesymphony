@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 from django.core.serializers import serialize
 from django.core.urlresolvers import reverse
 
@@ -106,7 +106,7 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
 
-@login_required
+@permission_required('change_concertanswerscore')
 def scores_edit_table(request):
   concert_list = Concert.objects.all()
   answer_list = Answer.objects.all()
