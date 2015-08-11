@@ -11,7 +11,7 @@ $(document).ready(function() {
     ORCA.session.save(ORCA.session.attributes, {error: function() {
       alert("invalid session");
       localStorage.removeItem('session');
-      window.location = window.origin;
+      window.location = "/";
     }});
   } else {
     ORCA.session = new Session({
