@@ -441,7 +441,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 50
@@ -452,7 +452,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 51
@@ -463,7 +463,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 52
@@ -474,7 +474,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 53
@@ -485,7 +485,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": 0
+    "new_question": -1
   },
   "model": "appcode.answer",
   "pk": 54
