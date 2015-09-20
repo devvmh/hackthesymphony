@@ -6,7 +6,7 @@
 {% endblock css %}
 
 {% block main %}
-  <p class="suggestions-explanation">Nice work! We found some shows that match your interests perfectly. See you at Centre in the Square!</p>
+  <p class="suggestions-explanation">Nice work! We found some shows that match your interests perfectly. See you at the show!</p>
   {% for concert in concert_list %}
     {% include "concert.html" with concert=concert %}
   {% endfor %}
