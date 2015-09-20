@@ -4,7 +4,7 @@
     "question": "Done Quiz"
   },
   "model": "appcode.question",
-  "pk": -1
+  "pk": 0
 },
 {
   "fields": {
@@ -441,7 +441,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": -1
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 50
@@ -452,7 +452,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": -1
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 51
@@ -463,7 +463,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": -1
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 52
@@ -474,7 +474,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": -1
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 53
@@ -485,7 +485,7 @@
     "comment": "",
     "protip": "",
     "old_question": 15,
-    "new_question": -1
+    "new_question": 0
   },
   "model": "appcode.answer",
   "pk": 54
@@ -495,8 +495,8 @@
     "description": "Classical popera group Tenore combine their stunning vocal talents with the musical stylings of the KWS for this exquisite concert. Tenore has won prestigious awards and wowed communities with their timeless, beautiful music with hits like You Raise Me Up, Fare Thee Well and Nessun Dorma. Known for powerhouse vocals, inspiring music and audience participation, this concert is sure to delight KWS audiences!",
     "title": "Tenore",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/Tenore0172-Edit-Edit.jpg",
-    "date": "2015-08-25",
+    "image": "https://kwsymphony.ca/2015_16/images/pops1-450x450.gif",
+    "date": "FRI SEPTEMBER 11 | Centre in the Square | 8 PM \r\nSAT SEPTEMBER 12 | Centre in the Square |8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -507,8 +507,8 @@
     "description": "Bond\u2026 James Bond. Experience the drama and mystery of the iconic spy with a tribute to the music of James Bond. Hear music from 007\u2019s most thrilling missions with classic Bond theme songs and essentials from Dr. No, Live and Let Die, For Your Eyes Only and recent Oscar\u00ae winner, Skyfall, featuring the vocals of Broadway stars Capathia Jenkins and Ron Bohmer.",
     "title": "James Bond: The Music",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/James-Bond.jpg",
-    "date": "2015-10-09",
+    "image": "https://kwsymphony.ca/2015_16/images/pops2-450x450.gif",
+    "date": "FRI OCTOBER 9 | Centre in the Square | 8 PM\r\nSAT OCTOBER 10 | Center in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -519,8 +519,8 @@
     "description": "Yuletide Spectacular is back with an all-new program featuring The Hockey Sweater.\r\nThe classic short story by Canadian author Roch Carrier has been interpreted for orchestra by Canadian composer Abigail Richardson, together with stunning visuals of the original illustrations from the book. The celebration continues with special guests from the community joining the KWS to play your holiday favourites. Together with the everpopular carol sing-along, this is a spectacularly festive concert!",
     "title": "Yuletide Spectacular",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/Yuletide.jpg",
-    "date": "2015-12-18",
+    "image": "https://kwsymphony.ca/2015_16/images/pops3-450x450.gif",
+    "date": "FRI DECEMBER 18 | Centre in the Square | 8 PM\r\nSAT DECEMBER 19 | Centre in the Square | 2:30 PM \r\nSAT DECEMBER 19 | Centre in the Square | 8 PM\r\nSUN DECEMBER 20 | Centre in the Square | 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -531,8 +531,8 @@
     "description": "Relive the beloved Beatles\u2019 album Sgt. Pepper\u2019s Lonely Hearts Club Band with Canada\u2019s Art of Time Ensemble and the KWS. Made up of Canadian pop icons, including Craig Northey and Glen Phillips of popular 90s bands Odds and Toad the Wet Sprocket, and Andy Maize of the enduring roots rock band Skydiggers, Art of Time Ensemble re-imagines and re-invents Sgt. Pepper through arrangements from pop, jazz and classical composers, bringing a unique perspective and orchestral arrangements to this classic album.",
     "title": "Sgt. Pepper's Lonely Hearts Club Band",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/Sgt_Pepper_FA.tif",
-    "date": "2015-05-22",
+    "image": "https://kwsymphony.ca/2015_16/images/pops4-450x450.gif",
+    "date": "FRI JANUARY 22 | Centre in the Square | 8 PM\r\nSAT JANUARY 23 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -543,8 +543,8 @@
     "description": "One of Canada\u2019s most beloved male vocalists and crooner in the style of Sinatra, Matt Dusk, and the angelic songstress and triple East Coast Music Award nominee, Eleanor McCain, join the KWS for a concert of familiar classic and contemporary love songs. Featuring selections from McCain\u2019s new album Runaway, produced by Matt Dusk, the two pair up for the poignant duet To Make You Feel My Love and other symphonic love songs. Join the KWS to celebrate love with lush, elegant music for the eternal romantic. A perfect start to your Valentine\u2019s Day celebration!",
     "title": "Matt Dusk & Eleanor McCain: The Music of Love",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/Matt-Dusk2.jpg",
-    "date": "2016-02-12",
+    "image": "https://kwsymphony.ca/2015_16/images/pops5-450x450.gif",
+    "date": "FRI FEBRUARY 12 | Centre in the Square | 8 PM\r\nSAT FEBRUARY 13 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -555,8 +555,8 @@
     "description": "KWS favourite Matt Catingub returns to conduct this energetic concert featuring dance music spanning 70 years from swing to hip hop! From Glenn Miller\u2019s big band classic In the Mood, to the early days of Rock \u2018n Roll with hits like Bill Haley\u2019s Rock Around the Clock and the Beatles\u2019 Twist and Shout, to the disco era and the 80s with Madonna\u2019s Vogue, there is something for all ages. Featuring drummer Steve Moretti and vocalist Anita Hall, this concert is sure to have you dancing in the aisles!",
     "title": "Dancin' Thru The Decades",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/Dancin Through The Decades.jpg",
-    "date": "2015-05-11",
+    "image": "https://kwsymphony.ca/2015_16/images/pops6-450x450.gif",
+    "date": "FRI MARCH 11 | Centre in the Square | 8 PM\r\nSAT MARCH 12 | Centre in the Square | 2:30 PM \r\nSAT MARCH 12 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -567,8 +567,8 @@
     "description": "The great-grandchildren of Captain and Maria von Trapp, made famous by the beloved 1965 film, The Sound of Music, bring a new generation of voices to the legendary family tradition. Inspired by Austrian and American folk songs, this vocal quartet brings modern flair to classics like Edelweiss and Dream A Little Dream of Me, together with songs from their original new release Dancing in Gold, accompanied by the KWS led by Music Director Edwin Outwater!",
     "title": "The Von Trapps",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/The-von-Trapps.jpg",
-    "date": "2016-04-15",
+    "image": "https://kwsymphony.ca/2015_16/images/pops7-450x450.gif",
+    "date": "FRI APRIL 15 | Centre in the Square | 8 PM \r\nSAT APRIL 16 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -579,8 +579,8 @@
     "description": "Guest Conductor Lucas Waldin returns to the KWS to lead a very special program to celebrate the 70th anniversary season. With a number of guest artists back by popular demand, including the Carousel Dance Company, The Grand Philharmonic Youth Choir and the Waterloo Regional Police Male Chorus, this concert will be curated by you, the audience!\r\n\r\nVisit kwsymphony.ca/KWSByRequest and fill out the survey by June 1, 2015. Your favourite selections could be included in this evening of music from stage, screen and concert hall. Don\u2019t miss what is sure to be a delightfully surprising evening celebrating you \u2014 the KWS audience!",
     "title": "KWS By Request",
     "highlights": "",
-    "image": "https://localhost:8000/static/Pops Series/kws-by-req-banner.jpg",
-    "date": "2015-05-13",
+    "image": "https://kwsymphony.ca/2015_16/images/pops8-450x450.gif",
+    "date": "FRI MAY 13 | Centre in the Square | 8 PM\r\nSAT MAY 14 | Centre in the Square | 2:30 PM \r\nSAT MAY 14 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -591,9 +591,9 @@
     "description": "The 70th anniversary season begins with an astounding marathon of music as pianist Stewart Goodyear plays all five Beethoven piano concertos with the KWS. This music is a joy to hear, and the immersive multi-night journey into Beethoven\u2019s masterpieces for piano and orchestra will be unforgettable. (Piano Concerto No. 3 appears on the Matin\u00e9e Series, September 26 at 2:30 pm.)",
     "title": "Beethoven Marathon",
     "highlights": "",
-    "image": "https://kwsymphony.ca/2015_16/subscription/signature-banner.jpg",
-    "date": "2015-09-25",
-    "youtube_embed_link": null
+    "image": "https://kwsymphony.ca/2015_16/images/sig1-450x450.gif",
+    "date": "FRI SEPTEMBER 25 | Centre in the Square | 8 PM\r\nSAT SEPTEMBER 26 | Centre in the Square | 2:30 PM \r\nSAT SEPTEMBER 26 | Centre in the Square | 8 PM",
+    "youtube_embed_link": ""
   },
   "model": "appcode.concert",
   "pk": 9
@@ -603,8 +603,8 @@
     "description": "Join the KWS and special guests to explore a world of symmetry, pattern, and the intimate relationship between mathematics and music, with a focus on the beauty and elegance of geometry and its most passionate apostle, the late Donald Coxeter. Regarded as the greatest geometer of the 20th Century and one of Canada\u2019s mathematical heroes, Coxeter\u2019s influence is far-reaching. In the tradition of \u201cBeethoven and Your Brain,\u201d and \u201cQuantum: Music on the Frontier of Science,\u201d this concert is the latest music/science collaboration in the Intersections Series.",
     "title": "The Geometry of Music: Harold Scott MacDonald Coxeter ",
     "highlights": "",
-    "image": "https://localhost:8000/static/Intersections/Dr. Coxeter Final LR - credit EDEN ROBBINS.jpg",
-    "date": "2016-04-22",
+    "image": "https://kwsymphony.ca/2015_16/images/int3-450x450.gif",
+    "date": "FRI APRIL 22 | Conrad Centre | 7:30 PM\r\nSAT APRIL 23 | Conrad Centre | 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -615,9 +615,9 @@
     "description": "The KWS Youth Orchestra is featured playing side-by-side with the KWS on the following concerts: Yuletide\r\nSpectacular (Pops Series) and KWS Concerto Celebration (Signature Series).",
     "title": "Youth Orchestra Program",
     "highlights": "",
-    "image": "https://kwsymphony.ca/2015_16/subscription/yop-banner.jpg",
-    "date": "2015-11-28",
-    "youtube_embed_link": null
+    "image": "http://kwsymphony.ca/2015_16/images/yop3-300x300.gif",
+    "date": "November 28 | Centre In The Square | 2 pm\r\nFebruary 27 | Centre In The Square | 2 pm\r\nApril 16 | Centre In The Square | 2 pm\r\n",
+    "youtube_embed_link": ""
   },
   "model": "appcode.concert",
   "pk": 13
@@ -627,8 +627,8 @@
     "description": "Opera returns to Kitchener-Waterloo! In this concert version of Johann Strauss, Jr.\u2019s beloved opera, Die Fledermaus, the KWS joins forces with Wilfrid Laurier University music faculty, host Daniel Isengart and surprise guests to present an evening of glorious melody, great laughs and unforgettable performances. We are thrilled to present opera at the Centre In The Square as part of the 70th anniversary celebrations.",
     "title": "Die Fledermaus: Comic Opera in Concert",
     "highlights": "",
-    "image": "https://localhost:8000/static/orchestrashots/KWSorch.jpg",
-    "date": "2016-01-15",
+    "image": "https://kwsymphony.ca/2015_16/images/sig4-450x450.gif",
+    "date": "FRI JANUARY 15 | Centre in the Square | 8 PM\r\nSAT JANUARY 16 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -637,10 +637,10 @@
 {
   "fields": {
     "description": "Pianist Orion Weiss returns to the KWS to perform one of Haydn\u2019s greatest symphonies and one of Mozart\u2019s most sublime piano concertos. Weiss will perform these pieces alongside delightful and surprising works both old and new.",
-    "title": "Weiss plays Mozart and Haydn",
+    "title": "Orion plays Mozart and Haydn",
     "highlights": "Experience a delightful symphony and one of the most sublime piano concertos - all in one night!",
-    "image": "",
-    "date": "2015-10-30",
+    "image": "https://kwsymphony.ca/2015_16/images/sig2-450x450.gif",
+    "date": "FRI OCTOBER 30 | Centre in the Square | 8 PM\r\nSAT OCTOBER 31 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -651,8 +651,8 @@
     "description": "Bruckner\u2019s epic Symphony No. 4 evokes ancient castles, hunting horns, snow-capped mountains and misty forests. It is one of the great romantic works for orchestra\u2014majestic and transcendent. The music of Donovan Seidle opens the program, and Bruch\u2019s famous violin concerto will be played by the fiery and expressive violinist Elena Urioste, making her KWS debut.",
     "title": "Bruckner's Romantic Symphony",
     "highlights": "One of the greatest romantic works for orchestra - majestic and transcendent",
-    "image": "",
-    "date": "2015-11-27",
+    "image": "https://kwsymphony.ca/2015_16/images/sig3-450x450.gif",
+    "date": "FRI NOVEMBER 27 | Centre in the Square | 8 PM\r\nSAT NOVEMBER 28 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -663,8 +663,8 @@
     "description": "Three Russian masterpieces are combined to create a program bursting with musical colour, virtuosity and fantasy. Tchaikovsky\u2019s rarely heard music to The Tempest opens the program (a favourite of Edwin\u2019s); Alon Goldstein makes his KWS debut in Prokofiev\u2019s fiendishly challenging Piano Concerto No. 3; and Scheherazade takes us on a magical journey of sound, storytelling and imagination.",
     "title": "Scheherazade",
     "highlights": "A program bursting with musical colour, virtuosity and fantasy",
-    "image": "",
-    "date": "2016-02-26",
+    "image": "https://kwsymphony.ca/2015_16/images/sig5-450x450.gif",
+    "date": "FRI FEBRUARY 26 | Centre in the Square | 8 PM\r\nSAT FEBRUARY 27 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -675,8 +675,8 @@
     "description": "One of Canada\u2019s great pianists makes a long-awaited return to the KWS, sharing the music that made her famous. Janina Fialkowska\u2019s performances of Chopin are legendary, and she plays his Piano Concerto No. 2 on this beautiful program. Conductor Heiichiro Ohyama makes his KWS conducting debut, featuring Dvo\u0159\u00e1k's powerful Symphony No. 7.",
     "title": "Janina Plays Chopin",
     "highlights": "Janina Fialkowska\u2019s performances of Chopin are legendary",
-    "image": "",
-    "date": "2016-04-01",
+    "image": "https://kwsymphony.ca/2015_16/images/sig6-450x450.gif",
+    "date": "FRI APRIL 1 | Centre in the Square | 8 PM\r\nSAT APRIL 2 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -687,8 +687,8 @@
     "description": "Members of the KWS take centre stage in a celebration of the remarkable individual talents that make up the Orchestra. You\u2019ll hear beautiful concerto performances from oboist James Mason, bassoonist Ian Hopkin, violist Natasha Sharko and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re. Then, the entire Orchestra takes a solo turn in Bart\u00f3k\u2019s masterpiece, Concerto for Orchestra.",
     "title": "KWS Concerto Celebration",
     "highlights": "A showcase of remarkable individual talents that make up your orchestra",
-    "image": "",
-    "date": "2016-04-29",
+    "image": "https://kwsymphony.ca/2015_16/images/sig7-450x450.gif",
+    "date": "FRI APRIL 29 | Centre in the Square | 8 PM\r\nSAT APRIL 30 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -699,8 +699,8 @@
     "description": "Dynamic young conductor Marcelo Lehninger leads the season finale, performing the music of young Canadian composer Jordan Pal and glorious music of Brahms. Brahms\u2019 Symphony No. 1 carried on the great German symphonic tradition of Beethoven, and his Shicksalslied is a profound and touching work for chorus and orchestra.",
     "title": "Lehninger conducts Brahms",
     "highlights": "The dynamic young conductor leads the season finale!",
-    "image": "",
-    "date": "2016-05-27",
+    "image": "https://kwsymphony.ca/2015_16/images/sig8-450x450.gif",
+    "date": "FRI MAY 27 | Centre in the Square | 8 PM\r\nSAT MAY 28 | Centre in the Square | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -711,8 +711,8 @@
     "description": "A major new work commissioned by the KWS! Take the first silent horror movie, commission a wild new score by Canadian composer Scott Good, perform the film with a live orchestra, piano by Gregory Oh and vocals by Stacie Dunlop, and you have an evening of creative mayhem like no other. One of the most exciting concerts of the season!",
     "title": "The Hands of Orlac",
     "highlights": "An evening of creative mayhem like no other. It will be a scream!",
-    "image": "",
-    "date": "2015-11-20",
+    "image": "https://kwsymphony.ca/2015_16/images/int1-450x450.gif",
+    "date": "FRI NOVEMBER 20 | Conrad Centre | 7:30 PM\r\nSAT NOVEMBER 21 | Conrad Centre | 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -723,8 +723,8 @@
     "description": "Songwriter, throat singer, rock star, Polaris prizewinner: Tanya Tagaq brings her visionary voice and music to the Intersections Series. Featuring her own songs as well as a stunning work for throat singer and orchestra by Derek Charke, Tanya Tagaq\u2019s music is powerful and revolutionary. This is a must-hear concert featuring one of the most compelling Canadian artists of our time.",
     "title": "Tanya Tagaq",
     "highlights": "A must-hear concert featuring one of the most compelling Canadian artists of our time",
-    "image": "https://localhost:8000/static/Intersections/tanya_colour_with_frame_0.jpg",
-    "date": "2016-02-05",
+    "image": "https://kwsymphony.ca/2015_16/images/int2-450x450.gif",
+    "date": "FRI FEBRUARY 5 | Conrad Centre | 7:30 PM\r\nSAT FEBRUARY 6 | Conrad Centre | 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -735,8 +735,8 @@
     "description": "Join the KWS for a concert that celebrates the French horn repertoire of Baroque masters Vivaldi, Handel and Telemann, curated by KWS hornist Jessie Brooks. From unaccompanied hunting horns to Handel\u2019s call and response concerto and Telemann\u2019s exciting but rarely heard Alster Echo for horn quartet, these works showcase the amazing talents of the KWS horn section.",
     "title": "Ode to the Horn",
     "highlights": "",
-    "image": "",
-    "date": "WED OCTOBER 14, 8 PM\r\nFRI OCTOBER 16, 8 PM\r\nSAT OCTOBER 17, 8 PM",
+    "image": "https://kwsymphony.ca/2015_16/images/bar1-450x450.gif",
+    "date": "WED OCTOBER 14 | WAT | 8 PM\r\nFRI OCTOBER 16 | GUE | 8 PM\r\nSAT OCTOBER 17 | CAM | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -747,8 +747,8 @@
     "description": "Friedrich II of Prussia (1712-86) was not only King, but also a flute player and composer. The musical establishment of his court, particularly at his summer home at Sanssouci Palace, featured prominent composers C.P.E Bach, Quantz and Benda, and was for a time a centre of German musical life. This concert, curated by KWS bassist Bruce McGillivray, brings together works by composers of this \u201cmusical household,\u201d and features the talents of KWS musicians Thomas Kay, John Helmers and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re.",
     "title": "Music at Sanssouci - The Musical Court of Friedrich \"the Great\"",
     "highlights": "C.P.E. Bach, Quantz, Benda and more",
-    "image": "",
-    "date": "WED NOVEMBER 11, 8 PM\r\nFRI NOVEMBER 13, 8 PM\r\nSAT NOVEMBER 14, 8 PM",
+    "image": "http://kwsymphony.ca/2015_16/images/bar2-300x300.gif",
+    "date": "WED NOVEMBER 11 | WAT | 8 PM\r\nFRI NOVEMBER 13 | GUE | 8 PM\r\nSAT NOVEMBER 14 | CAM | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -759,8 +759,8 @@
     "description": "Join Guest Director Jeanne Lamon, celebrated Music Director Emerita of Tafelmusik and Member of the Order of Canada, as she leads the KWS through a joyful and energetic program of Baroque music. Curated by KWS violinist Allene Chomyn, this concert is a musical memoir of her time studying Baroque violin with Jeanne and members of Tafelmusik at their Summer and Winter Institutes, and features works by Handel, Corelli, Rameau and more!",
     "title": "Becoming Baroque",
     "highlights": "Handel, Corelli, Rameau and more",
-    "image": "",
-    "date": "WED APRIL 6, 8 PM\r\nFRI APRIL 8, 8 PM\r\nSAT APRIL 9, 8 PM",
+    "image": "https://kwsymphony.ca/2015_16/images/bar3-450x450.gif",
+    "date": "WED APRIL 6 | WAT | 8 PM\r\nFRI APRIL 8 | GUE | 8 PM\r\nSAT APRIL 9 | CAM | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -771,8 +771,8 @@
     "description": "Join us for an evening of musical exploration into the genre of classical music as it has transformed and evolved over time, curated by KWS bassoonist Michael Macaulay. A genre is a living thing and, once in a while, a radical development emerges that both changes the future of music and pays homage to the work of generations past. Join the KWS and featured Orchestra soloists to trace the evolution of the classical symphony; a story told through the music of the composers who laid its foundation, as well as those who refined it.",
     "title": "Evolution",
     "highlights": "Handel, Corelli, J.C. Bach, Haydn and more",
-    "image": "",
-    "date": "WED MAY 4, 8 PM\r\nFRI MAY 6, 8 PM\r\nSAT MAY 7, 8 PM",
+    "image": "https://kwsymphony.ca/2015_16/images/bar4-450x450.gif",
+    "date": "WED MAY 4 | WAT | 8 PM\r\nFRI MAY 6 | GUE | 8 PM\r\nSAT MAY 7 | CAM | 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -783,8 +783,8 @@
     "description": "The musical Mendelssohn Mouse family is rehearsing and getting ready for a concert, but Fannie Mouse has disappeared! Help the Mouse family find Fannie, and discover a musical canon and fugue along the way.",
     "title": "Cabbages and Counterpoint",
     "highlights": "An adventure with the musical Mendelssohn Mouse family ",
-    "image": "",
-    "date": "SAT OCT 17, 10 & 11 AM\r\nSAT OCT 31, 10:30 AM\r\nSAT NOV 7, 10:30 AM",
+    "image": "http://kwsymphony.ca/2015_16/images/kin1-300x300.gif",
+    "date": "October 17 | Conrad Centre for Performing Arts | 10 & 11 am\r\nOctober 31 | Waterloo Region Museum | 10:30 am\r\nNovember 7 | Woolwich Memorial Centre | 10:30 am ",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -795,8 +795,8 @@
     "description": "What do trumpets, French horns, trombones, tubas and conch shells have in common? Join Teddy as he learns that the Brass family are like bees\u2026always buzzing!",
     "title": "Buzzing Brass",
     "highlights": "This will \"bee\" a fun concert!",
-    "image": "",
-    "date": "SAT JAN 30, 10:30 AM\r\nSAT FEB 6, 10 & 11 AM\r\nSAT FEB 20, 10:30 AM",
+    "image": "https://kwsymphony.ca/2015_16/images/kin2-450x450.gif",
+    "date": "SAT JAN 30 | Waterloo Region Museum | 10:30 AM\r\nSAT FEB 6 | Conrad Centre for Performing Arts | 10 & 11 AM\r\nSAT FEB 20 | Woolwich Memorial Centre |10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -807,8 +807,8 @@
     "description": "The harp, trombone and oboe introduce you to three talented bears that sing, dance and cook the perfect porridge for Goldilocks in this delightful version of the classic fairy tale.",
     "title": "Goldilocks and the Three Musical Bears",
     "highlights": "A delightful musical version of the classic fairytale",
-    "image": "",
-    "date": "SAT APRIL 9, 10:30 AM\r\nSAT APRIL 23, 10 & 11 AM\r\nSAT MAY 7, 10:30 AM",
+    "image": "http://kwsymphony.ca/2015_16/images/kin3-300x300.gif",
+    "date": "SAT APRIL 9 | Waterloo Region Museum | 10:30 AM\r\nSAT APRIL 23 | Conrad Centre for Performing Arts | 10 & 11 AM\r\nSAT MAY 7 | Woolwich Memorial Centre | 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -819,8 +819,8 @@
     "description": "In this entertaining concert, the KWS explores music as it occurs in diverse cultures around the world. Music is truly universal, and you will be amazed by the variety of styles and genres you hear in this action-packed concert, featuring special guests Suubi Fusion Troupe from the Dream for Uganda project.",
     "title": "Music Around the World",
     "highlights": "Explore music as it occurs in diverse cultures around the world",
-    "image": "https://localhost:8000/static/Family Series/Suubi Performance Troupe.JPG",
-    "date": "SAT OCTOBER 10, 2:30 PM",
+    "image": "http://kwsymphony.ca/2015_16/images/fam1-300x300.gif",
+    "date": "SAT OCTOBER 10 | Centre in the Square | 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -831,8 +831,8 @@
     "description": "Music is a big part of our everyday life \u2014 we come in contact with music and sometimes we don\u2019t even realize it! The KWS brings music to life with pieces you will recognize and love. You will laugh as you find music in places you didn\u2019t know it was hiding!",
     "title": "Music at Your House",
     "highlights": "Laugh as you find music in places you didn't know it was hiding!",
-    "image": "https://localhost:8000/static/Family Series/15KWS-i36129708-Sm.jpg",
-    "date": "SAT FEBRUARY 13, 2:30 PM",
+    "image": "http://kwsymphony.ca/2015_16/images/fam2-300x300.gif",
+    "date": "SAT FEBRUARY 13 | Centre in the Square | 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -843,8 +843,8 @@
     "description": "Kitchener and Waterloo Region are rich in history, landscape and legacy. Come hear music inspired by our city in a concert that features local celebrities and locally inspired music that will open your eyes and ears to everything the Region has to offer. Expect surprises!",
     "title": "Music in Your Neighbourhood",
     "highlights": "Music and surprises inspired by our community",
-    "image": "https://localhost:8000/static/Family Series/15KWS-shutter131224562.jpg",
-    "date": "SAT April 30, 2:30 PM",
+    "image": "http://kwsymphony.ca/2015_16/images/fam3-300x300.gif",
+    "date": "SAT APRIL 30 | Centre in the Square | 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
