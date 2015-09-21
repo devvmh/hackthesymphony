@@ -153,7 +153,12 @@ WHAT IS THIS PAGE
 	text-align: left;
 }
 
+#cat-gif-large {
+	margin-top: 2em;
+}
+
 #cat-gif-mobile {
+	margin-top: 1em;
 	display: none;
 }
 
