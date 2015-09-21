@@ -532,7 +532,7 @@
     "title": "Tenore",
     "highlights": "",
     "image": "http://www.kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI SEPTEMBER 11 | 8 PM \r\nSAT SEPTEMBER 12 | 8 PM",
+    "date": "Fri., Sept. 11, 8 PM | \r\nSat., Sept. 12, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -544,7 +544,7 @@
     "title": "James Bond: The Music",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI OCTOBER 9 | 8 PM\r\nSAT OCTOBER 10 | 8 PM",
+    "date": "Fri., Oct. 9, 8 PM | \r\nSat., Oct. 10, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -556,7 +556,7 @@
     "title": "Yuletide Spectacular",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI DECEMBER 18 | 8 PM\r\nSAT DECEMBER 19 | 2:30 PM \r\nSAT DECEMBER 19 | 8 PM\r\nSUN DECEMBER 20 | 2:30 PM",
+    "date": "Fri., Dec. 18, 8 PM | \r\nSat., Dec. 19, 2:30 PM | \r\nSat., Dec. 19, 8 PM | \r\nSun., Dec. 20, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -568,7 +568,7 @@
     "title": "Sgt. Pepper's Lonely Hearts Club Band",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI JANUARY 22 | 8 PM\r\nSAT JANUARY 23 | 8 PM",
+    "date": "Fri., Jan. 22, 8 PM | \r\nSat., Jan. 23, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -580,7 +580,7 @@
     "title": "Matt Dusk & Eleanor McCain: The Music of Love",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI FEBRUARY 12 | 8 PM\r\nSAT FEBRUARY 13 | 8 PM",
+    "date": "Fri., Feb. 12, 8 PM | \r\nSat., Feb. 13, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -592,7 +592,7 @@
     "title": "Dancin' Thru The Decades",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI MARCH 11 | 8 PM\r\nSAT MARCH 12 | 2:30 PM \r\nSAT MARCH 12 | 8 PM",
+    "date": "Fri., Mar. 11, 8 PM | \r\nSat., Mar. 12, 2:30 PM | \r\nSat., Mar. 12, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -604,7 +604,7 @@
     "title": "The Von Trapps",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI APRIL 15 | 8 PM \r\nSAT APRIL 16 | 8 PM",
+    "date": "Fri., Apr. 15, 8 PM | \r\nSat., Apr. 16, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -615,8 +615,8 @@
     "description": "Guest Conductor Lucas Waldin returns to the KWS to lead a very special program to celebrate the 70th anniversary season. With a number of guest artists back by popular demand, including the Carousel Dance Company, The Grand Philharmonic Youth Choir and the Waterloo Regional Police Male Chorus, this concert will be curated by you, the audience!\r\n\r\nVisit kwsymphony.ca/KWSByRequest and fill out the survey by June 1, 2015. Your favourite selections could be included in this evening of music from stage, screen and concert hall. Don\u2019t miss what is sure to be a delightfully surprising evening celebrating you \u2014 the KWS audience!\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttps://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1813\r\n\r\n\"> here.</a>",
     "title": "KWS By Request",
     "highlights": "",
-    "image": "http://kwsymphony.ca/2015_16/subscription/pops-banner.jpg",
-    "date": "FRI MAY 13 | 8 PM\r\nSAT MAY 14 | 2:30 PM \r\nSAT MAY 14 | 8 PM",
+    "image": "https://kwsymphony.ca/2015_16/images/pops8-450x450.gif",
+    "date": "Fri., May 13, 8 PM | \r\nSat., May 14, 2:30 PM | \r\nSat., May 14, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -628,7 +628,7 @@
     "title": "Beethoven Marathon",
     "highlights": "",
     "image": "https://kwsymphony.ca/2015_16/images/sig1-450x450.gif",
-    "date": "FRI SEPTEMBER 25 | 8 PM\r\nSAT SEPTEMBER 26 | 2:30 PM \r\nSAT SEPTEMBER 26 | 8 PM",
+    "date": "Fri., Sept. 25, 8 PM |\r\nSat., Sept. 26, 2:30 PM |\r\nSat., Sept. 26, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -640,7 +640,7 @@
     "title": "The Geometry of Music: Harold Scott MacDonald Coxeter ",
     "highlights": "",
     "image": "https://kwsymphony.ca/2015_16/images/int3-450x450.gif",
-    "date": "FRI APRIL 22 | 7:30 PM\r\nSAT APRIL 23 | 7:30 PM",
+    "date": "Fri., Apr. 22, 7:30 PM | \r\nSat., Apr. 23, 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -648,24 +648,24 @@
 },
 {
   "fields": {
-    "description": "Friedrich II of Prussia (1712-86) was not only King, but also a flute player and composer. The musical establishment of his court, particularly at his summer home at Sanssouci Palace, featured prominent composers C.P.E Bach, Quantz and Benda, and was for a time a centre of German musical life. This concert, curated by KWS bassist Bruce McGillivray, brings together works by composers of this \u201cmusical household,\u201d and features the talents of KWS musicians Thomas Kay, John Helmers and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re.",
-    "title": "Music at Sanssouci",
+    "description": "Friedrich II of Prussia (1712-86) was not only King, but also a flute player and composer. The musical establishment of his court, particularly at his summer home at Sanssouci Palace, featured prominent composers C.P.E Bach, Quantz and Benda, and was for a time a centre of German musical life. This concert, curated by KWS bassist Bruce McGillivray, brings together works by composers of this \u201cmusical household,\u201d and features the talents of KWS musicians Thomas Kay, John Helmers and concertmaster B\u00e9n\u00e9dicte Lauzi\u00e8re.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttp://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1857\r\n\r\n\"> here.</a>",
+    "title": "Music at Sanssouci - The Musical Court of Friedrich 'The Great'",
     "highlights": "",
-    "image": "https://kwsymphony.ca/2015_16/subscription/baroque.jpg",
-    "date": "2015-11-11",
-    "youtube_embed_link": null
+    "image": "https://kwsymphony.ca/2015_16/images/bar2-450x450.gif",
+    "date": "Wed., Nov. 11, 8 PM | \r\nFri., Nov. 13, 8 PM | \r\nSat., Nov. 14, 8 PM",
+    "youtube_embed_link": ""
   },
   "model": "appcode.concert",
   "pk": 11
 },
 {
   "fields": {
-    "description": "The harp, trombone and oboe introduce you to three talented bears that sing, dance and cook the perfect porridge for Goldilocks in this delightful version of the classic fairy tale.",
+    "description": "The harp, trombone and oboe introduce you to three talented bears that sing, dance and cook the perfect porridge for Goldilocks in this delightful version of the classic fairy tale.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttp://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1895\r\n\r\n\"> here.</a>",
     "title": "Goldilocks and The Three Musical Bears",
     "highlights": "",
     "image": "https://kwsymphony.ca/2015_16/subscription/kinder-banner.jpg",
-    "date": "2016-04-09",
-    "youtube_embed_link": null
+    "date": "Sat., Apr. 9, 10:30 AM | \r\nSat., Apr. 23, 10 & 11 AM | \r\nSat., May 7, 10:30 AM",
+    "youtube_embed_link": ""
   },
   "model": "appcode.concert",
   "pk": 12
@@ -676,7 +676,7 @@
     "title": "Youth Orchestra Program",
     "highlights": "",
     "image": "http://kwsymphony.ca/2015_16/subscription/yop-banner.jpg",
-    "date": "SAT NOVEMBER 28 | 2:00 PM\r\nSAT FEBRUARY 27 | 2:00 PM\r\nSAT APRIL 16 | 2:00 PM",
+    "date": "Sat., Nov. 28, 2:00 PM | \r\nSat., Feb. 27, 2:00 PM | \r\nSat., Apr. 16, 2:00 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -684,11 +684,11 @@
 },
 {
   "fields": {
-    "description": "Opera returns to Kitchener-Waterloo! In this concert version of Johann Strauss, Jr.\u2019s beloved opera, Die Fledermaus, the KWS joins forces with Wilfrid Laurier University music faculty, host Daniel Isengart and surprise guests to present an evening of glorious melody, great laughs and unforgettable performances. We are thrilled to present opera at the Centre In The Square as part of the 70th anniversary celebrations.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttps://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1821\r\n\r\n\"> here.</a>",
+    "description": "Opera returns to Kitchener-Waterloo! In this concert version of Johann Strauss, Jr.\u2019s beloved opera, Die Fledermaus, the KWS joins forces with Wilfrid Laurier University music faculty, host Daniel Isengart and surprise guests to present an evening of glorious melody, great laughs and unforgettable performances. We are thrilled to present opera at the Centre In The Square as part of the 70th anniversary celebrations.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttp://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1827\r\n\r\n\"> here.</a>",
     "title": "Die Fledermaus: Comic Opera in Concert",
     "highlights": "",
-    "image": "https://localhost:8000/static/orchestrashots/KWSorch.jpg",
-    "date": "2016-01-15",
+    "image": "https://kwsymphony.ca/2015_16/images/sig4-450x450.gif",
+    "date": "Fri., Jan. 15, 8 PM | \r\nSat., Jan. 16, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -699,8 +699,8 @@
     "description": "Pianist Orion Weiss returns to the KWS to perform one of Haydn\u2019s greatest symphonies and one of Mozart\u2019s most sublime piano concertos. Weiss will perform these pieces alongside delightful and surprising works both old and new.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttps://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1821\r\n\r\n\"> here.</a>",
     "title": "Orion plays Mozart and Haydn",
     "highlights": "Experience a delightful symphony and one of the most sublime piano concertos - all in one night!",
-    "image": "",
-    "date": "FRI OCTOBER 30 | 8 PM\r\nSAT OCTOBER 31 | 8 PM",
+    "image": "https://kwsymphony.ca/2015_16/images/sig2-450x450.gif",
+    "date": "Fri., Oct. 30, 8 PM | \r\nSat., Oct. 31, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -711,8 +711,8 @@
     "description": "Bruckner\u2019s epic Symphony No. 4 evokes ancient castles, hunting horns, snow-capped mountains and misty forests. It is one of the great romantic works for orchestra\u2014majestic and transcendent. The music of Donovan Seidle opens the program, and Bruch\u2019s famous violin concerto will be played by the fiery and expressive violinist Elena Urioste, making her KWS debut.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttps://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1824\r\n\r\n\"> here.</a>",
     "title": "Bruckner's Romantic Symphony",
     "highlights": "One of the greatest romantic works for orchestra - majestic and transcendent",
-    "image": "",
-    "date": "2015-11-27",
+    "image": "https://kwsymphony.ca/2015_16/images/sig3-450x450.gif",
+    "date": "Fri., Nov. 27, 8 PM | \r\nSat., Nov. 28, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -720,11 +720,11 @@
 },
 {
   "fields": {
-    "description": "Three Russian masterpieces are combined to create a program bursting with musical colour, virtuosity and fantasy. Tchaikovsky\u2019s rarely heard music to The Tempest opens the program (a favourite of Edwin\u2019s); Alon Goldstein makes his KWS debut in Prokofiev\u2019s fiendishly challenging Piano Concerto No. 3; and Scheherazade takes us on a magical journey of sound, storytelling and imagination.",
+    "description": "Three Russian masterpieces are combined to create a program bursting with musical colour, virtuosity and fantasy. Tchaikovsky\u2019s rarely heard music to The Tempest opens the program (a favourite of Edwin\u2019s); Alon Goldstein makes his KWS debut in Prokofiev\u2019s fiendishly challenging Piano Concerto No. 3; and Scheherazade takes us on a magical journey of sound, storytelling and imagination.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttp://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1830\r\n\r\n\"> here.</a>",
     "title": "Scheherazade",
     "highlights": "A program bursting with musical colour, virtuosity and fantasy",
-    "image": "",
-    "date": "2016-02-26",
+    "image": "https://kwsymphony.ca/2015_16/images/sig5-450x450.gif",
+    "date": "Fri., Feb. 26, 8 PM | \r\nSat., Feb. 27, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -732,11 +732,11 @@
 },
 {
   "fields": {
-    "description": "One of Canada\u2019s great pianists makes a long-awaited return to the KWS, sharing the music that made her famous. Janina Fialkowska\u2019s performances of Chopin are legendary, and she plays his Piano Concerto No. 2 on this beautiful program. Conductor Heiichiro Ohyama makes his KWS conducting debut, featuring Dvo\u0159\u00e1k's powerful Symphony No. 7.",
+    "description": "One of Canada\u2019s great pianists makes a long-awaited return to the KWS, sharing the music that made her famous. Janina Fialkowska\u2019s performances of Chopin are legendary, and she plays his Piano Concerto No. 2 on this beautiful program. Conductor Heiichiro Ohyama makes his KWS conducting debut, featuring Dvo\u0159\u00e1k's powerful Symphony No. 7.\r\n\r\n<br><br>For more information and to buy a ticket see <a href=\"\r\n\r\nhttp://tickets.kwsymphony.ca/single/EventDetail.aspx?p=1833\r\n\r\n\"> here.</a>",
     "title": "Janina Plays Chopin",
     "highlights": "Janina Fialkowska\u2019s performances of Chopin are legendary",
-    "image": "",
-    "date": "2016-04-01",
+    "image": "https://kwsymphony.ca/2015_16/images/sig6-450x450.gif",
+    "date": "Fri., Apr. 1, 8 PM | \r\nSat., Apr. 2, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -748,7 +748,7 @@
     "title": "KWS Concerto Celebration",
     "highlights": "A showcase of remarkable individual talents that make up your orchestra",
     "image": "",
-    "date": "FRI APRIL 29 | 8 PM\r\nSAT APRIL 30 | 8 PM",
+    "date": "Fri., Apr. 29, 8 PM | \r\nSat., Apr. 30, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -760,7 +760,7 @@
     "title": "Lehninger conducts Brahms",
     "highlights": "The dynamic young conductor leads the season finale!",
     "image": "",
-    "date": "FRI MAY 27 | 8 PM\r\nSAT MAY 28 | 8 PM",
+    "date": "Fri., May 27, 8 PM | \r\nSat., May 28, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -772,7 +772,7 @@
     "title": "The Hands of Orlac",
     "highlights": "An evening of creative mayhem like no other. It will be a scream!",
     "image": "https://kwsymphony.ca/2015_16/images/int1-450x450.gif",
-    "date": "FRI NOVEMBER 20 | 7:30 PM\r\nSAT NOVEMBER 21 | 7:30 PM",
+    "date": "Fri., Nov. 20, 7:30 PM | \r\nSat., Nov. 21, 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -784,7 +784,7 @@
     "title": "Tanya Tagaq",
     "highlights": "A must-hear concert featuring one of the most compelling Canadian artists of our time",
     "image": "https://kwsymphony.ca/2015_16/images/int2-450x450.gif",
-    "date": "FRI FEBRUARY 5 | 7:30 PM\r\nSAT FEBRUARY 6 | 7:30 PM",
+    "date": "Fri., Feb. 5, 7:30 PM | \r\nSat., Feb. 6, 7:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -796,7 +796,7 @@
     "title": "Ode to the Horn",
     "highlights": "",
     "image": "https://kwsymphony.ca/2015_16/images/bar1-450x450.gif",
-    "date": "WED OCTOBER 14, 8 PM\r\nFRI OCTOBER 16, 8 PM\r\nSAT OCTOBER 17, 8 PM",
+    "date": "Wed., Oct. 14, 8 PM | \r\nFri., Oct. 16, 8 PM | \r\nSat., Oct. 17, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -808,7 +808,7 @@
     "title": "Music at Sanssouci - The Musical Court of Friedrich \"the Great\"",
     "highlights": "C.P.E. Bach, Quantz, Benda and more",
     "image": "https://kwsymphony.ca/2015_16/images/bar2-450x450.gif",
-    "date": "WED NOVEMBER 11, 8 PM\r\nFRI NOVEMBER 13, 8 PM\r\nSAT NOVEMBER 14, 8 PM",
+    "date": "Wed., Nov. 11, 8 PM | \r\nFri., Nov. 13, 8 PM | \r\nSat., Nov. 14, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -820,7 +820,7 @@
     "title": "Becoming Baroque",
     "highlights": "Handel, Corelli, Rameau and more",
     "image": "https://kwsymphony.ca/2015_16/images/bar3-450x450.gif",
-    "date": "WED APRIL 6, 8 PM\r\nFRI APRIL 8, 8 PM\r\nSAT APRIL 9, 8 PM",
+    "date": "Wed., Apr. 6, 8 PM | \r\nFri., Apr. 8, 8 PM | \r\nSat., Apr. 9, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -832,7 +832,7 @@
     "title": "Evolution",
     "highlights": "Handel, Corelli, J.C. Bach, Haydn and more",
     "image": "https://kwsymphony.ca/2015_16/images/bar4-450x450.gif",
-    "date": "WED MAY 4, 8 PM\r\nFRI MAY 6, 8 PM\r\nSAT MAY 7, 8 PM",
+    "date": "Wed., May 4, 8 PM | \r\nFri., May 6, 8 PM | \r\nSat., May 7, 8 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -844,7 +844,7 @@
     "title": "Cabbages and Counterpoint",
     "highlights": "An adventure with the musical Mendelssohn Mouse family ",
     "image": "https://kwsymphony.ca/2015_16/images/kin1-450x450.gif",
-    "date": "SAT OCT 17, 10 & 11 AM\r\nSAT OCT 31, 10:30 AM\r\nSAT NOV 7, 10:30 AM",
+    "date": "Sat., Oct. 17, 10 & 11 AM | \r\nSat., Oct. 31, 10:30 AM | \r\nSat., Nov. 7, 10:30 AM ",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -856,7 +856,7 @@
     "title": "Buzzing Brass",
     "highlights": "This will \"bee\" a fun concert!",
     "image": "https://kwsymphony.ca/2015_16/images/kin2-450x450.gif",
-    "date": "SAT JAN 30, 10:30 AM\r\nSAT FEB 6, 10 & 11 AM\r\nSAT FEB 20, 10:30 AM",
+    "date": "Sat., Jan. 30, 10:30 AM | \r\nSat., Feb. 6, 10 & 11 AM | \r\nSat., Feb. 20, 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -868,7 +868,7 @@
     "title": "Goldilocks and the Three Musical Bears",
     "highlights": "A delightful musical version of the classic fairytale",
     "image": "https://kwsymphony.ca/2015_16/images/kin3-450x450.gif",
-    "date": "SAT APRIL 9, 10:30 AM\r\nSAT APRIL 23, 10 & 11 AM\r\nSAT MAY 7, 10:30 AM",
+    "date": "Sat., Apr. 9, 10:30 AM | \r\nSat., Apr. 23, 10 & 11 AM | \r\nSat., May 7, 10:30 AM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -880,7 +880,7 @@
     "title": "Music Around the World",
     "highlights": "Explore music as it occurs in diverse cultures around the world",
     "image": "https://kwsymphony.ca/2015_16/images/fam1-450x450.gif",
-    "date": "SAT OCTOBER 10, 2:30 PM",
+    "date": "Sat., Oct. 10, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -892,7 +892,7 @@
     "title": "Music at Your House",
     "highlights": "Laugh as you find music in places you didn't know it was hiding!",
     "image": "https://kwsymphony.ca/2015_16/images/fam2-450x450.gif",
-    "date": "SAT FEBRUARY 13, 2:30 PM",
+    "date": "Sat., Feb. 13, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",
@@ -904,7 +904,7 @@
     "title": "Music in Your Neighbourhood",
     "highlights": "Music and surprises inspired by our community",
     "image": "https://kwsymphony.ca/2015_16/images/fam3-450x450.gif",
-    "date": "SAT April 30, 2:30 PM",
+    "date": "Sat., Apr. 30, 2:30 PM",
     "youtube_embed_link": ""
   },
   "model": "appcode.concert",

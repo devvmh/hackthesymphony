@@ -15,12 +15,11 @@
 
 .concert-title {
   font-weight: bold;
-  float: left;
 }
 
-.concert-date {
+/*.concert-date {
   float: right;
-}
+}*/
 
 .concert-img {
   padding-top: 1em;
