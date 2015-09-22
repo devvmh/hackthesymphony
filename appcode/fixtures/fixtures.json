@@ -8,13 +8,6 @@
 },
 {
   "fields": {
-    "question": "Done Quiz"
-  },
-  "model": "appcode.question",
-  "pk": 0
-},
-{
-  "fields": {
     "question": "Have you been to the symphony before?"
   },
   "model": "appcode.question",
