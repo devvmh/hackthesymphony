@@ -39,12 +39,12 @@ def suggestions(request, pk):
 
   #set up a dict of the scores for each concert
   concert_scores = {}
-  for concert in Concert.objects.all():
+  for concert in Concert.objects.in_the_future():
     concert_scores[str(concert.pk)] = {'pk': concert.pk, 'score': 0}
 
   #for each answer the user provided, add scores for each relevant concert
   for session_answer in session_answer_list:
-    for concert in Concert.objects.all():
+    for concert in Concert.objects.in_the_future():
       concert_scores[str(concert.pk)]['score'] += get_score(session_answer.answer, concert)
 
   #sort the concerts by score in descending order; grab the top 3

@@ -30,7 +30,29 @@ class SessionAnswer(Model):
   def __unicode__(self):
     return str(self.session) + " answered '" + str(self.answer) + "' to '" + str(self.question) + "'."
 
+class ConcertManager(Manager):
+  def in_the_future(self):
+    return [c for c in self.all() if not self.date_passed(c)]
+
+  def date_passed(self, concert):
+    from dateutil import parser
+    from datetime import date
+    today_date = date.today()
+  
+    #parse dat
+    datestr = concert.date.split("\n")[-1]
+    concert_date = None
+    try:
+      concert_date = parser.parse(datestr).date()
+    except ValueError:
+      return false #just include this concert just in case
+  
+    #has the concert already passed?
+    return (concert_date < today_date)
+
+
 class Concert(Model):
+  objects = ConcertManager()
   title = CharField(max_length=2550)
   date = TextField()
   description = TextField()
