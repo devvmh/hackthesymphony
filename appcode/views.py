@@ -32,6 +32,22 @@ def what_is_this(request):
     'body_classes': 'what-is-this',
   })
 
+def date_passed(concert):
+  from dateutil import parser
+  from datetime import date
+  today_date = date.today()
+
+  #parse dat
+  datestr = concert.date.split("\n")[-1]
+  concert_date = None
+  try:
+    concert_date = parser.parse(datestr).date()
+  except ValueError:
+    return false #just include this concert just in case
+
+  #has the concert already passed?
+  return (concert_date < today_date)
+
 def suggestions(request, pk):
   #grab the session and its answers
   session = get_object_or_404(Session, pk=pk)
