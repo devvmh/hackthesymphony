@@ -46,6 +46,10 @@ class ConcertManager(Manager):
       concert_date = parser.parse(datestr).date()
     except ValueError:
       return false #just include this concert just in case
+
+    #KWS season
+    if concert_date.month < 7:
+      concert_date = concert_date.replace(year = concert_date.year + 1)
   
     #has the concert already passed?
     return (concert_date < today_date)
