@@ -25,10 +25,10 @@
   <body class="{{body_classes}}">
   	<header>
 
-  		<div class="back-button back-button-arrow">{% block backlink %}
+  		<div class="back-button back-button-arrow">{% block backlink_arrow %}
           <a href="javascript:void(0);"><img src="/static/arrow-282-48.png"></a>
 
-        {% endblock backlink %}</div>
+        {% endblock backlink_arrow %}</div>
       <h1 id="logo"><a href="/">How Do I Symphony?</a></h1>
   		<h3 id="nav-top"><a href="/what-is-this">What is this?</a></h3>
   	</header>  	
@@ -41,9 +41,9 @@
     <section class="back-button back-button-text">
 
       <p>
-        {% block backlink2 %}
+        {% block backlink_text %}
           <a href="javascript:void(0);">Back</a>
-        {% endblock backlink2 %}
+        {% endblock backlink_text %}
       </p>
     </section>
     

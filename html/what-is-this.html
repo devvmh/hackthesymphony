@@ -21,10 +21,10 @@
 </div>
 {% endblock main %}
 
-{% block backlink %}
-  <a href="{{ request.META | get_item:"HTTP_REFERER" }}"><img src="/static/arrow-282-48.png" id="arrow"></a>
-{% endblock backlink %}
+{% block backlink_arrow %}
+  <a href="{{ back_url }}"><img src="/static/arrow-282-48.png" id="arrow"></a>
+{% endblock backlink_arrow %}
 
-{% block backlink2 %}
-  <a href="{{ request.META | get_item:"HTTP_REFERER" }}">Back</a>
-{% endblock backlink2 %}
+{% block backlink_text %}
+  <a href="{{ back_url }}">Back</a>
+{% endblock backlink_text %}

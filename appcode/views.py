@@ -28,7 +28,12 @@ def index(request):
   })
 
 def what_is_this(request):
+  if request.META['HTTP_REFERER']
+    back_url = request.META['HTTP_REFERER']
+  else
+    back_url = "/"
   return render(request, 'what-is-this.html', {
+    'back_url': back_url,
     'body_classes': 'what-is-this',
   })
 
