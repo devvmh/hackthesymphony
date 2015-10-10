@@ -6,10 +6,15 @@
 {% endblock css %}
 
 {% block main %}
-  <p class="suggestions-explanation">Nice work! We found some shows that match your interests perfectly. See you at the show!</p>
-  {% for concert in concert_list %}
-    {% include "concert.html" with concert=concert %}
-  {% endfor %}
+  {% if concert_list %}
+    <p class="suggestions-explanation">Nice work! We found some shows that match your interests perfectly. See you at the show!</p>
+    {% for concert in concert_list %}
+      {% include "concert.html" with concert=concert %}
+    {% endfor %}
+  {% else %}
+    <p>The season is over! Thanks for filling out the quiz! The next season will probably begin in 2016 of this year.</p>
+    <a href="http://www.kwsymphony.ca/">Visit the KW Symphony website</a>
+  {% endif %}
 {% endblock main %}
 
 {% block backlink_arrow %}
