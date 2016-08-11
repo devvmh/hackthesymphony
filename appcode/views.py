@@ -122,7 +122,7 @@ class SessionAnswerViewSet(viewsets.ModelViewSet):
     queryset = SessionAnswer.objects.all()
     serializer_class = SessionAnswerSerializer
 
-@permission_required('change_concertanswerscore')
+@permission_required('change_concertanswerscore', login_url='/admin/login/')
 def scores_edit_table(request):
   concert_list = Concert.objects.all()
   answer_list = Answer.objects.all()
@@ -152,7 +152,7 @@ def scores_edit_table(request):
     'body_classes': 'scores scores-edit scores-edit-table',
   })
 
-@login_required
+@login_required(login_url='/admin/login/')
 def scores_edit_table_submit(request):
   if not request.POST:
     return HttpResponseNotAllowed
