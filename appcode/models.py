@@ -45,7 +45,7 @@ class ConcertManager(Manager):
     try:
       concert_date = parser.parse(datestr).date()
     except ValueError:
-      return false #just include this concert just in case
+      return False #just include this concert just in case
 
     #KWS season
     if concert_date.month < 7:
@@ -71,4 +71,4 @@ class ConcertAnswerScore(Model):
   answer = ForeignKey(Answer)
   score = IntegerField()
   def __unicode__(self):
-    return str(self.concert) + ' Ans:' + str(self.answer.pk) + ' Score:' + str(self.score)
+    return unicode(self.concert) + ' Ans:' + unicode(self.answer.pk) + ' Score:' + unicode(self.score)
