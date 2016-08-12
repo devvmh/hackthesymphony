@@ -28,7 +28,7 @@ class SessionAnswer(Model):
   question = ForeignKey(Question, related_name='session_answers')
   answer = ForeignKey(Answer, related_name='sessions_using_this_answer')
   def __unicode__(self):
-    return str(self.session) + " answered '" + str(self.answer) + "' to '" + str(self.question) + "'."
+    return unicode(self.session) + " answered '" + unicode(self.answer) + "' to '" + unicode(self.question) + "'."
 
 class ConcertManager(Manager):
   def in_the_future(self):
